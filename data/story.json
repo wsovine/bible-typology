@@ -1,0 +1,1345 @@
+{
+  "metadata": {
+    "generated": "2026-10-16T18:51:44+00:00",
+    "source": "export/story.toml + LogosGraph Neo4j",
+    "stats": {
+      "types": 198,
+      "links": 275,
+      "verseLinks": "1,130",
+      "cccLinks": 43,
+      "christLinks": 100,
+      "eschatological": 41,
+      "sacramental": 34,
+      "ecclesial": 70,
+      "christological": 104,
+      "covenantal": 12,
+      "marian": 14
+    },
+    "christFamily": [
+      "christ",
+      "christs-passion",
+      "the-resurrection",
+      "christs-victory",
+      "christ-high-priest",
+      "christs-ascension",
+      "the-betrayal-by-judas"
+    ]
+  },
+  "meta": {
+    "title": "Shadow & Fulfillment",
+    "subtitle": "How the Old Testament foreshadows the New"
+  },
+  "chapters": [
+    {
+      "id": "intro",
+      "title": "What is a type?",
+      "category": null,
+      "steps": [
+        {
+          "id": "intro-title",
+          "view": "title",
+          "text": "“The law contains the shadow of future good things,” says the Letter to the Hebrews. For two thousand years Christians have read the Old Testament this way: as a true story whose people, events and rituals cast shadows forward onto Christ and his Church.",
+          "words": 44,
+          "verse": {
+            "id": "HEB-10-1",
+            "ref": "Hebrews 10:1",
+            "text": "For the law contains the shadow of future good things, not the very image of these things. So, by the very same sacrifices which they offer ceaselessly each year, they can never cause these to approach perfection."
+          },
+          "ccc": []
+        },
+        {
+          "id": "intro-saying",
+          "view": "text",
+          "text": "A saying of Saint Augustine, quoted by the Catechism, puts it simply: the New Testament lies hidden in the Old, and the Old is unveiled in the New. Reading Scripture this way is called typology.",
+          "words": 35,
+          "ccc": [
+            {
+              "para": 129,
+              "quote": "the New Testament lies hidden in the Old and the Old Testament is unveiled in the New"
+            }
+          ]
+        },
+        {
+          "id": "intro-word",
+          "view": "pair",
+          "text": "The word comes from Scripture itself. Saint Paul calls Adam “a figure of him who was to come.” His Greek word is typos. A type is a real person, event or institution that foreshadows a greater fulfillment, called its antitype. Adam's antitype is Christ, who brings life where Adam brought death.",
+          "words": 51,
+          "pair": {
+            "type": "adam",
+            "antitype": "christ",
+            "typeName": "Adam",
+            "antitypeName": "Christ",
+            "category": "Christological",
+            "confidence": "high",
+            "sources": [
+              "haydock"
+            ]
+          },
+          "warrant": [
+            {
+              "key": "scripture",
+              "label": "the New Testament draws this link itself"
+            }
+          ],
+          "ot": {
+            "id": "GEN-2-7",
+            "ref": "Genesis 2:7",
+            "text": "And then the Lord God formed man from the clay of the earth, and he breathed into his face the breath of life, and man became a living soul."
+          },
+          "nt": {
+            "id": "ROM-5-14",
+            "ref": "Romans 5:14",
+            "text": "Yet death reigned from Adam until Moses, even in those who have not sinned, in the likeness of the transgression of Adam, who is a figure of him who was to come."
+          },
+          "quote": {
+            "text": "that the creature might go before in figure, and the Son of God might follow after in reality",
+            "by": "St. Ambrose",
+            "source": "Haydock commentary on Luke 3:38"
+          },
+          "ccc": []
+        },
+        {
+          "id": "intro-example",
+          "view": "pair",
+          "text": "Here is one. At the first Passover, Israel was told to eat a lamb without breaking any of its bones. At the crucifixion, soldiers broke the legs of the men beside Jesus, but not his. John saw the connection: Jesus is the Passover Lamb.",
+          "words": 44,
+          "pair": {
+            "type": "passover",
+            "antitype": "christs-passion",
+            "typeName": "Passover",
+            "antitypeName": "Christ's Passion",
+            "category": "Christological",
+            "confidence": "high",
+            "sources": [
+              "haydock"
+            ]
+          },
+          "warrant": [
+            {
+              "key": "scripture",
+              "label": "the New Testament draws this link itself"
+            }
+          ],
+          "ot": {
+            "id": "EXO-12-46",
+            "ref": "Exodus 12:46",
+            "text": "In one house it shall be eaten; you shall not carry its flesh outside, nor shall you break its bone."
+          },
+          "nt": {
+            "id": "JHN-19-36",
+            "ref": "John 19:36",
+            "text": "For these things happened so that the Scripture would be fulfilled: “You shall not break a bone of him.”"
+          },
+          "quote": {
+            "text": "This, which was literally spoken of the paschal lamb, … the evangelist applies to Christ, of whom the lamb was a figure.",
+            "by": "Witham",
+            "source": "Haydock commentary on John 19:36"
+          },
+          "ccc": []
+        },
+        {
+          "id": "intro-value",
+          "view": "text",
+          "text": "A type is not a coincidence or a clever code. The Catechism insists that the Old Testament “retains its own intrinsic value,” and that “the New Testament has to be read in the light of the Old.” The figure has its own meaning. But it points beyond itself, and the fulfillment is always greater.",
+          "words": 54,
+          "ccc": [
+            {
+              "para": 129,
+              "quote": "the Old Testament retains its own intrinsic value as Revelation reaffirmed by our Lord himself"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "web",
+      "title": "A web of figures",
+      "category": null,
+      "steps": [
+        {
+          "id": "web-all",
+          "view": "web-all",
+          "text": "LogosGraph maps 198 of these figures and 275 links between them. They are drawn from the Catechism of the Catholic Church and from the 19th-century Haydock Bible commentary, which gathers readings from the Church Fathers and later Catholic commentators. Old Testament figures sit on one side; their fulfillments, on the other.",
+          "words": 51,
+          "ccc": []
+        },
+        {
+          "id": "web-categories",
+          "view": "web-category",
+          "text": "Each link has a theme: Christ himself, the Church, the end of time, the sacraments, Mary, or the covenants. Let's follow four of these threads.",
+          "words": 25,
+          "ccc": []
+        }
+      ]
+    },
+    {
+      "id": "waters",
+      "title": "Through the Waters",
+      "category": "Sacramental",
+      "steps": [
+        {
+          "id": "waters-intro",
+          "view": "web-category",
+          "text": "Every Easter Vigil, as the Church blesses the water for Baptism, she recalls great moments of salvation history that already prefigured it. The Catechism walks through them one by one.",
+          "words": 30,
+          "ccc": [
+            {
+              "para": 1217,
+              "quote": "the Church solemnly commemorates the great events in salvation history that already prefigured the mystery of Baptism"
+            }
+          ]
+        },
+        {
+          "id": "waters-flood",
+          "view": "pair",
+          "text": "The Flood. The waters that ended a corrupt world also carried eight people to safety in the ark. Saint Peter makes the link explicit: Baptism now saves you “in a similar manner.” His Greek word is antitypos, “corresponding to,” from which we get “antitype.”",
+          "words": 44,
+          "pair": {
+            "type": "noahs-ark",
+            "antitype": "baptism",
+            "typeName": "Noah's Ark",
+            "antitypeName": "Baptism",
+            "category": "Sacramental",
+            "confidence": "high",
+            "sources": [
+              "CCC-1094",
+              "haydock"
+            ]
+          },
+          "warrant": [
+            {
+              "key": "scripture",
+              "label": "the New Testament draws this link itself"
+            },
+            {
+              "key": "catechism",
+              "label": "taught in the Catechism"
+            }
+          ],
+          "ot": {
+            "id": "GEN-7-23",
+            "ref": "Genesis 7:23",
+            "text": "And he wiped away all substance that was upon the earth, from man to animal, the crawling things just as much as the flying things of the air. And they were wiped away from the earth. But only Noah remained, and those who were with him in the ark."
+          },
+          "nt": {
+            "id": "1PE-3-21",
+            "ref": "1 Peter 3:21",
+            "text": "And now you also are saved, in a similar manner, by baptism, not by the testimony of sordid flesh, but by the examination of a good conscience in God, through the resurrection of Jesus Christ."
+          },
+          "quote": {
+            "text": "the ark was a figure of baptism, which saveth you from the death of the soul",
+            "by": null,
+            "source": "Haydock commentary on 1 Peter 3:21"
+          },
+          "ccc": [
+            {
+              "para": 1219,
+              "quote": "The Church has seen in Noah's ark a prefiguring of salvation by Baptism"
+            }
+          ]
+        },
+        {
+          "id": "waters-red-sea",
+          "view": "pair",
+          "text": "The Red Sea. Israel walked out of slavery between walls of water, and the army pursuing them drowned. Paul says they were all “baptized, in the cloud and in the sea.” Liberation from Egypt becomes the pattern for liberation from sin.",
+          "words": 41,
+          "pair": {
+            "type": "red-sea-crossing",
+            "antitype": "baptism",
+            "typeName": "Crossing of the Red Sea",
+            "antitypeName": "Baptism",
+            "category": "Sacramental",
+            "confidence": "high",
+            "sources": [
+              "CCC-1094",
+              "haydock"
+            ]
+          },
+          "warrant": [
+            {
+              "key": "scripture",
+              "label": "the New Testament draws this link itself"
+            },
+            {
+              "key": "catechism",
+              "label": "taught in the Catechism"
+            }
+          ],
+          "ot": {
+            "id": "EXO-14-22",
+            "ref": "Exodus 14:22",
+            "text": "And the sons of Israel went in through the midst of the dried sea. For the water was like a wall at their right hand and at their left hand."
+          },
+          "nt": {
+            "id": "1CO-10-2",
+            "ref": "1 Corinthians 10:2",
+            "text": "And in Moses, they all were baptized, in the cloud and in the sea."
+          },
+          "quote": {
+            "text": "This is a figure of baptism, in which the fruits of Christ's blood are applied to our souls. All sins are there destroyed, as the Egyptians were in the Sea.",
+            "by": "St. Augustine, via Worthington",
+            "source": "Haydock commentary on Psalm 105 (106):10"
+          },
+          "ccc": [
+            {
+              "para": 1221,
+              "quote": "the crossing of the Red Sea, literally the liberation of Israel from the slavery of Egypt, announces the liberation wrought by Baptism"
+            }
+          ]
+        },
+        {
+          "id": "waters-jordan",
+          "view": "pair",
+          "text": "The Jordan. Forty years after the Red Sea, Israel crossed the Jordan River on dry ground into the Promised Land, which the Catechism calls “an image of eternal life.” Their leader was Joshua, a name that in Greek is Jesus. Centuries later, Jesus was baptized in the same river, and the heavens opened.",
+          "words": 53,
+          "pair": {
+            "type": "jordan-crossing",
+            "antitype": "baptism",
+            "typeName": "Crossing of the Jordan",
+            "antitypeName": "Baptism",
+            "category": "Sacramental",
+            "confidence": "high",
+            "sources": [
+              "CCC-1222"
+            ]
+          },
+          "warrant": [
+            {
+              "key": "catechism",
+              "label": "taught in the Catechism"
+            }
+          ],
+          "ot": {
+            "id": "JOS-3-17",
+            "ref": "Joshua 3:17",
+            "text": "Then the people advanced opposite Jericho. And the priests who were carrying the ark of the covenant of the Lord were standing, fully-dressed, upon dry soil in the midst of the Jordan, and all the people passed over, through the channel that was dried up."
+          },
+          "nt": {
+            "id": "MAT-3-16",
+            "ref": "Matthew 3:16",
+            "text": "And Jesus, having been baptized, ascended from the water immediately, and behold, the heavens were opened to him. And he saw the Spirit of God descending like a dove, and alighting on him."
+          },
+          "ccc": [
+            {
+              "para": 1222,
+              "quote": "Baptism is prefigured in the crossing of the Jordan River by which the People of God received the gift of the land promised to Abraham's descendants, an image of eternal life"
+            }
+          ]
+        },
+        {
+          "id": "waters-circumcision",
+          "view": "pair",
+          "text": "Circumcision. One figure of Baptism involves no water. God's covenant with Abraham was marked on every male child eight days after birth, Jesus included. Paul speaks of “a circumcision not made by hand… the circumcision of Christ,” and in the next breath of being “buried with him in baptism.”",
+          "words": 49,
+          "pair": {
+            "type": "circumcision",
+            "antitype": "baptism",
+            "typeName": "Circumcision",
+            "antitypeName": "Baptism",
+            "category": "Sacramental",
+            "confidence": "high",
+            "sources": [
+              "CCC-527",
+              "haydock"
+            ]
+          },
+          "warrant": [
+            {
+              "key": "scripture",
+              "label": "the New Testament draws this link itself"
+            },
+            {
+              "key": "catechism",
+              "label": "taught in the Catechism"
+            }
+          ],
+          "ot": {
+            "id": "GEN-17-11",
+            "ref": "Genesis 17:11",
+            "text": "And you shall circumcise the flesh of your foreskin, so that it may be a sign of the covenant between me and you."
+          },
+          "nt": {
+            "id": "COL-2-12",
+            "ref": "Colossians 2:12",
+            "text": "You have been buried with him in baptism. In him also, you have risen again through faith, by the work of God, who raised him up from the dead."
+          },
+          "quote": {
+            "text": "to be a figure of baptism",
+            "by": "Menochius and Tirinus",
+            "source": "Haydock commentary on Genesis 17:11"
+          },
+          "ccc": [
+            {
+              "para": 527,
+              "quote": "This sign prefigures that \"circumcision of Christ\" which is Baptism."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bread",
+      "title": "Bread from Heaven",
+      "category": "Sacramental",
+      "steps": [
+        {
+          "id": "bread-intro",
+          "view": "web-category",
+          "text": "A second sacramental thread runs through meals: a lamb eaten in haste, bread falling from the sky, a mysterious priest-king's offering. Each one, the Church teaches, points toward the Eucharist.",
+          "words": 30,
+          "ccc": []
+        },
+        {
+          "id": "bread-passover",
+          "view": "pair",
+          "text": "Passover. Israel was commanded to keep the Passover “as a memorial” forever. On the night before he died, at the Passover meal, Jesus took bread and said: “Do this as a commemoration of me.”",
+          "words": 34,
+          "pair": {
+            "type": "passover",
+            "antitype": "eucharist",
+            "typeName": "Passover",
+            "antitypeName": "Eucharist",
+            "category": "Sacramental",
+            "confidence": "high",
+            "sources": [
+              "CCC-1334",
+              "haydock"
+            ]
+          },
+          "warrant": [
+            {
+              "key": "catechism",
+              "label": "taught in the Catechism"
+            }
+          ],
+          "ot": {
+            "id": "EXO-12-14",
+            "ref": "Exodus 12:14",
+            "text": "Then you shall have this day as a memorial, and you shall celebrate it as a solemnity to the Lord, in your generations, as an everlasting devotion."
+          },
+          "nt": {
+            "id": "LUK-22-19",
+            "ref": "Luke 22:19",
+            "text": "And taking bread, he gave thanks and broke it and gave it to them, saying: “This is my body, which is given for you. Do this as a commemoration of me.”"
+          },
+          "ccc": [
+            {
+              "para": 1363,
+              "quote": "every time Passover is celebrated, the Exodus events are made present to the memory of believers"
+            }
+          ]
+        },
+        {
+          "id": "bread-manna",
+          "view": "pair",
+          "text": "Manna. For forty years in the desert, God fed his people with bread from heaven. When the crowd recalled it, Jesus answered: “I am the living bread, who descended from heaven.”",
+          "words": 31,
+          "pair": {
+            "type": "manna",
+            "antitype": "eucharist",
+            "typeName": "Manna in the Desert",
+            "antitypeName": "Eucharist",
+            "category": "Sacramental",
+            "confidence": "high",
+            "sources": [
+              "CCC-1094",
+              "haydock"
+            ]
+          },
+          "warrant": [
+            {
+              "key": "scripture",
+              "label": "the New Testament draws this link itself"
+            },
+            {
+              "key": "catechism",
+              "label": "taught in the Catechism"
+            }
+          ],
+          "ot": {
+            "id": "EXO-16-4",
+            "ref": "Exodus 16:4",
+            "text": "Then the Lord said to Moses: “Behold, I will rain down bread from heaven for you. Let the people go out and collect what is sufficient for each day, so that I may test them, as to whether or not they will walk in my law."
+          },
+          "nt": {
+            "id": "JHN-6-51",
+            "ref": "John 6:51",
+            "text": "I am the living bread, who descended from heaven."
+          },
+          "quote": {
+            "text": "was a figure of the bread of life, which we receive in the blessed sacrament, for the food and nourishment of our souls, during the time of our mortal pilgrimage",
+            "by": "Challoner",
+            "source": "Haydock commentary on Exodus 16:31"
+          },
+          "ccc": [
+            {
+              "para": 1094,
+              "quote": "manna in the desert prefigured the Eucharist, \"the true bread from heaven.\""
+            }
+          ]
+        },
+        {
+          "id": "bread-melchizedek",
+          "view": "pair",
+          "text": "Melchizedek. A king of Salem and “a priest of the Most High God” appears from nowhere to bless Abraham, bringing out bread and wine. The Church sees in his gesture “a prefiguring of her own offering.”",
+          "words": 36,
+          "pair": {
+            "type": "melchizedek",
+            "antitype": "eucharist",
+            "typeName": "Melchizedek",
+            "antitypeName": "Eucharist",
+            "category": "Sacramental",
+            "confidence": "high",
+            "sources": [
+              "CCC-1334",
+              "haydock"
+            ]
+          },
+          "warrant": [
+            {
+              "key": "catechism",
+              "label": "taught in the Catechism"
+            },
+            {
+              "key": "tradition",
+              "label": "from the commentary tradition"
+            }
+          ],
+          "ot": {
+            "id": "GEN-14-18",
+            "ref": "Genesis 14:18",
+            "text": "Then in truth, Melchizedek, the king of Salem, brought forth bread and wine, for he was a priest of the Most High God;"
+          },
+          "nt": {
+            "id": "MAT-26-26",
+            "ref": "Matthew 26:26",
+            "text": "Now while they were eating the meal, Jesus took bread, and he blessed and broke and gave it to his disciples, and he said: “Take and eat. This is my body.”"
+          },
+          "quote": {
+            "text": "Melchisedech offered not bloody victims, but dedicated the sacrament of Christ in bread and wine",
+            "by": "St. Jerome",
+            "source": "Haydock commentary on Genesis 14:18"
+          },
+          "ccc": [
+            {
+              "para": 1333,
+              "quote": "The Church sees in the gesture of the king-priest Melchizedek, who \"brought out bread and wine,\" a prefiguring of her own offering."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "christ",
+      "title": "Figures of Christ",
+      "category": "Christological",
+      "steps": [
+        {
+          "id": "christ-intro",
+          "view": "web-category",
+          "text": "The largest thread is about Christ himself: figures that foreshadow who Jesus is and what he would suffer. Here are six of them.",
+          "words": 23,
+          "ccc": []
+        },
+        {
+          "id": "christ-isaac",
+          "view": "pair",
+          "text": "Isaac. God asked Abraham for “your only begotten son Isaac, whom you love.” Isaac carried the wood up the mountain, and Abraham told him: “God himself will provide the victim.” Isaac was spared; a ram died in his place. Centuries later, Jesus carried his own cross to Calvary.",
+          "words": 48,
+          "pair": {
+            "type": "binding-of-isaac",
+            "antitype": "christs-passion",
+            "typeName": "Binding of Isaac",
+            "antitypeName": "Christ's Passion",
+            "category": "Christological",
+            "confidence": "medium",
+            "sources": [
+              "haydock"
+            ]
+          },
+          "warrant": [
+            {
+              "key": "catechism",
+              "label": "taught in the Catechism"
+            },
+            {
+              "key": "tradition",
+              "label": "from the commentary tradition"
+            }
+          ],
+          "ot": {
+            "id": "GEN-22-6",
+            "ref": "Genesis 22:6",
+            "text": "He also took the wood for the holocaust, and he imposed it upon his son Isaac. And he himself carried in his hands fire and a sword. And as the two continued on together,"
+          },
+          "nt": {
+            "id": "JHN-19-17",
+            "ref": "John 19:17",
+            "text": "And carrying his own cross, he went forth to the place which is called Calvary, but in Hebrew it is called the Place of the Skull."
+          },
+          "quote": {
+            "text": "Isaac, carrying the wood on his shoulders for the sacrifice, was a figure of Jesus Christ carrying his cross.",
+            "by": null,
+            "source": "Haydock commentary on Matthew 27:33"
+          },
+          "ccc": [
+            {
+              "para": 2572,
+              "quote": "the Father who will not spare his own Son but will deliver him up for us all"
+            }
+          ]
+        },
+        {
+          "id": "christ-joseph",
+          "view": "pair",
+          "text": "Joseph. Sold by his jealous brothers for twenty pieces of silver, he rose to save Egypt and his own family from famine. “You devised evil against me,” he told them. “But God turned it into good.” The Catechism sets this beside the Cross: from the greatest evil ever committed, God brought the greatest good.",
+          "words": 54,
+          "pair": {
+            "type": "joseph",
+            "antitype": "christ",
+            "typeName": "Joseph",
+            "antitypeName": "Christ",
+            "category": "Christological",
+            "confidence": "medium",
+            "sources": [
+              "haydock"
+            ]
+          },
+          "warrant": [
+            {
+              "key": "catechism",
+              "label": "taught in the Catechism"
+            },
+            {
+              "key": "tradition",
+              "label": "from the commentary tradition"
+            }
+          ],
+          "ot": {
+            "id": "GEN-50-20",
+            "ref": "Genesis 50:20",
+            "text": "You devised evil against me. But God turned it into good, so that he might exalt me, just as you presently discern, and so that he might bring about the salvation of many peoples."
+          },
+          "nt": {
+            "id": "ROM-5-20",
+            "ref": "Romans 5:20",
+            "text": "Now the law entered in such a way that offenses would abound. But where offenses were abundant, grace was superabundant."
+          },
+          "quote": {
+            "text": "His greatest glory was, to have prefigured Jesus Christ in so wonderful a manner during the course of his life",
+            "by": null,
+            "source": "Haydock commentary on Genesis 50:25"
+          },
+          "ccc": [
+            {
+              "para": 312,
+              "quote": "From the greatest moral evil ever committed"
+            }
+          ]
+        },
+        {
+          "id": "christ-serpent",
+          "view": "pair",
+          "text": "The bronze serpent. Bitten by poisonous snakes in the desert, the Israelites were healed by looking at a bronze serpent Moses set up as a sign. Wisdom adds that each one “was not healed by what he saw, but by you, the Savior of all.” Jesus applied it to himself: “so also must the Son of man be lifted up.”",
+          "words": 60,
+          "pair": {
+            "type": "brazen-serpent",
+            "antitype": "christs-passion",
+            "typeName": "Brazen Serpent",
+            "antitypeName": "Christ's Passion",
+            "category": "Christological",
+            "confidence": "high",
+            "sources": [
+              "haydock"
+            ]
+          },
+          "warrant": [
+            {
+              "key": "scripture",
+              "label": "the New Testament draws this link itself"
+            },
+            {
+              "key": "catechism",
+              "label": "taught in the Catechism"
+            }
+          ],
+          "ot": {
+            "id": "NUM-21-9",
+            "ref": "Numbers 21:9",
+            "text": "Therefore, Moses made a bronze serpent, and he placed it as a sign. When those who had been struck gazed upon it, they were healed."
+          },
+          "nt": {
+            "id": "JHN-3-14",
+            "ref": "John 3:14",
+            "text": "And just as Moses lifted up the serpent in the desert, so also must the Son of man be lifted up,"
+          },
+          "quote": {
+            "text": "he does not consider the cross as a disgrace, but as a glory",
+            "by": "Theophylactus and St. Chrysostom",
+            "source": "Haydock commentary on John 3:14"
+          },
+          "ccc": [
+            {
+              "para": 2130,
+              "quote": "God ordained or permitted the making of images that pointed symbolically toward salvation by the incarnate Word: so it was with the bronze serpent"
+            }
+          ]
+        },
+        {
+          "id": "christ-david",
+          "view": "pair",
+          "text": "David. Betrayed by his own son Absalom, Israel's shepherd-king still wept when the young man died: “Who can grant to me that I may die on your behalf?” The commentators saw a figure of Christ, who prayed even for those crucifying him: “Father, forgive them. For they know not what they do.”",
+          "words": 52,
+          "pair": {
+            "type": "david",
+            "antitype": "christs-passion",
+            "typeName": "David",
+            "antitypeName": "Christ's Passion",
+            "category": "Christological",
+            "confidence": "high",
+            "sources": [
+              "haydock"
+            ]
+          },
+          "warrant": [
+            {
+              "key": "tradition",
+              "label": "from the commentary tradition"
+            }
+          ],
+          "ot": {
+            "id": "2SA-18-33",
+            "ref": "2 Samuel 18:33",
+            "text": "And so the king, being greatly saddened, ascended to the upper room of the gate, and he wept. And as he went, he was speaking in this manner: “My son Absalom! Absalom my son! Who can grant to me that I may die on your behalf? Absalom, my son! My son, Absalom!”"
+          },
+          "nt": {
+            "id": "LUK-23-34",
+            "ref": "Luke 23:34",
+            "text": "Then Jesus said, “Father, forgive them. For they know not what they do.” And truly, dividing his garments, they cast lots."
+          },
+          "quote": {
+            "text": "In this he was a figure of Christ weeping, praying, and dying for his rebellious children, and even for them that crucified him.",
+            "by": "Challoner, with St. Ambrose and Theodoret",
+            "source": "Haydock commentary on 2 Samuel 18:33"
+          },
+          "ccc": []
+        },
+        {
+          "id": "christ-jonah",
+          "view": "pair",
+          "text": "Jonah. Three days and three nights in the belly of a great fish, then back into the light. Asked for a sign, Jesus offered only this one: “so shall the Son of man be in the heart of the earth for three days and three nights.”",
+          "words": 46,
+          "pair": {
+            "type": "jonah",
+            "antitype": "the-resurrection",
+            "typeName": "Jonah",
+            "antitypeName": "The Resurrection",
+            "category": "Christological",
+            "confidence": "high",
+            "sources": [
+              "haydock"
+            ]
+          },
+          "warrant": [
+            {
+              "key": "scripture",
+              "label": "the New Testament draws this link itself"
+            }
+          ],
+          "ot": {
+            "id": "JON-2-1",
+            "ref": "Jonah 2:1",
+            "text": "And the Lord prepared a great fish to swallow Jonah. And Jonah was in the belly of the fish for three days and three nights."
+          },
+          "nt": {
+            "id": "MAT-12-40",
+            "ref": "Matthew 12:40",
+            "text": "For just as Jonah was in the belly of the whale for three days and three nights, so shall the Son of man be in the heart of the earth for three days and three nights."
+          },
+          "quote": {
+            "text": "who would have thought that Jonas had been a figure of our Saviour's death and resurrection, if he himself had not declared it?",
+            "by": "Worthington",
+            "source": "Haydock commentary on Jonah 4:9"
+          },
+          "ccc": []
+        },
+        {
+          "id": "christ-melchizedek",
+          "view": "pair",
+          "text": "Melchizedek again, where type and prophecy meet. Genesis gives the figure; a psalm then promises a king who will be “a priest forever, according to the order of Melchizedek.” Hebrews applies both to Jesus: a priest not by descent from Levi, but “according to the virtue of an indissoluble life.”",
+          "words": 50,
+          "pair": {
+            "type": "melchizedek",
+            "antitype": "christ-high-priest",
+            "typeName": "Melchizedek",
+            "antitypeName": "Christ the High Priest",
+            "category": "Christological",
+            "confidence": "high",
+            "sources": [
+              "CCC-1544",
+              "haydock"
+            ]
+          },
+          "warrant": [
+            {
+              "key": "scripture",
+              "label": "the New Testament draws this link itself"
+            },
+            {
+              "key": "catechism",
+              "label": "taught in the Catechism"
+            }
+          ],
+          "ot": {
+            "id": "PSA-109-4",
+            "ref": "Psalm 109 (110):4",
+            "text": "The Lord has sworn, and he will not repent: “You are a priest forever, according to the order of Melchizedek.”"
+          },
+          "nt": {
+            "id": "HEB-7-17",
+            "ref": "Hebrews 7:17",
+            "text": "For he testifies: “You are a priest forever, according to the order of Melchizedek.”"
+          },
+          "ccc": [
+            {
+              "para": 1544,
+              "quote": "The Christian tradition considers Melchizedek, \"priest of God Most High,\" as a prefiguration of the priesthood of Christ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mary",
+      "title": "Daughters of Promise",
+      "category": "Marian",
+      "steps": [
+        {
+          "id": "mary-intro",
+          "view": "web-category",
+          "text": "The Catechism names Old Testament women who “kept alive the hope of Israel's salvation”: Sarah, Hannah, Deborah, Judith, Esther and others. “The purest figure among them is Mary.” Some readings that follow appear in the Catechism; others come from devotional tradition, and Christians weigh them differently.",
+          "words": 46,
+          "ccc": [
+            {
+              "para": 64,
+              "quote": "kept alive the hope of Israel's salvation. The purest figure among them is Mary."
+            }
+          ]
+        },
+        {
+          "id": "mary-eve",
+          "view": "pair",
+          "text": "Eve. Despite her disobedience, the Catechism notes, Eve received God's promise and the name “the mother of all the living.” Mary answered the angel: “Let it be done to me according to your word.” Early Fathers such as Saint Irenaeus called Mary the new Eve, whose obedience untied “the knot of Eve's disobedience.”",
+          "words": 53,
+          "pair": {
+            "type": "eve",
+            "antitype": "mary",
+            "typeName": "Eve",
+            "antitypeName": "Mary",
+            "category": "Marian",
+            "confidence": "high",
+            "sources": [
+              "CCC-489",
+              "haydock"
+            ]
+          },
+          "warrant": [
+            {
+              "key": "catechism",
+              "label": "taught in the Catechism"
+            },
+            {
+              "key": "tradition",
+              "label": "from the commentary tradition"
+            }
+          ],
+          "ot": {
+            "id": "GEN-3-20",
+            "ref": "Genesis 3:20",
+            "text": "And Adam called the name of his wife, ‘Eve,’ because she was the mother of all the living."
+          },
+          "nt": {
+            "id": "LUK-1-38",
+            "ref": "Luke 1:38",
+            "text": "Then Mary said: “Behold, I am the handmaid of the Lord. Let it be done to me according to your word.” And the Angel departed from her."
+          },
+          "quote": {
+            "text": "one who imparts life, in which she was a figure of the blessed Virgin Mary",
+            "by": "Calmet",
+            "source": "Haydock commentary on Genesis 3:20"
+          },
+          "ccc": [
+            {
+              "para": 494,
+              "quote": "The knot of Eve's disobedience was untied by Mary's obedience"
+            }
+          ]
+        },
+        {
+          "id": "mary-sarah",
+          "view": "pair",
+          "text": "Sarah. Long past the age of childbearing, she laughed when told she would have a son. God's reply: “Is anything difficult for God?” When the angel tells Mary she will conceive by the Holy Spirit, he gives the same answer: “For no word will be impossible with God.”",
+          "words": 48,
+          "pair": {
+            "type": "sarah",
+            "antitype": "mary",
+            "typeName": "Sarah",
+            "antitypeName": "Mary",
+            "category": "Marian",
+            "confidence": "high",
+            "sources": [
+              "CCC-489",
+              "haydock"
+            ]
+          },
+          "warrant": [
+            {
+              "key": "catechism",
+              "label": "taught in the Catechism"
+            }
+          ],
+          "ot": {
+            "id": "GEN-18-14",
+            "ref": "Genesis 18:14",
+            "text": "Is anything difficult for God? According to the announcement, he will return to you at this same time, with life as a companion, and Sarah will have a son.”"
+          },
+          "nt": {
+            "id": "LUK-1-37",
+            "ref": "Luke 1:37",
+            "text": "For no word will be impossible with God.”"
+          },
+          "quote": {
+            "text": "who was a figure of the blessed Virgin Mary, and of the Church",
+            "by": "Calmet",
+            "source": "Haydock commentary on Genesis 17:16"
+          },
+          "ccc": [
+            {
+              "para": 489,
+              "quote": "By virtue of this promise, Sarah conceives a son in spite of her old age."
+            }
+          ]
+        },
+        {
+          "id": "mary-hannah",
+          "view": "pair",
+          "text": "Hannah. Childless and taunted, she prayed for a son and was given Samuel. Her song of thanks praises a God who reverses fortunes: “He humbles, and he lifts up.” A thousand years later, Mary's Magnificat sings the same: “He has deposed the powerful from their seat, and he has exalted the humble.”",
+          "words": 52,
+          "pair": {
+            "type": "hannah",
+            "antitype": "mary",
+            "typeName": "Hannah",
+            "antitypeName": "Mary",
+            "category": "Marian",
+            "confidence": "high",
+            "sources": [
+              "CCC-489",
+              "haydock"
+            ]
+          },
+          "warrant": [
+            {
+              "key": "catechism",
+              "label": "taught in the Catechism"
+            },
+            {
+              "key": "tradition",
+              "label": "from the commentary tradition"
+            }
+          ],
+          "ot": {
+            "id": "1SA-2-7",
+            "ref": "1 Samuel 2:7",
+            "text": "The Lord impoverishes, and he enriches. He humbles, and he lifts up."
+          },
+          "nt": {
+            "id": "LUK-1-52",
+            "ref": "Luke 1:52",
+            "text": "He has deposed the powerful from their seat, and he has exalted the humble."
+          },
+          "quote": {
+            "text": "The blessed Virgin conveys the same idea in other words",
+            "by": "Menochius",
+            "source": "Haydock commentary on 1 Samuel 2:5"
+          },
+          "ccc": [
+            {
+              "para": 489,
+              "quote": "Hannah, the mother of Samuel"
+            }
+          ]
+        },
+        {
+          "id": "mary-ark",
+          "view": "pair",
+          "text": "The Ark of the Covenant was where God's glory dwelt. David asked, “How shall the ark of the Lord be brought to me?” and it stayed three months in a house that was blessed. Many readers hear Luke echoing this: Elizabeth asks how “the mother of my Lord” could come to her, and Mary stays about three months.",
+          "words": 58,
+          "pair": {
+            "type": "the-ark-of-the-covenant",
+            "antitype": "mary",
+            "typeName": "The Ark of the Covenant",
+            "antitypeName": "Mary",
+            "category": "Marian",
+            "confidence": "high",
+            "sources": [
+              "CCC-2676"
+            ]
+          },
+          "warrant": [
+            {
+              "key": "catechism",
+              "label": "taught in the Catechism"
+            }
+          ],
+          "ot": {
+            "id": "2SA-6-9",
+            "ref": "2 Samuel 6:9",
+            "text": "And David was very fearful of the Lord on that day, saying, “How shall the ark of the Lord be brought to me?”"
+          },
+          "nt": {
+            "id": "LUK-1-43",
+            "ref": "Luke 1:43",
+            "text": "And how does this concern me, so that the mother of my Lord would come to me?"
+          },
+          "ccc": [
+            {
+              "para": 2676,
+              "quote": "the ark of the covenant, the place where the glory of the Lord dwells"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "church",
+      "title": "One Ark, One People",
+      "category": "Ecclesial",
+      "steps": [
+        {
+          "id": "church-intro",
+          "view": "web-category",
+          "text": "The Fathers also saw in Israel's story the shape of the Church: a people gathered, sheltered and built into a dwelling for God. Paul's image is not replacement but grafting: the nations are joined to Israel's own olive tree, where “the root supports you.” 70 links follow this thread.",
+          "words": 49,
+          "ccc": []
+        },
+        {
+          "id": "church-ark",
+          "view": "pair",
+          "text": "Noah's Ark. The ark that prefigures Baptism also became one of the Church's oldest images of herself: a vessel carrying a family through the flood. The “nave” of a church takes its name from the Latin navis, ship.",
+          "words": 38,
+          "pair": {
+            "type": "noahs-ark",
+            "antitype": "the-one-true-church",
+            "typeName": "Noah's Ark",
+            "antitypeName": "The Church",
+            "category": "Ecclesial",
+            "confidence": "high",
+            "sources": [
+              "haydock"
+            ]
+          },
+          "warrant": [
+            {
+              "key": "catechism",
+              "label": "taught in the Catechism"
+            },
+            {
+              "key": "tradition",
+              "label": "from the commentary tradition"
+            }
+          ],
+          "ot": {
+            "id": "GEN-7-1",
+            "ref": "Genesis 7:1",
+            "text": "And the Lord said to him: “Enter the ark, you and all your house. For I have seen you to be just in my sight, within this generation."
+          },
+          "nt": {
+            "id": "1PE-3-20",
+            "ref": "1 Peter 3:20",
+            "text": "who had been unbelieving in past times, while they waited for the patience of God, as in the days of Noah, when the ark was being built. In that ark, a few, that is, eight souls, were saved by water."
+          },
+          "ccc": [
+            {
+              "para": 845,
+              "quote": "According to another image dear to the Church Fathers, she is prefigured by Noah's ark"
+            }
+          ]
+        },
+        {
+          "id": "church-temple",
+          "view": "pair",
+          "text": "The Temple. When Solomon dedicated it, the glory of the Lord filled the house so completely that the priests could not stand. Jesus, John explains, “was speaking about the Temple of his body,” and Paul tells the first Christians that in him they are rising “into a holy temple in the Lord.”",
+          "words": 52,
+          "pair": {
+            "type": "the-temple-of-jerusalem",
+            "antitype": "the-one-true-church",
+            "typeName": "The Temple of Jerusalem",
+            "antitypeName": "The Church",
+            "category": "Ecclesial",
+            "confidence": "high",
+            "sources": [
+              "haydock"
+            ]
+          },
+          "warrant": [
+            {
+              "key": "scripture",
+              "label": "the New Testament draws this link itself"
+            },
+            {
+              "key": "catechism",
+              "label": "taught in the Catechism"
+            }
+          ],
+          "ot": {
+            "id": "1KI-8-11",
+            "ref": "1 Kings 8:11",
+            "text": "And the priests were unable to stand and minister, because of the cloud. For the glory of the Lord had filled the house of the Lord."
+          },
+          "nt": {
+            "id": "EPH-2-21",
+            "ref": "Ephesians 2:21",
+            "text": "In him, all that has been built is framed together, rising up into a holy temple in the Lord."
+          },
+          "quote": {
+            "text": "was fulfilled in the Church of Jesus Christ",
+            "by": null,
+            "source": "Haydock commentary on Psalm 77 (78):69"
+          },
+          "ccc": [
+            {
+              "para": 756,
+              "quote": "As living stones we here on earth are built into it."
+            }
+          ]
+        },
+        {
+          "id": "church-twelve",
+          "view": "pair",
+          "text": "The Twelve. Israel grew from the twelve sons of Jacob; Jesus chose twelve apostles. In Revelation, the heavenly city has twelve gates named for the tribes of Israel and twelve foundations bearing the names of the apostles.",
+          "words": 37,
+          "pair": {
+            "type": "the-twelve-patriarchs",
+            "antitype": "the-twelve-apostles",
+            "typeName": "The Twelve Patriarchs",
+            "antitypeName": "The Twelve Apostles",
+            "category": "Ecclesial",
+            "confidence": "high",
+            "sources": [
+              "haydock"
+            ]
+          },
+          "warrant": [
+            {
+              "key": "scripture",
+              "label": "the New Testament draws this link itself"
+            },
+            {
+              "key": "catechism",
+              "label": "taught in the Catechism"
+            }
+          ],
+          "ot": {
+            "id": "GEN-49-28",
+            "ref": "Genesis 49:28",
+            "text": "All these are the twelve tribes of Israel. These things their father spoke to them, and he blessed each one with their proper blessings."
+          },
+          "nt": {
+            "id": "REV-21-14",
+            "ref": "Revelation 21:14",
+            "text": "And the wall of the City had twelve foundations. And upon them were the twelve names of the twelve Apostles of the Lamb."
+          },
+          "quote": {
+            "text": "that they might correspond to the number of the Jewish patriarchs, by whom they may be said to have been prefigured",
+            "by": "Menochius",
+            "source": "Haydock commentary on Matthew 10:1"
+          },
+          "ccc": [
+            {
+              "para": 765,
+              "quote": "Representing the twelve tribes of Israel, they are the foundation stones of the new Jerusalem."
+            }
+          ]
+        },
+        {
+          "id": "church-rahab",
+          "view": "pair",
+          "text": "Rahab. A Canaanite woman of Jericho sheltered Israel's spies and lived among God's people from then on; Matthew names her among Jesus' ancestors. The Fathers saw in her the nations welcomed in: “no longer visitors,” Paul writes, but “citizens among the saints.”",
+          "words": 42,
+          "pair": {
+            "type": "rahab",
+            "antitype": "the-gentiles-grafted-into-christs-church",
+            "typeName": "Rahab",
+            "antitypeName": "The Gentiles Grafted into Christ's Church",
+            "category": "Ecclesial",
+            "confidence": "high",
+            "sources": [
+              "haydock"
+            ]
+          },
+          "warrant": [
+            {
+              "key": "tradition",
+              "label": "from the commentary tradition"
+            }
+          ],
+          "ot": {
+            "id": "JOS-6-25",
+            "ref": "Joshua 6:25",
+            "text": "Yet truly, Joshua caused Rahab the harlot, and her father’s household, and all she had, to survive. And they lived in the midst of Israel, even to the present day. For she hid the messengers, whom he had sent to explore Jericho. At that time, Joshua made an invocation, saying:"
+          },
+          "nt": {
+            "id": "EPH-2-19",
+            "ref": "Ephesians 2:19",
+            "text": "Now, therefore, you are no longer visitors and new arrivals. Instead, you are citizens among the saints in the household of God,"
+          },
+          "quote": {
+            "text": "Rahab prefigured the wild olive tree, which St. Paul says was engrafted on the good olive tree",
+            "by": "Theodoret",
+            "source": "Haydock commentary on Joshua 6:25"
+          },
+          "ccc": []
+        },
+        {
+          "id": "church-marriage",
+          "view": "pair",
+          "text": "Marriage. “The two shall be as one flesh,” Genesis says, right after the creation of the first couple. Paul quotes the line, then adds: “This is a great Sacrament. And I am speaking in Christ and in the Church.” His Greek word is mystērion, “mystery”: the union of husband and wife reflects Christ's love for his Church.",
+          "words": 57,
+          "pair": {
+            "type": "adam-and-eve",
+            "antitype": "christ-church",
+            "typeName": "Marriage of Adam and Eve",
+            "antitypeName": "Christ's union with the Church",
+            "category": "Ecclesial",
+            "confidence": "high",
+            "sources": [
+              "haydock"
+            ]
+          },
+          "warrant": [
+            {
+              "key": "scripture",
+              "label": "the New Testament draws this link itself"
+            },
+            {
+              "key": "catechism",
+              "label": "taught in the Catechism"
+            }
+          ],
+          "ot": {
+            "id": "GEN-2-24",
+            "ref": "Genesis 2:24",
+            "text": "For this reason, a man shall leave behind his father and mother, and he shall cling to his wife; and the two shall be as one flesh."
+          },
+          "nt": {
+            "id": "EPH-5-32",
+            "ref": "Ephesians 5:32",
+            "text": "This is a great Sacrament. And I am speaking in Christ and in the Church."
+          },
+          "quote": {
+            "text": "the mystery of Christ's union with his church for ever, prefigured by this indissoluble marriage of our first parents",
+            "by": "Calmet",
+            "source": "Haydock commentary on Genesis 2:24"
+          },
+          "ccc": [
+            {
+              "para": 766,
+              "quote": "As Eve was formed from the sleeping Adam's side, so the Church was born from the pierced heart of Christ hanging dead on the cross."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "convergence",
+      "title": "All threads lead to Christ",
+      "category": null,
+      "steps": [
+        {
+          "id": "convergence-gather",
+          "view": "radial",
+          "text": "Step back and the pattern is clear. These commentators read every thread toward Christ: of the 275 links, 100 point to him or to an event of his life, such as his passion, resurrection and priesthood. And the threads of the sacraments, of Mary and of the Church lead back to him too.",
+          "words": 53,
+          "ccc": []
+        },
+        {
+          "id": "convergence-close",
+          "view": "radial",
+          "text": "That is the point of typology. It does not flatten the Old Testament into a code: the patriarchs and the Exodus keep their own value. It shows one story, moving toward one end, when, as Paul writes, “God may be all in all.”",
+          "words": 43,
+          "ccc": [
+            {
+              "para": 130,
+              "quote": "Typology indicates the dynamic movement toward the fulfillment of the divine plan when \"God [will] be everything to everyone.\""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "explore",
+      "title": "Explore the figures",
+      "category": null,
+      "steps": [
+        {
+          "id": "explore-intro",
+          "view": "explorer",
+          "text": "Now explore on your own. Search any of the 198 figures, filter by theme, and open one to see its links, the verses behind it, the commentators who noticed it, and what the Catechism says.",
+          "words": 35,
+          "ccc": []
+        }
+      ]
+    },
+    {
+      "id": "sources",
+      "title": "Sources & methods",
+      "category": null,
+      "steps": [
+        {
+          "id": "sources-data",
+          "view": "text",
+          "text": "This site is built from LogosGraph, a knowledge graph of the 73-book Catholic Bible. Verse text is from the Catholic Public Domain Version. Typology links come from the Catechism of the Catholic Church and from the Haydock Bible commentary (first published 1811–1814, later revised), which gathers the Fathers and later commentators.",
+          "words": 51,
+          "ccc": []
+        },
+        {
+          "id": "sources-method",
+          "view": "text",
+          "text": "AI helped build the graph. A language model read 872 typological notes in the Haydock commentary and proposed links. An AI assistant made a first review pass with suggestions, and the author then reviewed selections of them personally, over several rounds. More verse evidence was mined from cross-references and reviewed the same way.",
+          "words": 53,
+          "ccc": []
+        },
+        {
+          "id": "sources-warrant",
+          "view": "text",
+          "text": "Two cautions. First, these are traditional readings, not proofs. Each pair on this site is marked by its strongest warrant: the New Testament draws the link itself, the Catechism teaches it, or it comes from the commentary tradition, sometimes from a single commentator.",
+          "words": 43,
+          "ccc": []
+        },
+        {
+          "id": "sources-caveats",
+          "view": "text",
+          "text": "Second, the 19th-century commentary sometimes speaks harshly of Jews and Protestants. Where it does, the explorer adds what the Church teaches: Jews “should not be spoken of as rejected or accursed as if this followed from holy Scripture,” and other Christians are “accepted as brothers in the Lord.”",
+          "words": 48,
+          "ccc": [
+            {
+              "para": 597,
+              "quote": "[T]he Jews should not be spoken of as rejected or accursed as if this followed from holy Scripture"
+            },
+            {
+              "para": 818,
+              "quote": "with good reason are accepted as brothers in the Lord by the children of the Catholic Church"
+            }
+          ]
+        },
+        {
+          "id": "sources-numbering",
+          "view": "text",
+          "text": "A note on numbering: this site follows the Vulgate numbering used by Catholic Bibles of the Haydock era. For Psalms, the number most modern Bibles use is shown in parentheses, as in Psalm 109 (110). A few other verses, such as Jonah 2:1 and those in Judith, may be numbered differently in your Bible.",
+          "words": 54,
+          "ccc": []
+        }
+      ]
+    }
+  ]
+}

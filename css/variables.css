@@ -1,0 +1,38 @@
+/* Design tokens. Category hues are from the validated data-viz palette (dark steps on --bg);
+   the graphic never shows more than one category hue at a time. */
+:root {
+  color-scheme: dark;
+
+  /* Surfaces */
+  --bg: #141210;
+  --surface-2: #1d1a17;
+  --surface-3: #26221e;
+  --border: #322d27;
+
+  /* Text */
+  --text-primary: #f2ede4;
+  --text-secondary: #bdb5a7;
+  --text-muted: #8c8478;
+
+  /* Categories (one at a time in the graphic) */
+  --cat-christological: #c98500;
+  --cat-sacramental: #199e70;
+  --cat-marian: #3987e5;
+  --cat-ecclesial: #d55181;
+
+  /* Neutral links and nodes */
+  --link-neutral: #b8ad9a;
+  --link-dim: #4a443c;
+  --node: #d9d0c1;
+
+  /* Type */
+  --font-display: "Playfair Display", Georgia, "Times New Roman", serif;
+  --font-body: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-verse: Georgia, "Times New Roman", serif;
+
+  /* Layout */
+  --step-width: 34rem;
+  --radius: 12px;
+  --space: 1rem;
+  --mobile-graphic-height: 46vh;
+}

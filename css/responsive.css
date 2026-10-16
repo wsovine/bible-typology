@@ -1,0 +1,71 @@
+/* Phones and narrow tablets: graphic sticks to the top, steps scroll beneath it */
+@media (max-width: 899px) {
+  .scrolly {
+    display: block;
+  }
+
+  .graphic {
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    height: var(--mobile-graphic-height);
+    border-bottom: 1px solid var(--border);
+    background: var(--bg);
+  }
+
+  #graph {
+    flex: 1;
+    min-height: 0;
+    height: auto;
+  }
+
+  .steps {
+    padding: 0 1rem 40vh;
+  }
+
+  .step {
+    min-height: 75vh;
+    align-items: flex-start;
+    padding-top: 8vh;
+  }
+
+  .step-card {
+    max-width: none;
+    padding: 1.2rem 1.1rem;
+  }
+
+  /* On phones the legend is a slim strip above the graph instead of an overlay */
+  .legend {
+    order: -1;
+    position: static;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.15rem 0.9rem;
+    max-width: none;
+    padding: 0.45rem 0.75rem 0;
+    border: 0;
+    border-radius: 0;
+    background: none;
+    font-size: 0.7rem;
+    min-height: 2.9rem; /* two rows, so the graph doesn't jump between steps */
+    align-content: flex-start;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .scroll-hint span {
+    animation: none;
+  }
+
+  .step {
+    transition: none;
+  }
+}
+
+@media (prefers-contrast: more) {
+  :root {
+    --text-muted: #b5ad9f;
+    --border: #5a5249;
+    --link-dim: #6b6359;
+  }
+}
