@@ -1,0 +1,186 @@
+# Catechism clarification notes (D4). Shown in the explorer beside the text they clarify.
+#
+# Editorial policy: all historical text (type names, descriptions, commentary notes) stays visible and
+# unaltered. Where 19th-century or older framing could be mistaken for current Church teaching, a short
+# note quotes what the Catechism of the Catholic Church actually teaches.
+#
+# Fields
+#   target      { type = "<type id>" } or { link = ["<source id>", "<target id>"] }
+#   applies_to  type-name | type-description | link-note | type (the Type as a whole)
+#               A "type" note is meant to cover the Type's name, description and the commentary notes on
+#               the links that touch it, so it should also be shown beside those links.
+#   text        25–55 words, plain language. Quotations are adapted for display (case, brackets).
+#   ccc         1–2 { para, quote }; each quote is a verbatim substring of that paragraph in
+#               data/raw/catechism/catechism.json
+
+# ---------------------------------------------------------------------------
+# Jews and Judaism
+# ---------------------------------------------------------------------------
+
+[[note]]
+target = { type = "the-synagogue-old-covenant-assembly" }
+applies_to = "type"
+text = """
+Many in Jesus' day did not accept him as the Messiah, but the Church does not teach that God rejected \
+Israel. The Catechism says the Jewish faith “is already a response to God's revelation in the Old \
+Covenant,” and that “the gifts and the call of God are irrevocable.”
+"""
+ccc = [
+  { para = 839, quote = "is already a response to God's revelation in the Old Covenant" },
+  { para = 839, quote = "the gifts and the call of God are irrevocable" },
+]
+
+[[note]]
+target = { type = "the-synagogues-persecution-of-the-church" }
+applies_to = "type-name"
+text = """
+This reading follows Paul's allegory in Galatians 4:29, written amid conflict in the first-century \
+Church. It is not a verdict on the Jewish people. Reflecting on her own mystery, the Church “discovers her link with the \
+Jewish People” and honors Israel as “the people of ‘elder brethren’ in the faith of Abraham.”
+"""
+ccc = [
+  { para = 839, quote = "discovers her link with the Jewish People" },
+  { para = 63, quote = 'the people of "elder brethren" in the faith of Abraham' },
+]
+
+[[note]]
+target = { type = "unbelievers-rejection-of-christ-crucified" }
+applies_to = "type"
+text = """
+One commentator linked here speaks of the “reprobation” of the chosen people. That is not Church \
+teaching. With the Second Vatican Council, the Catechism says “the Jews should not be spoken of as \
+rejected or accursed as if this followed from holy Scripture,” for “the gifts and the call of God are \
+irrevocable.”
+"""
+ccc = [
+  { para = 597, quote = "[T]he Jews should not be spoken of as rejected or accursed as if this followed from holy Scripture" },
+  { para = 839, quote = "the gifts and the call of God are irrevocable" },
+]
+
+[[note]]
+target = { type = "destruction-of-jerusalem-as-divine-judgment" }
+applies_to = "type"
+text = """
+Jesus foretold the Temple's fall as “a sign of the last days.” Commentators long read Jerusalem's ruin \
+in AD 70 as judgment, but the Church does not teach that Jews were punished for the Passion: \
+“neither all Jews indiscriminately at that time, nor Jews today, can be charged with the crimes \
+committed during his Passion.”
+"""
+ccc = [
+  { para = 585, quote = "he announced a sign of the last days" },
+  { para = 597, quote = "[N]either all Jews indiscriminately at that time, nor Jews today, can be charged with the crimes committed during his Passion" },
+]
+
+[[note]]
+target = { type = "the-babylonian-exile" }
+applies_to = "type"
+text = """
+Some Fathers read the centuries of Jewish suffering after AD 70 as the result of rejecting Christ. The \
+Church does not. Responsibility for the Passion cannot be extended “to other Jews of different times \
+and places,” and the Catechism notes that Christians have “all too often burdened the Jews alone” with \
+it.
+"""
+ccc = [
+  { para = 597, quote = "Still less can we extend responsibility to other Jews of different times and places" },
+  { para = 598, quote = "a responsibility with which they have all too often burdened the Jews alone" },
+]
+
+[[note]]
+target = { link = ["the-vineyard-of-israel", "the-gospel-new-covenant"] }
+applies_to = "link-note"
+text = """
+Bede is describing Old Testament figures giving way to their fulfillment in Christ. The Church does not \
+teach that God's covenant with Israel has lapsed: the books of the Old Testament “retain a permanent \
+value, for the Old Covenant has never been revoked.”
+"""
+ccc = [
+  { para = 121, quote = "retain a permanent value, for the Old Covenant has never been revoked" },
+]
+
+# ---------------------------------------------------------------------------
+# "Heretics" and other Christians
+# ---------------------------------------------------------------------------
+
+[[note]]
+target = { type = "heretics" }
+applies_to = "type"
+text = """
+In Catholic teaching, heresy is a precise term: “the obstinate post-baptismal denial of some truth \
+which must be believed with divine and catholic faith.” It is not a name for other Christians today. \
+Those raised in separated communities “with good reason are accepted as brothers in the Lord by the \
+children of the Catholic Church.”
+"""
+ccc = [
+  { para = 2089, quote = "the obstinate post-baptismal denial of some truth which must be believed with divine and catholic faith" },
+  { para = 818, quote = "with good reason are accepted as brothers in the Lord by the children of the Catholic Church" },
+]
+
+[[note]]
+target = { link = ["holofernes", "antichrist"] }
+applies_to = "link-note"
+text = """
+The word “heretics” here reflects the controversies of the commentator's own day; it is not the \
+Church's view of other Christians. The Catechism says the Church “knows that she is joined in many \
+ways to the baptized who are honored by the name of Christian.”
+"""
+ccc = [
+  { para = 838, quote = "knows that she is joined in many ways to the baptized who are honored by the name of Christian" },
+]
+
+[[note]]
+target = { link = ["job", "the-one-true-church"] }
+applies_to = "link-note"
+text = """
+St. Gregory wrote this in the sixth century, long before today's divisions among Christians. Of the \
+Christian communities separated from her, the Church teaches that “many elements of sanctification and of \
+truth” are found beyond her visible bounds, and “all these blessings come from Christ and lead to him.”
+"""
+ccc = [
+  { para = 819, quote = "many elements of sanctification and of truth" },
+  { para = 819, quote = "All these blessings come from Christ and lead to him" },
+]
+
+# ---------------------------------------------------------------------------
+# Election and reprobation
+# ---------------------------------------------------------------------------
+
+[[note]]
+target = { type = "the-reprobate-the-rejected" }
+applies_to = "type"
+text = """
+“Reprobate” is an old theological word for those who are finally lost. The Church teaches that no one \
+is rejected in advance: “God predestines no one to go to hell; for this, a willful turning away from \
+God (a mortal sin) is necessary, and persistence in it until the end.”
+"""
+ccc = [
+  { para = 1037, quote = "God predestines no one to go to hell; for this, a willful turning away from God (a mortal sin) is necessary, and persistence in it until the end" },
+]
+
+[[note]]
+target = { type = "esau" }
+applies_to = "type"
+text = """
+As the commentators themselves say, Esau is a figure here, not a verdict on the man. The Church \
+teaches that “Christ died for all men without exception” and that God “desires all men to be saved.”
+"""
+ccc = [
+  { para = 605, quote = "Christ died for all men without exception" },
+  { para = 1058, quote = "desires all men to be saved" },
+]
+
+# ---------------------------------------------------------------------------
+# Classification
+# ---------------------------------------------------------------------------
+
+[[note]]
+target = { link = ["the-virgin-of-emmanuel-isaiah-7-14", "mary"] }
+applies_to = "link-note"
+text = """
+Strictly speaking, Isaiah 7:14 is a prophecy rather than a type: a promise spoken in words, not a \
+person or event that foreshadows. The Catechism treats it as a promise kept: of Jesus' virginal \
+conception it says, “The Church sees here the fulfillment of the divine promise given through the \
+prophet Isaiah.”
+"""
+ccc = [
+  { para = 497, quote = "The Church sees here the fulfillment of the divine promise given through the prophet Isaiah" },
+]
