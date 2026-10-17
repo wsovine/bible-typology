@@ -11,3 +11,8 @@ export async function loadData() {
   const [typology, story] = await Promise.all([fetchJson('typology.json'), fetchJson('story.json')]);
   return { typology, story };
 }
+
+/** Explorer-only evidence (verses, notes, Catechism excerpts); fetched on demand. */
+export function loadEvidence() {
+  return fetchJson('evidence.json');
+}

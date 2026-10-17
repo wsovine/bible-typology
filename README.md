@@ -4,9 +4,8 @@ A scroll-driven story about biblical **typology**: how Old Testament figures, ev
 foreshadow their New Testament fulfillments. It ends with an explorer of every figure. Built from the
 typology layer of [LogosGraph](../../README.md), a Neo4j knowledge graph of the 73-book Catholic Bible.
 
-**Status:** prototype. One chapter (*Through the Waters*) plus the opening view of the whole web and the
-closing convergence on Christ. Awaiting sign-off on the visual model, typography and title before the
-full build.
+**Status:** draft. The full story (37 scroll steps) and the explorer are built; the Catechism clarification
+notes await sign-off; not yet published.
 
 ## Run it locally
 
@@ -16,7 +15,7 @@ open http://127.0.0.1:8765/
 ```
 
 Add `?step=<step-id>` to jump straight to a step, for example `?step=waters-flood`. Step IDs are in
-`export/story.toml`.
+`export/story.toml`. Add `#type=<id>` to open a figure in the explorer, for example `#type=noahs-ark`.
 
 ## Data pipeline
 
@@ -26,7 +25,11 @@ Everything in `data/` is generated; never edit it by hand. The story text lives 
 # from this directory, with LogosGraph's Neo4j running (this machine: port 17687)
 NEO4J_URI=bolt://localhost:17687 python export/export_typology.py   # -> data/typology.json
 NEO4J_URI=bolt://localhost:17687 python export/render_story.py      # -> data/story.json + export/story-draft.md
+NEO4J_URI=bolt://localhost:17687 python export/export_evidence.py   # -> data/evidence.json + export/context-notes-draft.md
 ```
+
+`data/evidence.json` holds the explorer's verses, link notes, Catechism excerpts and clarification notes. It
+loads only when a reader approaches the explorer.
 
 `render_story.py` validates the script before writing `data/story.json`. It refuses to write the file if
 anything fails:
@@ -42,11 +45,14 @@ anything fails:
 
 ```
 index.html
-css/   variables.css (design tokens) · main.css · responsive.css
+css/   variables.css (design tokens) · main.css · explorer.css · responsive.css
 js/    main.js (scroll wiring) · graph-renderer.js (two-column and radial layouts, morph, highlights)
-       story-steps.js (step cards) · palette.js · data-loader.js · util.js
-data/  typology.json · story.json (generated)
-export/ story.toml (the script) · render_story.py · export_typology.py · story-draft.md (generated)
+       story-steps.js (step cards, sources section) · explorer.js (search, figure panels, ego diagram)
+       palette.js · data-loader.js · util.js
+data/  typology.json · story.json · evidence.json (generated)
+export/ story.toml (the script) · context_notes.toml (Catechism clarifications)
+        render_story.py · export_typology.py · export_evidence.py · textcheck.py
+        story-draft.md · context-notes-draft.md (generated review copies)
 ```
 
 No build step. D3 7.9.0 and Scrollama 3.2.0 load from jsDelivr with pinned versions.
@@ -61,6 +67,9 @@ No build step. D3 7.9.0 and Scrollama 3.2.0 load from jsDelivr with pinned versi
   itself, the Catechism teaches it, or it comes from the commentary tradition.
 - On phones, the graph sticks to the top of the screen and the step cards scroll beneath it. Labels are
   limited to the pair being discussed.
+- **Explorer:** links are listed by theme, with a text label beside every color. A Catechism note on a
+  figure also shows beside every link that touches that figure. Verses found by mining cross-references
+  are labelled "via cross-references".
 
 ## Sources
 

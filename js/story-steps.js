@@ -30,7 +30,10 @@ function pairCard(step) {
       step.warrant.map((w) => h('li', { class: 'badge', title: w.label }, WARRANT_BADGES[w.key] ?? w.label))),
     verseBlock(step.ot, 'verse--ot'),
     h('div', { class: 'pair-arrow' }, 'fulfilled in'),
-    verseBlock(step.nt, 'verse--nt'));
+    verseBlock(step.nt, 'verse--nt'),
+    h('p', { class: 'explore-links' }, 'Explore ',
+      h('a', { href: `#type=${pair.type}` }, pair.typeName), ' or ',
+      h('a', { href: `#type=${pair.antitype}` }, pair.antitypeName), ' →'));
 
   if (step.quote) {
     const attribution = [step.quote.by, step.quote.source].filter(Boolean).join(', ');
@@ -71,4 +74,12 @@ export function buildSteps(container, chapters) {
     });
   }
   return built;
+}
+
+/** Render a text-only chapter (Sources & methods) as a plain closing section. */
+export function buildAppendix(container, chapter) {
+  container.append(h('h2', {}, chapter.title));
+  for (const step of chapter.steps) {
+    container.append(h('p', {}, step.text), ...cccBlock(step.ccc));
+  }
 }
