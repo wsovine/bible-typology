@@ -10,7 +10,7 @@ notes await sign-off; not yet published.
 ## Run it locally
 
 ```bash
-python3 -m http.server 8765        # from this directory
+python3 serve.py                   # from this directory (no browser caching)
 open http://127.0.0.1:8765/
 ```
 
