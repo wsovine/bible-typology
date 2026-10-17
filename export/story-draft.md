@@ -282,7 +282,7 @@ The Ark of the Covenant was where God's glory dwelt. David asked, “How shall t
 
 ### `church-intro` · web-category · 49 words
 
-The Fathers also saw in Israel's story the shape of the Church: a people gathered, sheltered and built into a dwelling for God. Paul's image is not replacement but grafting: the nations are joined to Israel's own olive tree, where “the root supports you.” 70 links follow this thread.
+The Fathers also saw in Israel's story the shape of the Church: a people gathered, sheltered and built into a dwelling for God. Paul's image is not replacement but grafting: the nations are joined to Israel's own olive tree, where “the root supports you.” 68 links follow this thread.
 
 
 ### `church-ark` · pair · 38 words

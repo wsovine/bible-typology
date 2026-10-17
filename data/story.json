@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated": "2026-10-16T18:51:44+00:00",
+    "generated": "2026-10-17T00:34:42+00:00",
     "source": "export/story.toml + LogosGraph Neo4j",
     "stats": {
       "types": 198,
@@ -9,8 +9,8 @@
       "cccLinks": 43,
       "christLinks": 100,
       "eschatological": 41,
-      "sacramental": 34,
-      "ecclesial": 70,
+      "sacramental": 36,
+      "ecclesial": 68,
       "christological": 104,
       "covenantal": 12,
       "marian": 14
@@ -1018,7 +1018,7 @@
         {
           "id": "church-intro",
           "view": "web-category",
-          "text": "The Fathers also saw in Israel's story the shape of the Church: a people gathered, sheltered and built into a dwelling for God. Paul's image is not replacement but grafting: the nations are joined to Israel's own olive tree, where “the root supports you.” 70 links follow this thread.",
+          "text": "The Fathers also saw in Israel's story the shape of the Church: a people gathered, sheltered and built into a dwelling for God. Paul's image is not replacement but grafting: the nations are joined to Israel's own olive tree, where “the root supports you.” 68 links follow this thread.",
           "words": 49,
           "ccc": []
         },

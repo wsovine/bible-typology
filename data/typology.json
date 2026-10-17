@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated": "2026-10-16T18:52:03+00:00",
+    "generated": "2026-10-17T00:34:40+00:00",
     "source": "LogosGraph Neo4j typology layer",
     "counts": {
       "types": 198,
@@ -9,9 +9,9 @@
         "Christological": 104,
         "Marian": 14,
         "Eschatological": 41,
-        "Ecclesial": 70,
+        "Ecclesial": 68,
         "Covenantal": 12,
-        "Sacramental": 34
+        "Sacramental": 36
       }
     }
   },
@@ -730,7 +730,7 @@
       "verseCount": 0,
       "inDegree": 3,
       "outDegree": 0,
-      "group": "Ecclesial"
+      "group": "Sacramental"
     },
     {
       "id": "hosea",
@@ -2722,7 +2722,7 @@
     {
       "source": "david",
       "target": "holy-orders",
-      "category": "Ecclesial",
+      "category": "Sacramental",
       "confidence": "medium",
       "sources": [
         "haydock"
@@ -3400,7 +3400,7 @@
     {
       "source": "jotham",
       "target": "holy-orders",
-      "category": "Ecclesial",
+      "category": "Sacramental",
       "confidence": "medium",
       "sources": [
         "haydock"
