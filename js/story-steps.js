@@ -16,7 +16,8 @@ function verseBlock(verse, extraClass = '') {
 function cccBlock(refs) {
   return refs.map((ref) => h('div', { class: 'ccc' },
     h('span', { class: 'ccc-ref' }, `Catechism §${ref.para}`),
-    h('p', {}, `“${ref.quote}”`)));
+    // The Catechism text marks italics with asterisks; drop them for display.
+    h('p', {}, `“${ref.quote.replaceAll('*', '')}”`)));
 }
 
 function pairCard(step) {

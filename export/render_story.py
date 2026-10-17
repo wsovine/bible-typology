@@ -25,6 +25,7 @@ sys.path.insert(0, str(PROJECT_ROOT))
 from src.data.book_mapping import CPDV_BOOK_ID_TO_ABBREV, display_ref  # noqa: E402
 from src.data.cpdv_parser import parse_cpdv  # noqa: E402
 from src.db.connection import get_connection  # noqa: E402
+from textcheck import normalize, quote_found  # noqa: E402
 
 MAX_WORDS = 60
 OT_BOOKS = {CPDV_BOOK_ID_TO_ABBREV[i] for i in range(1, 47)}
@@ -34,26 +35,6 @@ WARRANTS = {
     "tradition": "from the commentary tradition",
 }
 QUOTED = re.compile(r"“([^”]+)”")
-
-
-def normalize(text: str) -> str:
-    """Fold typographic quotes/dashes and whitespace so verbatim checks ignore typesetting."""
-    text = text.replace("“", '"').replace("”", '"').replace("‘", "'").replace("’", "'")
-    text = text.replace("—", "-").replace("–", "-")
-    return " ".join(text.split())
-
-
-def quote_found(quote: str, source: str) -> bool:
-    """True if each '…'-separated segment of the quote appears in the source, in order."""
-    pos, src = 0, normalize(source).replace('"', "")
-    for segment in (normalize(s).replace('"', "").strip(" .,;") for s in quote.split("…")):
-        if not segment:
-            continue
-        idx = src.find(segment, pos)
-        if idx < 0:
-            return False
-        pos = idx + len(segment)
-    return True
 
 
 def load_graph():

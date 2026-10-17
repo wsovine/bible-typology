@@ -11,6 +11,15 @@ const spread = (items, from, to, set) => items.forEach((item, i) => {
 });
 const fmt = (v) => Math.round(v * 10) / 10;
 
+/** Strong labels wrap onto two lines; others are truncated to one. */
+function labelLines(name, maxChars, strong) {
+  if (name.length <= maxChars || !strong) return [truncate(name, maxChars)];
+  const words = name.split(' ');
+  let first = '';
+  while (words.length && `${first} ${words[0]}`.trim().length <= maxChars) first = `${first} ${words.shift()}`.trim();
+  return [first, truncate(words.join(' '), maxChars)];
+}
+
 /**
  * Draws the typology graph in two layouts and morphs between them:
  *  - "shores": Old Testament figures on one side, their New Testament fulfillments on the other
@@ -91,7 +100,7 @@ export class GraphRenderer {
 
     if (this.vertical) {
       this.otRowY = 44;
-      this.ntRowY = H - 40;
+      this.ntRowY = H - 46;
       spread(this.otOrder, 12, W - 12, (n, x) => { n.pos.shores = { x, y: this.otRowY }; });
       spread(ntSlots, 12, W - 12, (n, x) => { n.pos.shores = { x, y: this.ntRowY }; });
     } else {
@@ -297,6 +306,18 @@ export class GraphRenderer {
       };
     }
 
+    if (view === 'title' || view === 'text') {
+      // Text-led steps: the web stays as a quiet backdrop.
+      return {
+        link: () => ({ color: neutral, width: 0.8, opacity: 0.1 }),
+        node: () => ({ fill: nodeFill, opacity: 0.35 }),
+        labels: [],
+        legend: [],
+        description: `${this.nodes.length} figures and ${total} links between them.`,
+      };
+    }
+
+    // web-all, web-category without a theme, and (until the explorer exists) explorer
     return {
       link: () => ({ color: neutral, width: 0.9, opacity: 0.3 }),
       node: () => ({ fill: nodeFill, opacity: 0.85 }),
@@ -328,9 +349,11 @@ export class GraphRenderer {
       for (const { node, strong } of labels) {
         const above = node.testament === 'OT';
         const third = node.x < this.W / 3 ? 'start' : node.x > (2 * this.W) / 3 ? 'end' : 'middle';
+        // Size the label to the room on its side of the node, so it rarely needs to wrap.
+        const room = { start: this.W - node.x, end: node.x, middle: 2 * Math.min(node.x, this.W - node.x) }[third] - 12;
         placed.push({
           node, strong, x: node.x, y: (above ? this.otRowY : this.ntRowY) + (above ? -14 : 15),
-          anchor: third, rotate: 0, leader: false, maxChars: 28,
+          anchor: third, rotate: 0, leader: false, maxChars: Math.floor(room / 7.6),
         });
       }
     } else {
@@ -348,7 +371,7 @@ export class GraphRenderer {
         });
       }
     }
-    return placed.map((p) => ({ ...p, text: truncate(p.node.displayName, p.maxChars ?? 40) }));
+    return placed.map((p) => ({ ...p, lines: labelLines(p.node.displayName, p.maxChars ?? 40, p.strong) }));
   }
 
   drawLabels(labels, ms) {
@@ -362,9 +385,14 @@ export class GraphRenderer {
     all.select('text')
       .attr('class', (d) => `node-label${d.strong ? ' is-strong' : ''}`)
       .attr('text-anchor', (d) => d.anchor)
-      .attr('dy', '0.32em')
       .attr('transform', (d) => `translate(${fmt(d.x)},${fmt(d.y)}) rotate(${d.rotate})`)
-      .text((d) => d.text);
+      .selectAll('tspan')
+      .data((d) => d.lines.map((line, i) => ({ line, i, n: d.lines.length })))
+      .join('tspan')
+      .attr('x', 0)
+      // Center the block of lines on the anchor point.
+      .attr('dy', (l) => (l.i === 0 ? `${0.32 - (l.n - 1) * 0.55}em` : '1.1em'))
+      .text((l) => l.line);
     all.select('line')
       .attr('x1', (d) => fmt(d.node.x)).attr('y1', (d) => fmt(d.node.y))
       .attr('x2', (d) => fmt(d.lx ?? d.node.x)).attr('y2', (d) => fmt(d.ly ?? d.node.y))

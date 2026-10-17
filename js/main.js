@@ -3,8 +3,6 @@ import { GraphRenderer } from './graph-renderer.js';
 import { buildSteps } from './story-steps.js';
 import { debounce, h } from './util.js';
 
-// The prototype shows one chapter plus the steps around it; the full site renders every chapter.
-const PROTOTYPE_CHAPTERS = ['web', 'waters', 'convergence'];
 const MOBILE_QUERY = '(max-width: 899px)';
 
 function viewFor({ step, chapter }) {
@@ -22,8 +20,7 @@ async function init() {
   document.getElementById('story-title').textContent = story.meta.title;
   document.getElementById('story-subtitle').textContent = story.meta.subtitle;
 
-  const chapters = story.chapters.filter((c) => PROTOTYPE_CHAPTERS.includes(c.id));
-  const steps = buildSteps(document.getElementById('steps'), chapters);
+  const steps = buildSteps(document.getElementById('steps'), story.chapters);
   const renderer = new GraphRenderer(
     document.getElementById('graph'), document.getElementById('legend'), typology, story.metadata.christFamily);
   renderer.setView(viewFor(steps[0]), { immediate: true });
