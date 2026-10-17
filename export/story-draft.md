@@ -378,12 +378,10 @@ AI helped build the graph. A language model read 872 typological notes in the Ha
 Two cautions. First, these are traditional readings, not proofs. Each pair on this site is marked by its strongest warrant: the New Testament draws the link itself, the Catechism teaches it, or it comes from the commentary tradition, sometimes from a single commentator.
 
 
-### `sources-caveats` · text · 48 words
+### `sources-caveats` · text · 33 words
 
-Second, the 19th-century commentary sometimes speaks harshly of Jews and Protestants. Where it does, the explorer adds what the Church teaches: Jews “should not be spoken of as rejected or accursed as if this followed from holy Scripture,” and other Christians are “accepted as brothers in the Lord.”
+Second, these commentators wrote amid the controversies of their own centuries. Where one of their readings could be mistaken for Church teaching, the explorer adds a short note from Scripture or the Catechism.
 
-- **Catechism §597:** “[T]he Jews should not be spoken of as rejected or accursed as if this followed from holy Scripture”
-- **Catechism §818:** “with good reason are accepted as brothers in the Lord by the children of the Catholic Church”
 
 ### `sources-numbering` · text · 54 words
 

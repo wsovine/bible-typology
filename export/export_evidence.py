@@ -24,10 +24,12 @@ PROJECT_ROOT = SITE.parent.parent  # LogosGraph repo (this site is a submodule u
 sys.path.insert(0, str(PROJECT_ROOT))
 
 from src.data.book_mapping import display_ref  # noqa: E402
+from src.data.cpdv_parser import parse_cpdv  # noqa: E402
 from src.db.connection import get_connection  # noqa: E402
-from textcheck import quote_found  # noqa: E402
+from textcheck import normalize, quote_found  # noqa: E402
 
 CCC_EXCERPT_CHARS = 320
+QUOTED = re.compile(r"“([^”]+)”")
 NOTE_TARGET_KINDS = {"type", "type-name", "type-description", "link-note"}
 
 
@@ -87,6 +89,9 @@ def main() -> int:
     notes_path = HERE / "context_notes.toml"
     raw_notes = tomllib.loads(notes_path.read_text()).get("note", []) if notes_path.exists() else []
     link_keys = {f"{l['source']}|{l['target']}" for l in links}
+    # Quoted phrases in a note's own text must be real Scripture (CPDV) or Catechism wording.
+    corpus = "\n".join(normalize(s).replace('"', "").lower()
+                       for s in [*(v["text"] for v in parse_cpdv()), *ccc_all.values()])
     for i, n in enumerate(raw_notes):
         target = n.get("target", {})
         if "type" in target:
@@ -102,6 +107,9 @@ def main() -> int:
             continue
         if n.get("applies_to", "type") not in NOTE_TARGET_KINDS:
             errors.append(f"note {i}: applies_to must be one of {sorted(NOTE_TARGET_KINDS)}")
+        for frag in QUOTED.findall(n["text"]):
+            if len(frag.split()) > 2 and not quote_found(frag.lower(), corpus):
+                errors.append(f"note {i}: quoted text not found in CPDV or the Catechism: “{frag}”")
         quotes = []
         for ref in n.get("ccc", []):
             source = ccc_all.get(f"CCC-{ref['para']}")

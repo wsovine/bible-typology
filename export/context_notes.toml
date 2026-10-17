@@ -9,92 +9,36 @@
 #   applies_to  type-name | type-description | link-note | type (the Type as a whole)
 #               A "type" note is meant to cover the Type's name, description and the commentary notes on
 #               the links that touch it, so it should also be shown beside those links.
-#   text        25–55 words, plain language. Quotations are adapted for display (case, brackets).
-#   ccc         1–2 { para, quote }; each quote is a verbatim substring of that paragraph in
+#   text        Plain language, brief. Any “quoted” phrase (over two words) must be real CPDV or Catechism
+#               wording (checked case-insensitively; '…' marks an omission).
+#   ccc         0–2 { para, quote }; each quote is a verbatim substring of that paragraph in
 #               data/raw/catechism/catechism.json
 
 # ---------------------------------------------------------------------------
 # Jews and Judaism
+# Annotate only where a text speaks of the Jewish people as a whole (or of later generations); texts about
+# those who rejected Christ, and Scripture's own framing (Gal 4, Luke 19), need no note. Plain and brief.
 # ---------------------------------------------------------------------------
-
-[[note]]
-target = { type = "the-synagogue-old-covenant-assembly" }
-applies_to = "type"
-text = """
-Many in Jesus' day did not accept him as the Messiah, but the Church does not teach that God rejected \
-Israel. The Catechism says the Jewish faith “is already a response to God's revelation in the Old \
-Covenant,” and that “the gifts and the call of God are irrevocable.”
-"""
-ccc = [
-  { para = 839, quote = "is already a response to God's revelation in the Old Covenant" },
-  { para = 839, quote = "the gifts and the call of God are irrevocable" },
-]
-
-[[note]]
-target = { type = "the-synagogues-persecution-of-the-church" }
-applies_to = "type-name"
-text = """
-This reading follows Paul's allegory in Galatians 4:29, written amid conflict in the first-century \
-Church. It is not a verdict on the Jewish people. Reflecting on her own mystery, the Church “discovers her link with the \
-Jewish People” and honors Israel as “the people of ‘elder brethren’ in the faith of Abraham.”
-"""
-ccc = [
-  { para = 839, quote = "discovers her link with the Jewish People" },
-  { para = 63, quote = 'the people of "elder brethren" in the faith of Abraham' },
-]
 
 [[note]]
 target = { type = "unbelievers-rejection-of-christ-crucified" }
 applies_to = "type"
 text = """
-One commentator linked here speaks of the “reprobation” of the chosen people. That is not Church \
-teaching. With the Second Vatican Council, the Catechism says “the Jews should not be spoken of as \
-rejected or accursed as if this followed from holy Scripture,” for “the gifts and the call of God are \
-irrevocable.”
+Paul answers this himself: “Has God driven away his people? Let it not be so! For I, too, am an \
+Israelite” (Romans 11:1). Christ's first followers, his mother and the apostles were Jews.
 """
-ccc = [
-  { para = 597, quote = "[T]he Jews should not be spoken of as rejected or accursed as if this followed from holy Scripture" },
-  { para = 839, quote = "the gifts and the call of God are irrevocable" },
-]
-
-[[note]]
-target = { type = "destruction-of-jerusalem-as-divine-judgment" }
-applies_to = "type"
-text = """
-Jesus foretold the Temple's fall as “a sign of the last days.” Commentators long read Jerusalem's ruin \
-in AD 70 as judgment, but the Church does not teach that Jews were punished for the Passion: \
-“neither all Jews indiscriminately at that time, nor Jews today, can be charged with the crimes \
-committed during his Passion.”
-"""
-ccc = [
-  { para = 585, quote = "he announced a sign of the last days" },
-  { para = 597, quote = "[N]either all Jews indiscriminately at that time, nor Jews today, can be charged with the crimes committed during his Passion" },
-]
+ccc = []
 
 [[note]]
 target = { type = "the-babylonian-exile" }
 applies_to = "type"
 text = """
-Some Fathers read the centuries of Jewish suffering after AD 70 as the result of rejecting Christ. The \
-Church does not. Responsibility for the Passion cannot be extended “to other Jews of different times \
-and places,” and the Catechism notes that Christians have “all too often burdened the Jews alone” with \
-it.
+The Catechism is precise about who bears responsibility for Jesus' trial: not “the Jews in Jerusalem as \
+a whole,” and “still less … other Jews of different times and places.”
 """
 ccc = [
+  { para = 597, quote = "Hence we cannot lay responsibility for the trial on the Jews in Jerusalem as a whole" },
   { para = 597, quote = "Still less can we extend responsibility to other Jews of different times and places" },
-  { para = 598, quote = "a responsibility with which they have all too often burdened the Jews alone" },
-]
-
-[[note]]
-target = { link = ["the-vineyard-of-israel", "the-gospel-new-covenant"] }
-applies_to = "link-note"
-text = """
-Bede is describing Old Testament figures giving way to their fulfillment in Christ. The Church does not \
-teach that God's covenant with Israel has lapsed: the books of the Old Testament “retain a permanent \
-value, for the Old Covenant has never been revoked.”
-"""
-ccc = [
-  { para = 121, quote = "retain a permanent value, for the Old Covenant has never been revoked" },
 ]
 
 # ---------------------------------------------------------------------------
