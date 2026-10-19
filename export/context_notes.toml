@@ -71,19 +71,6 @@ ccc = [
   { para = 838, quote = "knows that she is joined in many ways to the baptized who are honored by the name of Christian" },
 ]
 
-[[note]]
-target = { link = ["job", "the-one-true-church"] }
-applies_to = "link-note"
-text = """
-St. Gregory wrote this in the sixth century, long before today's divisions among Christians. Of the \
-Christian communities separated from her, the Church teaches that “many elements of sanctification and of \
-truth” are found beyond her visible bounds, and “all these blessings come from Christ and lead to him.”
-"""
-ccc = [
-  { para = 819, quote = "many elements of sanctification and of truth" },
-  { para = 819, quote = "All these blessings come from Christ and lead to him" },
-]
-
 # ---------------------------------------------------------------------------
 # Election and reprobation
 # ---------------------------------------------------------------------------

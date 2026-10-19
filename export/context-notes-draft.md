@@ -38,15 +38,6 @@
 
 - Catechism §838: “knows that she is joined in many ways to the baptized who are honored by the name of Christian”
 
-## Link: Job → The One True Church  (applies to link-note)
-
-- **Link note:** St. Gregory (via Worthington): Job 'was a figure of the Church, defending the common cause; while his friends, like heretics, speak both true and false things.'
-
-**Clarification:** St. Gregory wrote this in the sixth century, long before today's divisions among Christians. Of the Christian communities separated from her, the Church teaches that “many elements of sanctification and of truth” are found beyond her visible bounds, and “all these blessings come from Christ and lead to him.”
-
-- Catechism §819: “many elements of sanctification and of truth”
-- Catechism §819: “All these blessings come from Christ and lead to him”
-
 ## Type: The Reprobate (the Rejected)  (`the-reprobate-the-rejected`, applies to type)
 
 - **Description:** Those rejected by God and excluded from salvation, in contrast to the elect.
