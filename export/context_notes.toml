@@ -42,7 +42,7 @@ ccc = [
 ]
 
 # ---------------------------------------------------------------------------
-# "Heretics" and other Christians
+# Heresy
 # ---------------------------------------------------------------------------
 
 [[note]]
@@ -50,25 +50,10 @@ target = { type = "heretics" }
 applies_to = "type"
 text = """
 In Catholic teaching, heresy is a precise term: “the obstinate post-baptismal denial of some truth \
-which must be believed with divine and catholic faith.” It is not a name for other Christians today. \
-Those raised in separated communities “with good reason are accepted as brothers in the Lord by the \
-children of the Catholic Church.”
+which must be believed with divine and catholic faith.”
 """
 ccc = [
   { para = 2089, quote = "the obstinate post-baptismal denial of some truth which must be believed with divine and catholic faith" },
-  { para = 818, quote = "with good reason are accepted as brothers in the Lord by the children of the Catholic Church" },
-]
-
-[[note]]
-target = { link = ["holofernes", "antichrist"] }
-applies_to = "link-note"
-text = """
-The word “heretics” here reflects the controversies of the commentator's own day; it is not the \
-Church's view of other Christians. The Catechism says the Church “knows that she is joined in many \
-ways to the baptized who are honored by the name of Christian.”
-"""
-ccc = [
-  { para = 838, quote = "knows that she is joined in many ways to the baptized who are honored by the name of Christian" },
 ]
 
 # ---------------------------------------------------------------------------

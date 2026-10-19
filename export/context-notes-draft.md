@@ -25,18 +25,9 @@
 - **Link note, Ishmael → Heretics:** St. Augustine: Ishmael/Hagar are 'a figure of heretics (who are the children of the bond-woman) unjustly persecuting the Catholic Church.'
 - **Link note, Sanaballat → Heretics:** Ven. Bede/Worthington: Sanaballat 'was a persecutor, and prefigured heretics.'
 
-**Clarification:** In Catholic teaching, heresy is a precise term: “the obstinate post-baptismal denial of some truth which must be believed with divine and catholic faith.” It is not a name for other Christians today. Those raised in separated communities “with good reason are accepted as brothers in the Lord by the children of the Catholic Church.”
+**Clarification:** In Catholic teaching, heresy is a precise term: “the obstinate post-baptismal denial of some truth which must be believed with divine and catholic faith.”
 
 - Catechism §2089: “the obstinate post-baptismal denial of some truth which must be believed with divine and catholic faith”
-- Catechism §818: “with good reason are accepted as brothers in the Lord by the children of the Catholic Church”
-
-## Link: Holofernes → Antichrist  (applies to link-note)
-
-- **Link note:** Worthington: 'He is a figure of Antichrist; for whom all heretics pave the way' (2 Thess 2).
-
-**Clarification:** The word “heretics” here reflects the controversies of the commentator's own day; it is not the Church's view of other Christians. The Catechism says the Church “knows that she is joined in many ways to the baptized who are honored by the name of Christian.”
-
-- Catechism §838: “knows that she is joined in many ways to the baptized who are honored by the name of Christian”
 
 ## Type: The Reprobate (the Rejected)  (`the-reprobate-the-rejected`, applies to type)
 
