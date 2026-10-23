@@ -34,7 +34,7 @@ export class Explorer {
       this.outgoing.get(l.source).push(l);
       this.incoming.get(l.target).push(l);
     }
-    this.state = { query: '', testament: 'all', theme: null, sort: 'links', selected: null };
+    this.state = { query: '', testament: 'all', theme: null, sort: 'name', selected: null };
     this.buildShell();
     this.renderList();
     this.renderPanel();
@@ -102,7 +102,8 @@ export class Explorer {
       }));
 
     this.sortSelect = h('select', { class: 'explorer-sort', 'aria-label': 'Sort figures' },
-      [['links', 'Most links'], ['name', 'A–Z'], ['canon', 'Bible order']].map(([v, label]) => h('option', { value: v }, label)));
+      [['name', 'A–Z'], ['canon', 'Bible order'], ['links', 'Most links']].map(([v, label]) => h('option', { value: v }, label)));
+    this.sortSelect.value = this.state.sort;
     this.sortSelect.addEventListener('change', () => { this.state.sort = this.sortSelect.value; this.renderList(); });
 
     this.count = h('p', { class: 'explorer-count', 'aria-live': 'polite' });
@@ -132,7 +133,9 @@ export class Explorer {
     const matches = this.types.filter((t) => (testament === 'all' || t.testament === testament)
       && (!theme || this.hasTheme(t.id, theme))
       && (!q || fold(`${t.displayName} ${t.name} ${t.description ?? ''}`).includes(q)));
-    const byName = (a, b) => a.displayName.localeCompare(b.displayName);
+    // Alphabetize like an index: "The Ark of the Covenant" files under A
+    const sortName = (t) => t.displayName.replace(/^(the|an|a)\s+/i, '');
+    const byName = (a, b) => sortName(a).localeCompare(sortName(b), undefined, { sensitivity: 'base' });
     const sorters = {
       links: (a, b) => this.degree(b.id) - this.degree(a.id) || byName(a, b),
       name: byName,
@@ -297,7 +300,7 @@ export class Explorer {
     const verses = this.evidence.linkVerses[key] ?? [];
     return h('li', { class: 'link-item' },
       h('div', { class: 'link-main' }, open,
-        h('span', { class: 'link-meta' }, `${link.confidence} confidence · ${link.sources.map(sourceLabel).join(', ')}`)),
+        h('span', { class: 'link-meta' }, link.sources.map(sourceLabel).join(', '))),
       this.evidence.linkNotes[key] ? h('p', { class: 'link-note' }, this.evidence.linkNotes[key]) : null,
       this.notesBesideLink(link, viewedId).map((n) => this.contextNote(n)),
       verses.length ? h('details', { class: 'link-verses' },
@@ -321,9 +324,11 @@ export class Explorer {
         'No verses are attached to this figure yet. Its links above carry the verses where commentators noticed it.'));
       return section;
     }
-    // Curated evidence first; verses found by mining cross-references are labelled as such.
-    const ordered = [...all.filter(([, p]) => p === 'curated'), ...all.filter(([, p]) => p === 'mined')];
-    const lines = ordered.map(([vid, p]) => this.verseLine(vid, p === 'mined' ? 'via cross-references' : null));
+    // Curated evidence first, then verses the Catechism cites, then verses found by mining cross-references.
+    const rank = { curated: 0, catechism: 1, mined: 2 };
+    const ordered = [...all].sort((a, b) => rank[a[1]] - rank[b[1]]);
+    const tags = { mined: () => 'via cross-references', catechism: (para) => `cited in Catechism §${para}` };
+    const lines = ordered.map(([vid, p, para]) => this.verseLine(vid, tags[p]?.(para) ?? null));
     const list = h('div', { class: 'verse-list' }, lines.slice(0, VERSES_SHOWN));
     section.append(list);
     if (lines.length > VERSES_SHOWN) {

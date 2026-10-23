@@ -56,10 +56,11 @@ the Old, and the Old is unveiled in the New. Reading Scripture this way is calle
 id = "intro-word"
 view = "pair"
 pair = { type = "adam", antitype = "christ" }
-warrant = ["scripture"]
+warrant = ["scripture", "catechism"]
 ot = "GEN-2-7"
 nt = "ROM-5-14"
 quote = { text = "that the creature might go before in figure, and the Son of God might follow after in reality", by = "St. Ambrose" }
+ccc = { para = 504, quote = "he is the New Adam, who inaugurates the new creation" }
 text = """
 The word comes from Scripture itself. Saint Paul calls Adam “a figure of him who was to come.” His Greek \
 word is typos. A type is a real person, event or institution that foreshadows a greater fulfillment, \
@@ -70,10 +71,11 @@ called its antitype. Adam's antitype is Christ, who brings life where Adam broug
 id = "intro-example"
 view = "pair"
 pair = { type = "passover", antitype = "christs-passion" }
-warrant = ["scripture"]
+warrant = ["scripture", "catechism"]
 ot = "EXO-12-46"
 nt = "JHN-19-36"
 quote = { text = "This, which was literally spoken of the paschal lamb, … the evangelist applies to Christ, of whom the lamb was a figure.", by = "Witham" }
+ccc = { para = 1096, quote = "the Passover fulfilled in the death and Resurrection of Christ" }
 text = """
 Here is one. At the first Passover, Israel was told to eat a lamb without breaking any of its bones. At \
 the crucifixion, soldiers broke the legs of the men beside Jesus, but not his. John saw the connection: \
@@ -242,6 +244,16 @@ Melchizedek. A king of Salem and “a priest of the Most High God” appears fro
 bringing out bread and wine. The Church sees in his gesture “a prefiguring of her own offering.”
 """
 
+[[chapter.step]]
+id = "bread-other-sacraments"
+view = "web-category"
+text = """
+Other sacraments have figures too. The Church sees in Aaron's priesthood, the Levites and the seventy \
+elders “a prefiguring of the ordained ministry.” Anointed kings and priests point to Confirmation, God's \
+marriage covenant with Israel to Matrimony, and the old law's confession of sin to Penance. The Anointing \
+of the Sick first appears in the New Testament (James 5:14).
+"""
+
 # ---------------------------------------------------------------------------
 [[chapter]]
 id = "christ"
@@ -275,7 +287,7 @@ place. Centuries later, Jesus carried his own cross to Calvary.
 id = "christ-joseph"
 view = "pair"
 pair = { type = "joseph", antitype = "christ" }
-warrant = ["catechism", "tradition"]
+warrant = ["tradition"]
 ot = "GEN-50-20"
 nt = "ROM-5-20"
 quote = { text = "His greatest glory was, to have prefigured Jesus Christ in so wonderful a manner during the course of his life", by = "Haydock commentary" }
@@ -319,10 +331,11 @@ for those crucifying him: “Father, forgive them. For they know not what they d
 id = "christ-jonah"
 view = "pair"
 pair = { type = "jonah", antitype = "the-resurrection" }
-warrant = ["scripture"]
+warrant = ["scripture", "catechism"]
 ot = "JON-2-1"
 nt = "MAT-12-40"
 quote = { text = "who would have thought that Jonas had been a figure of our Saviour's death and resurrection, if he himself had not declared it?", by = "Worthington" }
+ccc = { para = 994, quote = "He speaks of this unique event as the \"sign of Jonah,\" the sign of the temple: he announces that he will be put to death but rise thereafter on the third day." }
 text = """
 Jonah. Three days and three nights in the belly of a great fish, then back into the light. Asked for a \
 sign, Jesus offered only this one: “so shall the Son of man be in the heart of the earth for three days \
@@ -355,8 +368,8 @@ view = "web-category"
 ccc = { para = 64, quote = "kept alive the hope of Israel's salvation. The purest figure among them is Mary." }
 text = """
 The Catechism names Old Testament women who “kept alive the hope of Israel's salvation”: Sarah, Hannah, \
-Deborah, Judith, Esther and others. “The purest figure among them is Mary.” Some readings that follow \
-appear in the Catechism; others come from devotional tradition, and Christians weigh them differently.
+Deborah, Judith, Esther and others. “The purest figure among them is Mary.” Throughout the Old Covenant, \
+the Catechism teaches, “the mission of many holy women prepared for that of Mary.”
 """
 
 [[chapter.step]]
@@ -553,7 +566,7 @@ title = "Sources & methods"
 id = "sources-data"
 view = "text"
 text = """
-This site is built from LogosGraph, a knowledge graph of the 73-book Catholic Bible. Verse text is from \
+This site is built from LogosGraph, a knowledge graph of the 73-book Bible. Verse text is from \
 the Catholic Public Domain Version. Typology links come from the Catechism of the Catholic Church and \
 from the Haydock Bible commentary (first published 1811–1814, later revised), which gathers the Fathers \
 and later commentators.
@@ -563,17 +576,15 @@ and later commentators.
 id = "sources-method"
 view = "text"
 text = """
-AI helped build the graph. A language model read 872 typological notes in the Haydock commentary and \
-proposed links. An AI assistant made a first review pass with suggestions, and the author then reviewed \
-selections of them personally, over several rounds. More verse evidence was mined from cross-references \
-and reviewed the same way.
+Every link on this site was checked against the text of its source: the Catechism paragraph or the \
+commentary note that makes it.
 """
 
 [[chapter.step]]
 id = "sources-warrant"
 view = "text"
 text = """
-Two cautions. First, these are traditional readings, not proofs. Each pair on this site is marked by its \
+Two cautions on the commentaries. First, these are traditional readings, not proofs. Each pair on this site is marked by its \
 strongest warrant: the New Testament draws the link itself, the Catechism teaches it, or it comes from the \
 commentary tradition, sometimes from a single commentator.
 """

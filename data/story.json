@@ -1,19 +1,19 @@
 {
   "metadata": {
-    "generated": "2026-10-17T13:01:25+00:00",
+    "generated": "2026-10-23T14:24:43+00:00",
     "source": "export/story.toml + LogosGraph Neo4j",
     "stats": {
-      "types": 198,
-      "links": 275,
-      "verseLinks": "1,130",
-      "cccLinks": 43,
-      "christLinks": 100,
-      "eschatological": 41,
-      "sacramental": 36,
-      "ecclesial": 68,
-      "christological": 104,
-      "covenantal": 12,
-      "marian": 14
+      "types": 220,
+      "links": 307,
+      "verseLinks": "1,235",
+      "cccLinks": 312,
+      "christLinks": 105,
+      "sacramental": 47,
+      "eschatological": 43,
+      "ecclesial": 77,
+      "christological": 113,
+      "covenantal": 11,
+      "marian": 16
     },
     "christFamily": [
       "christ",
@@ -72,13 +72,21 @@
             "category": "Christological",
             "confidence": "high",
             "sources": [
-              "haydock"
+              "haydock",
+              "CCC-359",
+              "CCC-411",
+              "CCC-504",
+              "CCC-539"
             ]
           },
           "warrant": [
             {
               "key": "scripture",
               "label": "the New Testament draws this link itself"
+            },
+            {
+              "key": "catechism",
+              "label": "taught in the Catechism"
             }
           ],
           "ot": {
@@ -96,7 +104,12 @@
             "by": "St. Ambrose",
             "source": "Haydock commentary on Luke 3:38"
           },
-          "ccc": []
+          "ccc": [
+            {
+              "para": 504,
+              "quote": "he is the New Adam, who inaugurates the new creation"
+            }
+          ]
         },
         {
           "id": "intro-example",
@@ -111,13 +124,20 @@
             "category": "Christological",
             "confidence": "high",
             "sources": [
-              "haydock"
+              "haydock",
+              "CCC-613",
+              "CCC-1096",
+              "CCC-1340"
             ]
           },
           "warrant": [
             {
               "key": "scripture",
               "label": "the New Testament draws this link itself"
+            },
+            {
+              "key": "catechism",
+              "label": "taught in the Catechism"
             }
           ],
           "ot": {
@@ -135,7 +155,12 @@
             "by": "Witham",
             "source": "Haydock commentary on John 19:36"
           },
-          "ccc": []
+          "ccc": [
+            {
+              "para": 1096,
+              "quote": "the Passover fulfilled in the death and Resurrection of Christ"
+            }
+          ]
         },
         {
           "id": "intro-value",
@@ -159,7 +184,7 @@
         {
           "id": "web-all",
           "view": "web-all",
-          "text": "LogosGraph maps 198 of these figures and 275 links between them. They are drawn from the Catechism of the Catholic Church and from the 19th-century Haydock Bible commentary, which gathers readings from the Church Fathers and later Catholic commentators. Old Testament figures sit on one side; their fulfillments, on the other.",
+          "text": "LogosGraph maps 220 of these figures and 307 links between them. They are drawn from the Catechism of the Catholic Church and from the 19th-century Haydock Bible commentary, which gathers readings from the Church Fathers and later Catholic commentators. Old Testament figures sit on one side; their fulfillments, on the other.",
           "words": 51,
           "ccc": []
         },
@@ -203,7 +228,8 @@
             "confidence": "high",
             "sources": [
               "CCC-1094",
-              "haydock"
+              "haydock",
+              "CCC-1219"
             ]
           },
           "warrant": [
@@ -252,7 +278,9 @@
             "confidence": "high",
             "sources": [
               "CCC-1094",
-              "haydock"
+              "haydock",
+              "CCC-117",
+              "CCC-1221"
             ]
           },
           "warrant": [
@@ -403,7 +431,8 @@
             "confidence": "high",
             "sources": [
               "CCC-1334",
-              "haydock"
+              "haydock",
+              "CCC-1340"
             ]
           },
           "warrant": [
@@ -491,8 +520,9 @@
             "category": "Sacramental",
             "confidence": "high",
             "sources": [
-              "CCC-1334",
-              "haydock"
+              "CCC-1333",
+              "haydock",
+              "CCC-1350"
             ]
           },
           "warrant": [
@@ -526,6 +556,13 @@
               "quote": "The Church sees in the gesture of the king-priest Melchizedek, who \"brought out bread and wine,\" a prefiguring of her own offering."
             }
           ]
+        },
+        {
+          "id": "bread-other-sacraments",
+          "view": "web-category",
+          "text": "Other sacraments have figures too. The Church sees in Aaron's priesthood, the Levites and the seventy elders “a prefiguring of the ordained ministry.” Anointed kings and priests point to Confirmation, God's marriage covenant with Israel to Matrimony, and the old law's confession of sin to Penance. The Anointing of the Sick first appears in the New Testament (James 5:14).",
+          "words": 59,
+          "ccc": []
         }
       ]
     },
@@ -554,7 +591,8 @@
             "category": "Christological",
             "confidence": "medium",
             "sources": [
-              "haydock"
+              "haydock",
+              "CCC-2572"
             ]
           },
           "warrant": [
@@ -606,10 +644,6 @@
             ]
           },
           "warrant": [
-            {
-              "key": "catechism",
-              "label": "taught in the Catechism"
-            },
             {
               "key": "tradition",
               "label": "from the commentary tradition"
@@ -737,13 +771,18 @@
             "category": "Christological",
             "confidence": "high",
             "sources": [
-              "haydock"
+              "haydock",
+              "CCC-994"
             ]
           },
           "warrant": [
             {
               "key": "scripture",
               "label": "the New Testament draws this link itself"
+            },
+            {
+              "key": "catechism",
+              "label": "taught in the Catechism"
             }
           ],
           "ot": {
@@ -761,7 +800,12 @@
             "by": "Worthington",
             "source": "Haydock commentary on Jonah 4:9"
           },
-          "ccc": []
+          "ccc": [
+            {
+              "para": 994,
+              "quote": "He speaks of this unique event as the \"sign of Jonah,\" the sign of the temple: he announces that he will be put to death but rise thereafter on the third day."
+            }
+          ]
         },
         {
           "id": "christ-melchizedek",
@@ -817,7 +861,7 @@
         {
           "id": "mary-intro",
           "view": "web-category",
-          "text": "The Catechism names Old Testament women who “kept alive the hope of Israel's salvation”: Sarah, Hannah, Deborah, Judith, Esther and others. “The purest figure among them is Mary.” Some readings that follow appear in the Catechism; others come from devotional tradition, and Christians weigh them differently.",
+          "text": "The Catechism names Old Testament women who “kept alive the hope of Israel's salvation”: Sarah, Hannah, Deborah, Judith, Esther and others. “The purest figure among them is Mary.” Throughout the Old Covenant, the Catechism teaches, “the mission of many holy women prepared for that of Mary.”",
           "words": 46,
           "ccc": [
             {
@@ -840,7 +884,13 @@
             "confidence": "high",
             "sources": [
               "CCC-489",
-              "haydock"
+              "haydock",
+              "CCC-494",
+              "CCC-511",
+              "CCC-726",
+              "CCC-975",
+              "CCC-2618",
+              "CCC-2853"
             ]
           },
           "warrant": [
@@ -1018,7 +1068,7 @@
         {
           "id": "church-intro",
           "view": "web-category",
-          "text": "The Fathers also saw in Israel's story the shape of the Church: a people gathered, sheltered and built into a dwelling for God. Paul's image is not replacement but grafting: the nations are joined to Israel's own olive tree, where “the root supports you.” 68 links follow this thread.",
+          "text": "The Fathers also saw in Israel's story the shape of the Church: a people gathered, sheltered and built into a dwelling for God. Paul's image is not replacement but grafting: the nations are joined to Israel's own olive tree, where “the root supports you.” 77 links follow this thread.",
           "words": 49,
           "ccc": []
         },
@@ -1035,7 +1085,8 @@
             "category": "Ecclesial",
             "confidence": "high",
             "sources": [
-              "haydock"
+              "haydock",
+              "CCC-845"
             ]
           },
           "warrant": [
@@ -1078,7 +1129,8 @@
             "category": "Ecclesial",
             "confidence": "high",
             "sources": [
-              "haydock"
+              "haydock",
+              "CCC-1543"
             ]
           },
           "warrant": [
@@ -1121,12 +1173,13 @@
           "pair": {
             "type": "the-twelve-patriarchs",
             "antitype": "the-twelve-apostles",
-            "typeName": "The Twelve Patriarchs",
+            "typeName": "The Twelve Patriarchs and Tribes of Israel",
             "antitypeName": "The Twelve Apostles",
             "category": "Ecclesial",
             "confidence": "high",
             "sources": [
-              "haydock"
+              "haydock",
+              "CCC-765"
             ]
           },
           "warrant": [
@@ -1209,11 +1262,13 @@
             "type": "adam-and-eve",
             "antitype": "christ-church",
             "typeName": "Marriage of Adam and Eve",
-            "antitypeName": "Christ's union with the Church",
+            "antitypeName": "Christ and the Church (Bridegroom and Bride)",
             "category": "Ecclesial",
             "confidence": "high",
             "sources": [
-              "haydock"
+              "haydock",
+              "CCC-796",
+              "CCC-1616"
             ]
           },
           "warrant": [
@@ -1258,7 +1313,7 @@
         {
           "id": "convergence-gather",
           "view": "radial",
-          "text": "Step back and the pattern is clear. These commentators read every thread toward Christ: of the 275 links, 100 point to him or to an event of his life, such as his passion, resurrection and priesthood. And the threads of the sacraments, of Mary and of the Church lead back to him too.",
+          "text": "Step back and the pattern is clear. These commentators read every thread toward Christ: of the 307 links, 105 point to him or to an event of his life, such as his passion, resurrection and priesthood. And the threads of the sacraments, of Mary and of the Church lead back to him too.",
           "words": 53,
           "ccc": []
         },
@@ -1284,7 +1339,7 @@
         {
           "id": "explore-intro",
           "view": "explorer",
-          "text": "Now explore on your own. Search any of the 198 figures, filter by theme, and open one to see its links, the verses behind it, the commentators who noticed it, and what the Catechism says.",
+          "text": "Now explore on your own. Search any of the 220 figures, filter by theme, and open one to see its links, the verses behind it, the commentators who noticed it, and what the Catechism says.",
           "words": 35,
           "ccc": []
         }
@@ -1305,8 +1360,8 @@
         {
           "id": "sources-method",
           "view": "text",
-          "text": "AI helped build the graph. A language model read 872 typological notes in the Haydock commentary and proposed links. An AI assistant made a first review pass with suggestions, and the author then reviewed selections of them personally, over several rounds. More verse evidence was mined from cross-references and reviewed the same way.",
-          "words": 53,
+          "text": "Every link on this site was checked against the text of its source: the Catechism paragraph or the commentary note that makes it.",
+          "words": 23,
           "ccc": []
         },
         {

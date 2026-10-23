@@ -55,7 +55,8 @@ def load_graph():
 def main() -> int:
     story = tomllib.loads((HERE / "story.toml").read_text())
     verses = {v["id"]: v["text"].strip() for v in parse_cpdv()}
-    ccc = {p["id"]: " ".join(p["text"].split())
+    # The source marks italics with asterisks; they're formatting, not words, so quotes are checked without them
+    ccc = {p["id"]: " ".join(p["text"].replace("*", "").split())
            for p in json.loads((PROJECT_ROOT / "data/raw/catechism/catechism.json").read_text())}
     commentary = defaultdict(list)  # (type, antitype) -> [(verse_id, original_text)]
     for line in (PROJECT_ROOT / "data/reviewed/typology_approved.jsonl").read_text().splitlines():
@@ -63,6 +64,8 @@ def main() -> int:
             rec = json.loads(line)
             commentary[(rec["type_id"], rec["antitype_id"])].append((rec["verse_id"], rec["original_text"]))
     types, edges, verse_links, ccc_links = load_graph()
+    # Same-testament links aren't drawn on the site (see export_typology.py), so they don't count here either
+    edges = {k: e for k, e in edges.items() if types[k[0]]["testament"] != types[k[1]]["testament"]}
 
     by_category = defaultdict(int)
     for e in edges.values():

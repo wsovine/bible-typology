@@ -1,17 +1,17 @@
 {
   "metadata": {
-    "generated": "2026-10-17T00:34:40+00:00",
+    "generated": "2026-10-23T14:24:41+00:00",
     "source": "LogosGraph Neo4j typology layer",
     "counts": {
-      "types": 198,
-      "links": 275,
+      "types": 220,
+      "links": 307,
       "categories": {
-        "Christological": 104,
-        "Marian": 14,
-        "Eschatological": 41,
-        "Ecclesial": 68,
-        "Covenantal": 12,
-        "Sacramental": 36
+        "Christological": 113,
+        "Marian": 16,
+        "Eschatological": 43,
+        "Ecclesial": 77,
+        "Sacramental": 47,
+        "Covenantal": 11
       }
     }
   },
@@ -43,7 +43,7 @@
       "description": "Abel, the just son of Adam whose innocent blood was shed by his brother Cain.",
       "displayName": "Abel",
       "canonPosition": 1004008,
-      "verseCount": 1,
+      "verseCount": 3,
       "inDegree": 0,
       "outDegree": 1,
       "group": null
@@ -56,6 +56,30 @@
       "displayName": "Abimelech",
       "canonPosition": 7009007,
       "verseCount": 1,
+      "inDegree": 0,
+      "outDegree": 1,
+      "group": null
+    },
+    {
+      "id": "abraham",
+      "name": "Abraham",
+      "testament": "OT",
+      "description": "The patriarch whom God called out of his own country and promised to make the father of a great people, in whom all the families of the earth would be blessed (Gen 12:1-3).",
+      "displayName": "Abraham",
+      "canonPosition": 1012002,
+      "verseCount": 1,
+      "inDegree": 0,
+      "outDegree": 1,
+      "group": null
+    },
+    {
+      "id": "abrahams-hospitality-at-mamre",
+      "name": "Abraham's Hospitality at Mamre",
+      "testament": "OT",
+      "description": "Abraham's welcome of three visitors at the oaks of Mamre, who announced that Sarah would bear him a son (Gen 18:1-15).",
+      "displayName": "Abraham's Hospitality at Mamre",
+      "canonPosition": null,
+      "verseCount": 0,
       "inDegree": 0,
       "outDegree": 1,
       "group": null
@@ -79,9 +103,9 @@
       "description": "Adam, the first man, whose creation and fall prefigure Christ as the New Adam.",
       "displayName": "Adam",
       "canonPosition": 1001026,
-      "verseCount": 5,
+      "verseCount": 9,
       "inDegree": 0,
-      "outDegree": 1,
+      "outDegree": 2,
       "group": null
     },
     {
@@ -90,8 +114,8 @@
       "testament": "OT",
       "description": null,
       "displayName": "Marriage of Adam and Eve",
-      "canonPosition": 1002024,
-      "verseCount": 2,
+      "canonPosition": 1002018,
+      "verseCount": 5,
       "inDegree": 0,
       "outDegree": 1,
       "group": null
@@ -114,10 +138,10 @@
       "testament": "OT",
       "description": null,
       "displayName": "Anointing of Kings, Priests, and Prophets",
-      "canonPosition": 9002010,
-      "verseCount": 3,
+      "canonPosition": 2029007,
+      "verseCount": 6,
       "inDegree": 0,
-      "outDegree": 1,
+      "outDegree": 4,
       "group": null
     },
     {
@@ -187,8 +211,8 @@
       "description": "The sacrament of regeneration and incorporation into Christ through water and the Spirit.",
       "displayName": "Baptism",
       "canonPosition": 47003006,
-      "verseCount": 30,
-      "inDegree": 17,
+      "verseCount": 31,
+      "inDegree": 18,
       "outDegree": 0,
       "group": "Sacramental"
     },
@@ -199,7 +223,7 @@
       "description": "Abraham's willing sacrifice of his son Isaac on Mount Moriah (Genesis 22).",
       "displayName": "Binding of Isaac",
       "canonPosition": 1022003,
-      "verseCount": 6,
+      "verseCount": 8,
       "inDegree": 0,
       "outDegree": 3,
       "group": null
@@ -223,9 +247,9 @@
       "description": "The bush that burned with fire but was not consumed, in which the Angel of the Lord appeared to Moses (Exodus 3).",
       "displayName": "Burning Bush",
       "canonPosition": 2003002,
-      "verseCount": 1,
+      "verseCount": 2,
       "inDegree": 0,
-      "outDegree": 1,
+      "outDegree": 2,
       "group": null
     },
     {
@@ -249,7 +273,7 @@
       "canonPosition": 2025018,
       "verseCount": 1,
       "inDegree": 0,
-      "outDegree": 1,
+      "outDegree": 2,
       "group": null
     },
     {
@@ -259,22 +283,22 @@
       "description": "Jesus Christ, the incarnate Son of God and fulfillment of all Old Testament types.",
       "displayName": "Christ",
       "canonPosition": 29040005,
-      "verseCount": 27,
-      "inDegree": 57,
+      "verseCount": 43,
+      "inDegree": 60,
       "outDegree": 0,
       "group": "Christological"
     },
     {
       "id": "christ-church",
-      "name": "Christ's union with the Church",
+      "name": "Christ and the Church (Bridegroom and Bride)",
       "testament": "NT",
-      "description": null,
-      "displayName": "Christ's union with the Church",
-      "canonPosition": null,
-      "verseCount": 0,
-      "inDegree": 5,
+      "description": "The union of Christ the Bridegroom with the Church his Bride, whom he loved and for whom he gave himself up (Eph 5:25-32; Rev 19:7).",
+      "displayName": "Christ and the Church (Bridegroom and Bride)",
+      "canonPosition": 56005025,
+      "verseCount": 4,
+      "inDegree": 6,
       "outDegree": 0,
-      "group": "Christological"
+      "group": "Ecclesial"
     },
     {
       "id": "christ-high-priest",
@@ -283,7 +307,7 @@
       "description": "Christ as the eternal high priest who offered himself once for all on the cross.",
       "displayName": "Christ the High Priest",
       "canonPosition": 45006013,
-      "verseCount": 21,
+      "verseCount": 24,
       "inDegree": 5,
       "outDegree": 0,
       "group": "Christological"
@@ -294,8 +318,8 @@
       "testament": "NT",
       "description": "Christ's ascension into heaven and exaltation to the right hand of the Father.",
       "displayName": "Christ's Ascension",
-      "canonPosition": null,
-      "verseCount": 0,
+      "canonPosition": 65009024,
+      "verseCount": 1,
       "inDegree": 4,
       "outDegree": 0,
       "group": "Christological"
@@ -306,9 +330,9 @@
       "testament": "NT",
       "description": "The suffering and crucifixion of Jesus Christ for the redemption of mankind.",
       "displayName": "Christ's Passion",
-      "canonPosition": null,
-      "verseCount": 0,
-      "inDegree": 19,
+      "canonPosition": 50001029,
+      "verseCount": 2,
+      "inDegree": 21,
       "outDegree": 0,
       "group": "Christological"
     },
@@ -333,20 +357,32 @@
       "canonPosition": 1017010,
       "verseCount": 33,
       "inDegree": 0,
-      "outDegree": 2,
+      "outDegree": 3,
       "group": null
     },
     {
       "id": "cloud-in-desert",
-      "name": "Cloud in the Desert",
+      "name": "The Cloud of the Lord's Glory",
       "testament": "OT",
-      "description": "The pillar of cloud that guided and protected Israel through the wilderness.",
-      "displayName": "Cloud in the Desert",
+      "description": "The cloud in which the Lord's glory appeared to Israel: the pillar of cloud and fire that led them out of Egypt and through the wilderness, the cloud that covered Mount Sinai and the tent of meeting, and the cloud that filled Solomon's Temple (Exod 13:21-22; 24:15-18; 40:34-38; 1 Kgs 8:10-11).",
+      "displayName": "The Cloud of the Lord's Glory",
       "canonPosition": 2013021,
       "verseCount": 25,
       "inDegree": 0,
       "outDegree": 3,
       "group": null
+    },
+    {
+      "id": "confirmation",
+      "name": "Confirmation",
+      "testament": "NT",
+      "description": "The sacrament in which the baptized are sealed with the gift of the Holy Spirit through the laying on of hands and anointing with chrism, as the apostles laid hands on the baptized in Samaria (Acts 8:14-17).",
+      "displayName": "Confirmation",
+      "canonPosition": null,
+      "verseCount": 0,
+      "inDegree": 1,
+      "outDegree": 0,
+      "group": "Sacramental"
     },
     {
       "id": "cyrus",
@@ -402,9 +438,9 @@
       "testament": "NT",
       "description": null,
       "displayName": "Descent of the Holy Spirit at Pentecost",
-      "canonPosition": null,
-      "verseCount": 0,
-      "inDegree": 3,
+      "canonPosition": 51002003,
+      "verseCount": 2,
+      "inDegree": 4,
       "outDegree": 0,
       "group": "Ecclesial"
     },
@@ -417,7 +453,7 @@
       "canonPosition": 43003008,
       "verseCount": 5,
       "inDegree": 5,
-      "outDegree": 1,
+      "outDegree": 0,
       "group": "Eschatological"
     },
     {
@@ -481,6 +517,18 @@
       "group": null
     },
     {
+      "id": "elijahs-sacrifice-on-mount-carmel",
+      "name": "Elijah's Sacrifice on Mount Carmel",
+      "testament": "OT",
+      "description": "The sacrifice on Mount Carmel, consumed by fire from heaven in answer to Elijah's prayer at the hour of the evening offering (1 Kgs 18:36-39).",
+      "displayName": "Elijah's Sacrifice on Mount Carmel",
+      "canonPosition": 11018037,
+      "verseCount": 1,
+      "inDegree": 0,
+      "outDegree": 2,
+      "group": null
+    },
+    {
       "id": "elisha",
       "name": "Elisha",
       "testament": "OT",
@@ -524,7 +572,7 @@
       "displayName": "Eternal Life",
       "canonPosition": 29045017,
       "verseCount": 32,
-      "inDegree": 3,
+      "inDegree": 4,
       "outDegree": 0,
       "group": "Eschatological"
     },
@@ -535,8 +583,8 @@
       "description": "The sacrament of Christ's Body and Blood under the appearances of bread and wine.",
       "displayName": "Eucharist",
       "canonPosition": 47026026,
-      "verseCount": 22,
-      "inDegree": 9,
+      "verseCount": 23,
+      "inDegree": 10,
       "outDegree": 0,
       "group": "Sacramental"
     },
@@ -548,6 +596,18 @@
       "displayName": "Eve",
       "canonPosition": 1003020,
       "verseCount": 1,
+      "inDegree": 0,
+      "outDegree": 1,
+      "group": null
+    },
+    {
+      "id": "eve-formed-from-adams-side",
+      "name": "Eve Formed from Adam's Side",
+      "testament": "OT",
+      "description": "God casting a deep sleep on Adam and forming the woman from a rib taken from his side (Gen 2:21-22).",
+      "displayName": "Eve Formed from Adam's Side",
+      "canonPosition": null,
+      "verseCount": 0,
       "inDegree": 0,
       "outDegree": 1,
       "group": null
@@ -572,7 +632,7 @@
       "displayName": "Final Judgment",
       "canonPosition": null,
       "verseCount": 0,
-      "inDegree": 13,
+      "inDegree": 12,
       "outDegree": 0,
       "group": "Eschatological"
     },
@@ -622,6 +682,18 @@
       "verseCount": 2,
       "inDegree": 0,
       "outDegree": 1,
+      "group": null
+    },
+    {
+      "id": "gods-marriage-covenant-with-israel",
+      "name": "God's Marriage Covenant with Israel",
+      "testament": "OT",
+      "description": "The covenant between the Lord and his people Israel, which the prophets portray as a marriage of faithful love, with the Lord as husband and Israel as his bride (Isa 54:5; Jer 2:2; Hos 2:19-20).",
+      "displayName": "God's Marriage Covenant with Israel",
+      "canonPosition": null,
+      "verseCount": 0,
+      "inDegree": 0,
+      "outDegree": 2,
       "group": null
     },
     {
@@ -678,9 +750,9 @@
       "testament": "NT",
       "description": "The heavenly tabernacle and city, the eternal dwelling place of God and his people (Apoc 15:5; Heb 12:22).",
       "displayName": "Heaven",
-      "canonPosition": null,
-      "verseCount": 0,
-      "inDegree": 7,
+      "canonPosition": 47026029,
+      "verseCount": 2,
+      "inDegree": 8,
       "outDegree": 0,
       "group": "Eschatological"
     },
@@ -728,7 +800,7 @@
       "displayName": "Holy Orders",
       "canonPosition": null,
       "verseCount": 0,
-      "inDegree": 3,
+      "inDegree": 5,
       "outDegree": 0,
       "group": "Sacramental"
     },
@@ -777,17 +849,17 @@
       "canonPosition": 1016003,
       "verseCount": 8,
       "inDegree": 0,
-      "outDegree": 3,
+      "outDegree": 2,
       "group": null
     },
     {
       "id": "israel-jeshurun",
-      "name": "Israel (Jeshurun)",
+      "name": "Israel, the Chosen People",
       "testament": "OT",
-      "description": "Israel under the title Jeshurun, the beloved of God; a figure of the Messiah, the true Beloved.",
-      "displayName": "Israel (Jeshurun)",
-      "canonPosition": 23028006,
-      "verseCount": 3,
+      "description": "The people descended from Abraham, Isaac and Jacob, whom God chose as his own possession and bound to himself by covenant at Sinai, called also by the poetic name Jeshurun (Exod 19:5-6; Deut 7:6; Isa 44:2).",
+      "displayName": "Israel, the Chosen People",
+      "canonPosition": 2019005,
+      "verseCount": 6,
       "inDegree": 0,
       "outDegree": 2,
       "group": null
@@ -800,6 +872,18 @@
       "displayName": "Israel's Disobedience in the Wilderness",
       "canonPosition": 53010006,
       "verseCount": 1,
+      "inDegree": 0,
+      "outDegree": 1,
+      "group": null
+    },
+    {
+      "id": "israels-testing-in-the-wilderness",
+      "name": "Israel's Forty Years of Testing in the Wilderness",
+      "testament": "OT",
+      "description": "The forty years in which the Lord led Israel, his son, through the wilderness, humbling and testing it and feeding it with manna, that it might learn that man does not live by bread alone (Deut 8:2-3).",
+      "displayName": "Israel's Forty Years of Testing in the Wilderness",
+      "canonPosition": null,
+      "verseCount": 0,
       "inDegree": 0,
       "outDegree": 1,
       "group": null
@@ -882,8 +966,8 @@
       "testament": "NT",
       "description": "John the Baptist, who came in the spirit and power of Elijah to prepare the way before Christ's first coming (Matt 11:14; 17:11).",
       "displayName": "John the Baptist",
-      "canonPosition": null,
-      "verseCount": 0,
+      "canonPosition": 47017012,
+      "verseCount": 3,
       "inDegree": 1,
       "outDegree": 0,
       "group": "Christological"
@@ -909,7 +993,7 @@
       "canonPosition": 5009001,
       "verseCount": 13,
       "inDegree": 0,
-      "outDegree": 2,
+      "outDegree": 1,
       "group": null
     },
     {
@@ -931,7 +1015,7 @@
       "description": "Joseph, son of Jacob, sold by his brothers yet exalted to deliver his people from famine.",
       "displayName": "Joseph",
       "canonPosition": 1030024,
-      "verseCount": 34,
+      "verseCount": 36,
       "inDegree": 0,
       "outDegree": 1,
       "group": null
@@ -1098,11 +1182,23 @@
       "testament": "NT",
       "description": "The Blessed Virgin Mary, Mother of God and Mother of the Church.",
       "displayName": "Mary",
-      "canonPosition": null,
-      "verseCount": 0,
-      "inDegree": 14,
+      "canonPosition": 49001028,
+      "verseCount": 3,
+      "inDegree": 16,
       "outDegree": 0,
       "group": "Marian"
+    },
+    {
+      "id": "matrimony",
+      "name": "Matrimony",
+      "testament": "NT",
+      "description": "The sacrament by which a baptized man and woman are joined in a lifelong covenant of marriage that signifies the union of Christ and the Church (Eph 5:25-32).",
+      "displayName": "Matrimony",
+      "canonPosition": null,
+      "verseCount": 0,
+      "inDegree": 1,
+      "outDegree": 0,
+      "group": "Sacramental"
     },
     {
       "id": "melchizedek",
@@ -1113,7 +1209,7 @@
       "canonPosition": 1014018,
       "verseCount": 17,
       "inDegree": 0,
-      "outDegree": 2,
+      "outDegree": 3,
       "group": null
     },
     {
@@ -1135,7 +1231,7 @@
       "description": "Moses, liberator and lawgiver of Israel, mediator of the Old Covenant.",
       "displayName": "Moses",
       "canonPosition": 2002004,
-      "verseCount": 25,
+      "verseCount": 29,
       "inDegree": 0,
       "outDegree": 3,
       "group": null
@@ -1184,7 +1280,7 @@
       "displayName": "Sacraments of the New Covenant",
       "canonPosition": 47026028,
       "verseCount": 9,
-      "inDegree": 7,
+      "inDegree": 10,
       "outDegree": 0,
       "group": "Sacramental"
     },
@@ -1194,8 +1290,8 @@
       "testament": "OT",
       "description": "Noah, the just man who found favor with God and was preserved through the Flood.",
       "displayName": "Noah",
-      "canonPosition": 1009021,
-      "verseCount": 1,
+      "canonPosition": 1006009,
+      "verseCount": 2,
       "inDegree": 0,
       "outDegree": 2,
       "group": null
@@ -1237,6 +1333,18 @@
       "group": null
     },
     {
+      "id": "ot-laying-on-of-hands",
+      "name": "Laying On of Hands (Old Testament)",
+      "testament": "OT",
+      "description": "The Old Testament gesture of laying hands on a person or an offering to bless, consecrate or commission, as when Moses laid his hands on Joshua (Num 27:18-23).",
+      "displayName": "Laying On of Hands (Old Testament)",
+      "canonPosition": null,
+      "verseCount": 0,
+      "inDegree": 0,
+      "outDegree": 1,
+      "group": null
+    },
+    {
       "id": "ot-priesthood",
       "name": "Old Testament Priesthood",
       "testament": "OT",
@@ -1245,7 +1353,7 @@
       "canonPosition": 2028001,
       "verseCount": 52,
       "inDegree": 0,
-      "outDegree": 4,
+      "outDegree": 5,
       "group": null
     },
     {
@@ -1269,7 +1377,7 @@
       "canonPosition": 2012001,
       "verseCount": 44,
       "inDegree": 0,
-      "outDegree": 3,
+      "outDegree": 5,
       "group": null
     },
     {
@@ -1412,7 +1520,7 @@
       "displayName": "Sacrament of Penance",
       "canonPosition": null,
       "verseCount": 0,
-      "inDegree": 1,
+      "inDegree": 3,
       "outDegree": 0,
       "group": "Sacramental"
     },
@@ -1434,8 +1542,8 @@
       "testament": "OT",
       "description": null,
       "displayName": "Samuel",
-      "canonPosition": 9025001,
-      "verseCount": 1,
+      "canonPosition": 9003009,
+      "verseCount": 4,
       "inDegree": 0,
       "outDegree": 1,
       "group": null
@@ -1530,8 +1638,8 @@
       "testament": "NT",
       "description": null,
       "displayName": "Spiritual Purity and Interior Holiness",
-      "canonPosition": null,
-      "verseCount": 0,
+      "canonPosition": 48007019,
+      "verseCount": 2,
       "inDegree": 2,
       "outDegree": 0,
       "group": "Ecclesial"
@@ -1609,6 +1717,18 @@
       "group": null
     },
     {
+      "id": "the-annunciation",
+      "name": "The Annunciation",
+      "testament": "NT",
+      "description": "The angel Gabriel's announcement to the Virgin Mary that she would conceive and bear a son, Jesus, the Son of the Most High (Luke 1:26-38).",
+      "displayName": "The Annunciation",
+      "canonPosition": null,
+      "verseCount": 0,
+      "inDegree": 1,
+      "outDegree": 0,
+      "group": "Christological"
+    },
+    {
       "id": "the-ark-of-the-covenant",
       "name": "The Ark of the Covenant",
       "testament": "OT",
@@ -1641,8 +1761,20 @@
       "canonPosition": 35003004,
       "verseCount": 1,
       "inDegree": 0,
-      "outDegree": 1,
+      "outDegree": 2,
       "group": null
+    },
+    {
+      "id": "the-baptism-of-jesus",
+      "name": "The Baptism of Jesus",
+      "testament": "NT",
+      "description": "Jesus' baptism by John in the Jordan, when the Spirit descended on him like a dove and the Father declared him his beloved Son (Matt 3:13-17).",
+      "displayName": "The Baptism of Jesus",
+      "canonPosition": 47003016,
+      "verseCount": 2,
+      "inDegree": 2,
+      "outDegree": 0,
+      "group": "Christological"
     },
     {
       "id": "the-betrayal-by-judas",
@@ -1669,6 +1801,18 @@
       "group": "Eschatological"
     },
     {
+      "id": "the-creation-of-the-world",
+      "name": "The Creation of the World",
+      "testament": "OT",
+      "description": "God's creation of the heavens and the earth and all that is in them 'in the beginning', the work of six days completed on the seventh (Gen 1:1-2:3).",
+      "displayName": "The Creation of the World",
+      "canonPosition": 1001001,
+      "verseCount": 1,
+      "inDegree": 0,
+      "outDegree": 2,
+      "group": null
+    },
+    {
       "id": "the-cup-of-divine-wrath",
       "name": "The Cup of Divine Wrath",
       "testament": "OT",
@@ -1678,6 +1822,18 @@
       "verseCount": 1,
       "inDegree": 0,
       "outDegree": 1,
+      "group": null
+    },
+    {
+      "id": "the-daughter-of-zion",
+      "name": "The Daughter of Zion",
+      "testament": "OT",
+      "description": "Zion, that is Jerusalem and the people of God, personified by the prophets as a daughter called to rejoice because the Lord her king comes to dwell in her midst (Zeph 3:14-17; Zech 9:9).",
+      "displayName": "The Daughter of Zion",
+      "canonPosition": 43003014,
+      "verseCount": 3,
+      "inDegree": 0,
+      "outDegree": 2,
       "group": null
     },
     {
@@ -1698,10 +1854,10 @@
       "testament": "OT",
       "description": "The dove returning to the ark with an olive branch (Gen 8:11), signifying peace and deliverance from the flood; a figure of the peace conferred in baptism.",
       "displayName": "The Dove and the Olive Branch (Noah)",
-      "canonPosition": 49003022,
-      "verseCount": 1,
+      "canonPosition": 1008008,
+      "verseCount": 3,
       "inDegree": 0,
-      "outDegree": 1,
+      "outDegree": 2,
       "group": null
     },
     {
@@ -1735,7 +1891,7 @@
       "description": "The few of Israel preserved through judgment (e.g. under Hezekiah after the Assyrians); a figure of the remnant who embrace the faith of Christ (Rom 9:27).",
       "displayName": "The Faithful Remnant",
       "canonPosition": 29010022,
-      "verseCount": 2,
+      "verseCount": 3,
       "inDegree": 0,
       "outDegree": 1,
       "group": null
@@ -1782,8 +1938,8 @@
       "testament": "NT",
       "description": null,
       "displayName": "The Gentiles Grafted into Christ's Church",
-      "canonPosition": null,
-      "verseCount": 0,
+      "canonPosition": 52011017,
+      "verseCount": 2,
       "inDegree": 11,
       "outDegree": 0,
       "group": "Ecclesial"
@@ -1818,8 +1974,8 @@
       "testament": "NT",
       "description": "The Gospel of Jesus Christ, the New Covenant which fulfills and perfects the Law.",
       "displayName": "The Gospel (New Covenant)",
-      "canonPosition": null,
-      "verseCount": 0,
+      "canonPosition": 53011025,
+      "verseCount": 2,
       "inDegree": 7,
       "outDegree": 0,
       "group": "Covenantal"
@@ -1921,6 +2077,30 @@
       "group": null
     },
     {
+      "id": "the-lord-passing-by-at-horeb",
+      "name": "The Lord Passing By at Horeb",
+      "testament": "OT",
+      "description": "The Lord's passing by on Mount Horeb, when Moses, sheltered in a cleft of the rock, saw his back but not his face, and when Elijah, at the mouth of a cave, heard him in a still small voice (Exod 33:18-23; 1 Kgs 19:9-13).",
+      "displayName": "The Lord Passing By at Horeb",
+      "canonPosition": 2033022,
+      "verseCount": 1,
+      "inDegree": 0,
+      "outDegree": 1,
+      "group": null
+    },
+    {
+      "id": "the-lords-day",
+      "name": "The Lord's Day (Sunday)",
+      "testament": "NT",
+      "description": "The first day of the week, the day of Christ's Resurrection, on which Christians gather for the breaking of bread (Acts 20:7; Rev 1:10).",
+      "displayName": "The Lord's Day (Sunday)",
+      "canonPosition": null,
+      "verseCount": 0,
+      "inDegree": 1,
+      "outDegree": 0,
+      "group": "Ecclesial"
+    },
+    {
       "id": "the-mark-of-tau",
       "name": "The Mark of Tau",
       "testament": "OT",
@@ -1930,6 +2110,18 @@
       "verseCount": 1,
       "inDegree": 0,
       "outDegree": 2,
+      "group": null
+    },
+    {
+      "id": "the-mercy-seat",
+      "name": "The Mercy Seat",
+      "testament": "OT",
+      "description": "The golden cover of the ark of the covenant (called the propitiatory in the Douay-Rheims), between the cherubim, where the Lord promised to meet Moses and on which the high priest sprinkled the blood of atonement (Exod 25:17-22; Lev 16:14-15).",
+      "displayName": "The Mercy Seat",
+      "canonPosition": 2025022,
+      "verseCount": 3,
+      "inDegree": 0,
+      "outDegree": 1,
       "group": null
     },
     {
@@ -1946,15 +2138,27 @@
     },
     {
       "id": "the-mosaic-law",
-      "name": "The Mosaic Law",
+      "name": "The Law of Moses (Old Covenant)",
       "testament": "OT",
-      "description": "The Law (Torah) given to Israel; perfected and fulfilled by the Gospel of Christ (Matt 5:17).",
-      "displayName": "The Mosaic Law",
-      "canonPosition": 28017010,
-      "verseCount": 32,
+      "description": "The Law the Lord gave Israel through Moses and the covenant he made with them at Sinai, sealed with the blood of sacrifice (Exod 24:7-8; Deut 5:2-3).",
+      "displayName": "The Law of Moses (Old Covenant)",
+      "canonPosition": 2031018,
+      "verseCount": 34,
+      "inDegree": 0,
+      "outDegree": 4,
+      "group": null
+    },
+    {
+      "id": "the-new-creation-in-christ",
+      "name": "The New Creation in Christ",
+      "testament": "NT",
+      "description": "The renewal of all things, begun in Christ's Resurrection and in each believer made a new creature in Baptism, and to be completed in the new heavens and the new earth (2 Cor 5:17; Rev 21:1-5).",
+      "displayName": "The New Creation in Christ",
+      "canonPosition": 52008021,
+      "verseCount": 1,
       "inDegree": 1,
-      "outDegree": 3,
-      "group": "Covenantal"
+      "outDegree": 0,
+      "group": "Christological"
     },
     {
       "id": "the-one-true-church",
@@ -1962,9 +2166,9 @@
       "testament": "NT",
       "description": null,
       "displayName": "The Church",
-      "canonPosition": null,
-      "verseCount": 0,
-      "inDegree": 35,
+      "canonPosition": 50019034,
+      "verseCount": 1,
+      "inDegree": 40,
       "outDegree": 0,
       "group": "Ecclesial"
     },
@@ -1989,7 +2193,7 @@
       "canonPosition": 23142010,
       "verseCount": 2,
       "inDegree": 0,
-      "outDegree": 1,
+      "outDegree": 2,
       "group": null
     },
     {
@@ -2058,11 +2262,23 @@
       "testament": "NT",
       "description": "The resurrection of Christ and the consequent bodily resurrection of believers.",
       "displayName": "The Resurrection",
-      "canonPosition": null,
-      "verseCount": 0,
+      "canonPosition": 47012039,
+      "verseCount": 1,
       "inDegree": 6,
       "outDegree": 0,
       "group": "Christological"
+    },
+    {
+      "id": "the-sabbath",
+      "name": "The Sabbath",
+      "testament": "OT",
+      "description": "The seventh day, on which God rested from the work of creation and which he blessed and hallowed, given to Israel to keep holy as a sign of the covenant (Gen 2:2-3; Exod 20:8-11; 31:16-17).",
+      "displayName": "The Sabbath",
+      "canonPosition": 1002002,
+      "verseCount": 4,
+      "inDegree": 0,
+      "outDegree": 2,
+      "group": null
     },
     {
       "id": "the-saints-in-heavenly-worship",
@@ -2086,6 +2302,18 @@
       "verseCount": 3,
       "inDegree": 0,
       "outDegree": 2,
+      "group": null
+    },
+    {
+      "id": "the-seventy-elders",
+      "name": "The Seventy Elders",
+      "testament": "OT",
+      "description": "The seventy elders of Israel on whom the Lord placed some of the spirit that was on Moses, so that they might bear the burden of the people with him (Num 11:16-17, 24-25).",
+      "displayName": "The Seventy Elders",
+      "canonPosition": 4011024,
+      "verseCount": 2,
+      "inDegree": 0,
+      "outDegree": 1,
       "group": null
     },
     {
@@ -2113,13 +2341,25 @@
       "group": null
     },
     {
+      "id": "the-spirit-over-the-waters",
+      "name": "The Spirit over the Waters of Creation",
+      "testament": "OT",
+      "description": "The Spirit of God moving over the face of the waters at the beginning of creation (Gen 1:2).",
+      "displayName": "The Spirit over the Waters of Creation",
+      "canonPosition": 1001002,
+      "verseCount": 1,
+      "inDegree": 0,
+      "outDegree": 2,
+      "group": null
+    },
+    {
       "id": "the-spouse-of-the-canticle-song-of-songs",
       "name": "The Spouse of the Canticle (Song of Songs)",
       "testament": "OT",
       "description": "The bride/spouse of the Song of Songs, read as the Church seeking and united to Christ the one true Shepherd-Bridegroom.",
       "displayName": "The Spouse of the Canticle (Song of Songs)",
       "canonPosition": 26001006,
-      "verseCount": 1,
+      "verseCount": 3,
       "inDegree": 0,
       "outDegree": 1,
       "group": null
@@ -2215,10 +2455,22 @@
       "description": "The material temple/sanctuary on Zion, stable and singular; fulfilled in the Church and figuring the heavenly dwelling.",
       "displayName": "The Temple of Jerusalem",
       "canonPosition": 15003011,
-      "verseCount": 24,
+      "verseCount": 25,
       "inDegree": 0,
       "outDegree": 3,
       "group": null
+    },
+    {
+      "id": "the-temptation-in-the-desert",
+      "name": "The Temptation of Jesus in the Desert",
+      "testament": "NT",
+      "description": "Jesus' forty days of fasting in the desert, where he was tempted by Satan and remained obedient to the Father (Matt 4:1-11).",
+      "displayName": "The Temptation of Jesus in the Desert",
+      "canonPosition": null,
+      "verseCount": 0,
+      "inDegree": 1,
+      "outDegree": 0,
+      "group": "Christological"
     },
     {
       "id": "the-threshing-floor",
@@ -2233,23 +2485,35 @@
       "group": null
     },
     {
+      "id": "the-transfiguration",
+      "name": "The Transfiguration",
+      "testament": "NT",
+      "description": "Christ's transfiguration on the mountain before Peter, James and John, when Moses and Elijah appeared talking with him and a voice spoke from the cloud (Matt 17:1-8).",
+      "displayName": "The Transfiguration",
+      "canonPosition": null,
+      "verseCount": 0,
+      "inDegree": 1,
+      "outDegree": 0,
+      "group": "Christological"
+    },
+    {
       "id": "the-twelve-apostles",
       "name": "The Twelve Apostles",
       "testament": "NT",
       "description": "The twelve apostles chosen by Christ, from whom the Christian people descend according to the spirit.",
       "displayName": "The Twelve Apostles",
-      "canonPosition": null,
-      "verseCount": 0,
+      "canonPosition": 47019028,
+      "verseCount": 3,
       "inDegree": 1,
       "outDegree": 0,
       "group": "Ecclesial"
     },
     {
       "id": "the-twelve-patriarchs",
-      "name": "The Twelve Patriarchs",
+      "name": "The Twelve Patriarchs and Tribes of Israel",
       "testament": "OT",
-      "description": "The twelve patriarchs, ancestral heads of the tribes of Israel; prefiguring the twelve apostles.",
-      "displayName": "The Twelve Patriarchs",
+      "description": "The twelve sons of Jacob and the twelve tribes of Israel descended from and named after them (Gen 49:28).",
+      "displayName": "The Twelve Patriarchs and Tribes of Israel",
       "canonPosition": 47010001,
       "verseCount": 1,
       "inDegree": 0,
@@ -2448,6 +2712,24 @@
       ]
     },
     {
+      "source": "abraham",
+      "target": "the-one-true-church",
+      "category": "Ecclesial",
+      "confidence": "high",
+      "sources": [
+        "CCC-762"
+      ]
+    },
+    {
+      "source": "abrahams-hospitality-at-mamre",
+      "target": "the-annunciation",
+      "category": "Christological",
+      "confidence": "high",
+      "sources": [
+        "CCC-2571"
+      ]
+    },
+    {
       "source": "absalom",
       "target": "destruction-of-jerusalem-as-divine-judgment",
       "category": "Eschatological",
@@ -2471,7 +2753,20 @@
       "category": "Christological",
       "confidence": "high",
       "sources": [
-        "haydock"
+        "haydock",
+        "CCC-359",
+        "CCC-411",
+        "CCC-504",
+        "CCC-539"
+      ]
+    },
+    {
+      "source": "adam",
+      "target": "christs-passion",
+      "category": "Christological",
+      "confidence": "medium",
+      "sources": [
+        "CCC-766"
       ]
     },
     {
@@ -2480,7 +2775,9 @@
       "category": "Ecclesial",
       "confidence": "high",
       "sources": [
-        "haydock"
+        "haydock",
+        "CCC-796",
+        "CCC-1616"
       ]
     },
     {
@@ -2498,7 +2795,37 @@
       "category": "Christological",
       "confidence": "high",
       "sources": [
-        "haydock"
+        "haydock",
+        "CCC-436"
+      ]
+    },
+    {
+      "source": "anointing-of-kings-priests-and-prophets",
+      "target": "confirmation",
+      "category": "Sacramental",
+      "confidence": "medium",
+      "sources": [
+        "CCC-1150",
+        "CCC-1294"
+      ]
+    },
+    {
+      "source": "anointing-of-kings-priests-and-prophets",
+      "target": "holy-orders",
+      "category": "Sacramental",
+      "confidence": "medium",
+      "sources": [
+        "CCC-1150",
+        "CCC-1294"
+      ]
+    },
+    {
+      "source": "anointing-of-kings-priests-and-prophets",
+      "target": "new-covenant-sacraments",
+      "category": "Sacramental",
+      "confidence": "high",
+      "sources": [
+        "CCC-1150"
       ]
     },
     {
@@ -2543,7 +2870,8 @@
       "category": "Christological",
       "confidence": "medium",
       "sources": [
-        "haydock"
+        "haydock",
+        "CCC-2572"
       ]
     },
     {
@@ -2561,7 +2889,8 @@
       "category": "Christological",
       "confidence": "high",
       "sources": [
-        "haydock"
+        "haydock",
+        "CCC-2130"
       ]
     },
     {
@@ -2583,12 +2912,22 @@
       ]
     },
     {
+      "source": "burning-bush",
+      "target": "mary",
+      "category": "Marian",
+      "confidence": "high",
+      "sources": [
+        "CCC-724"
+      ]
+    },
+    {
       "source": "ceremonial-law",
       "target": "christ",
       "category": "Christological",
       "confidence": "high",
       "sources": [
-        "haydock"
+        "haydock",
+        "CCC-2175"
       ]
     },
     {
@@ -2611,6 +2950,15 @@
     },
     {
       "source": "cherubim-of-the-ark",
+      "target": "christ",
+      "category": "Christological",
+      "confidence": "high",
+      "sources": [
+        "CCC-2130"
+      ]
+    },
+    {
+      "source": "cherubim-of-the-ark",
       "target": "the-saints-in-heavenly-worship",
       "category": "Ecclesial",
       "confidence": "high",
@@ -2626,6 +2974,15 @@
       "sources": [
         "CCC-527",
         "haydock"
+      ]
+    },
+    {
+      "source": "circumcision",
+      "target": "new-covenant-sacraments",
+      "category": "Sacramental",
+      "confidence": "high",
+      "sources": [
+        "CCC-1150"
       ]
     },
     {
@@ -2653,7 +3010,8 @@
       "category": "Christological",
       "confidence": "high",
       "sources": [
-        "haydock"
+        "haydock",
+        "CCC-697"
       ]
     },
     {
@@ -2689,7 +3047,9 @@
       "category": "Christological",
       "confidence": "high",
       "sources": [
-        "haydock"
+        "haydock",
+        "CCC-695",
+        "CCC-2579"
       ]
     },
     {
@@ -2792,15 +3152,6 @@
       ]
     },
     {
-      "source": "destruction-of-jerusalem-as-divine-judgment",
-      "target": "final-judgment",
-      "category": "Eschatological",
-      "confidence": "high",
-      "sources": [
-        "haydock"
-      ]
-    },
-    {
       "source": "destruction-of-sodom",
       "target": "final-judgment",
       "category": "Eschatological",
@@ -2815,7 +3166,8 @@
       "category": "Ecclesial",
       "confidence": "high",
       "sources": [
-        "haydock"
+        "haydock",
+        "CCC-582"
       ]
     },
     {
@@ -2878,7 +3230,28 @@
       "category": "Christological",
       "confidence": "high",
       "sources": [
-        "haydock"
+        "haydock",
+        "CCC-523",
+        "CCC-718"
+      ]
+    },
+    {
+      "source": "elijahs-sacrifice-on-mount-carmel",
+      "target": "descent-of-the-holy-spirit-at-pentecost",
+      "category": "Ecclesial",
+      "confidence": "high",
+      "sources": [
+        "CCC-696"
+      ]
+    },
+    {
+      "source": "elijahs-sacrifice-on-mount-carmel",
+      "target": "eucharist",
+      "category": "Sacramental",
+      "confidence": "medium",
+      "sources": [
+        "CCC-696",
+        "CCC-2583"
       ]
     },
     {
@@ -2952,7 +3325,22 @@
       "confidence": "high",
       "sources": [
         "CCC-489",
-        "haydock"
+        "haydock",
+        "CCC-494",
+        "CCC-511",
+        "CCC-726",
+        "CCC-975",
+        "CCC-2618",
+        "CCC-2853"
+      ]
+    },
+    {
+      "source": "eve-formed-from-adams-side",
+      "target": "the-one-true-church",
+      "category": "Ecclesial",
+      "confidence": "medium",
+      "sources": [
+        "CCC-766"
       ]
     },
     {
@@ -3010,6 +3398,25 @@
       ]
     },
     {
+      "source": "gods-marriage-covenant-with-israel",
+      "target": "christ-church",
+      "category": "Ecclesial",
+      "confidence": "medium",
+      "sources": [
+        "CCC-796",
+        "CCC-1612"
+      ]
+    },
+    {
+      "source": "gods-marriage-covenant-with-israel",
+      "target": "matrimony",
+      "category": "Sacramental",
+      "confidence": "medium",
+      "sources": [
+        "CCC-1642"
+      ]
+    },
+    {
       "source": "gods-wonders-by-water",
       "target": "baptism",
       "category": "Sacramental",
@@ -3030,7 +3437,7 @@
     {
       "source": "goliath",
       "target": "christs-victory",
-      "category": "Ecclesial",
+      "category": "Christological",
       "confidence": "medium",
       "sources": [
         "haydock"
@@ -3129,15 +3536,6 @@
     },
     {
       "source": "ishmael",
-      "target": "the-mosaic-law",
-      "category": "Covenantal",
-      "confidence": "high",
-      "sources": [
-        "haydock"
-      ]
-    },
-    {
-      "source": "ishmael",
       "target": "the-synagogues-persecution-of-the-church",
       "category": "Ecclesial",
       "confidence": "high",
@@ -3160,7 +3558,12 @@
       "category": "Ecclesial",
       "confidence": "medium",
       "sources": [
-        "haydock"
+        "haydock",
+        "CCC-60",
+        "CCC-751",
+        "CCC-759",
+        "CCC-762",
+        "CCC-781"
       ]
     },
     {
@@ -3170,6 +3573,15 @@
       "confidence": "medium",
       "sources": [
         "haydock"
+      ]
+    },
+    {
+      "source": "israels-testing-in-the-wilderness",
+      "target": "the-temptation-in-the-desert",
+      "category": "Christological",
+      "confidence": "high",
+      "sources": [
+        "CCC-539"
       ]
     },
     {
@@ -3313,22 +3725,14 @@
       "category": "Christological",
       "confidence": "high",
       "sources": [
-        "haydock"
+        "haydock",
+        "CCC-994"
       ]
     },
     {
       "source": "jordan-crossing",
       "target": "baptism",
       "category": "Sacramental",
-      "confidence": "high",
-      "sources": [
-        "CCC-1222"
-      ]
-    },
-    {
-      "source": "jordan-crossing",
-      "target": "eternal-life",
-      "category": "Eschatological",
       "confidence": "high",
       "sources": [
         "CCC-1222"
@@ -3499,7 +3903,7 @@
     },
     {
       "source": "levitical-leprosy-laws",
-      "target": "new-covenant-sacraments",
+      "target": "sacrament-of-penance",
       "category": "Sacramental",
       "confidence": "medium",
       "sources": [
@@ -3545,6 +3949,15 @@
     },
     {
       "source": "melchizedek",
+      "target": "christ",
+      "category": "Christological",
+      "confidence": "high",
+      "sources": [
+        "CCC-58"
+      ]
+    },
+    {
+      "source": "melchizedek",
       "target": "christ-high-priest",
       "category": "Christological",
       "confidence": "high",
@@ -3559,8 +3972,9 @@
       "category": "Sacramental",
       "confidence": "high",
       "sources": [
-        "CCC-1334",
-        "haydock"
+        "CCC-1333",
+        "haydock",
+        "CCC-1350"
       ]
     },
     {
@@ -3578,7 +3992,9 @@
       "category": "Christological",
       "confidence": "high",
       "sources": [
-        "haydock"
+        "haydock",
+        "CCC-2574",
+        "CCC-2593"
       ]
     },
     {
@@ -3638,7 +4054,7 @@
     {
       "source": "noah",
       "target": "unbelievers-rejection-of-christ-crucified",
-      "category": "Ecclesial",
+      "category": "Christological",
       "confidence": "medium",
       "sources": [
         "haydock"
@@ -3651,7 +4067,8 @@
       "confidence": "high",
       "sources": [
         "CCC-1094",
-        "haydock"
+        "haydock",
+        "CCC-1219"
       ]
     },
     {
@@ -3660,7 +4077,8 @@
       "category": "Ecclesial",
       "confidence": "high",
       "sources": [
-        "haydock"
+        "haydock",
+        "CCC-845"
       ]
     },
     {
@@ -3669,7 +4087,9 @@
       "category": "Sacramental",
       "confidence": "high",
       "sources": [
-        "CCC-1094"
+        "CCC-1094",
+        "CCC-701",
+        "CCC-1219"
       ]
     },
     {
@@ -3691,13 +4111,23 @@
       ]
     },
     {
+      "source": "ot-laying-on-of-hands",
+      "target": "new-covenant-sacraments",
+      "category": "Sacramental",
+      "confidence": "high",
+      "sources": [
+        "CCC-1150"
+      ]
+    },
+    {
       "source": "ot-priesthood",
       "target": "christ-high-priest",
       "category": "Christological",
       "confidence": "high",
       "sources": [
         "CCC-1544",
-        "haydock"
+        "haydock",
+        "CCC-1548"
       ]
     },
     {
@@ -3706,12 +4136,22 @@
       "category": "Sacramental",
       "confidence": "high",
       "sources": [
-        "haydock"
+        "haydock",
+        "CCC-1541"
       ]
     },
     {
       "source": "ot-priesthood",
       "target": "new-covenant-sacraments",
+      "category": "Sacramental",
+      "confidence": "high",
+      "sources": [
+        "haydock"
+      ]
+    },
+    {
+      "source": "ot-priesthood",
+      "target": "sacrament-of-penance",
       "category": "Sacramental",
       "confidence": "high",
       "sources": [
@@ -3751,7 +4191,8 @@
       "category": "Christological",
       "confidence": "high",
       "sources": [
-        "haydock"
+        "haydock",
+        "CCC-614"
       ]
     },
     {
@@ -3760,7 +4201,8 @@
       "category": "Sacramental",
       "confidence": "high",
       "sources": [
-        "haydock"
+        "haydock",
+        "CCC-1330"
       ]
     },
     {
@@ -3787,7 +4229,10 @@
       "category": "Christological",
       "confidence": "high",
       "sources": [
-        "haydock"
+        "haydock",
+        "CCC-608",
+        "CCC-1093",
+        "CCC-1151"
       ]
     },
     {
@@ -3796,7 +4241,10 @@
       "category": "Christological",
       "confidence": "high",
       "sources": [
-        "haydock"
+        "haydock",
+        "CCC-613",
+        "CCC-1096",
+        "CCC-1340"
       ]
     },
     {
@@ -3806,7 +4254,26 @@
       "confidence": "high",
       "sources": [
         "CCC-1334",
-        "haydock"
+        "haydock",
+        "CCC-1340"
+      ]
+    },
+    {
+      "source": "passover",
+      "target": "heaven",
+      "category": "Eschatological",
+      "confidence": "medium",
+      "sources": [
+        "CCC-1403"
+      ]
+    },
+    {
+      "source": "passover",
+      "target": "new-covenant-sacraments",
+      "category": "Sacramental",
+      "confidence": "high",
+      "sources": [
+        "CCC-1150"
       ]
     },
     {
@@ -3906,7 +4373,9 @@
       "confidence": "high",
       "sources": [
         "CCC-1094",
-        "haydock"
+        "haydock",
+        "CCC-117",
+        "CCC-1221"
       ]
     },
     {
@@ -3933,7 +4402,8 @@
       "category": "Christological",
       "confidence": "medium",
       "sources": [
-        "haydock"
+        "haydock",
+        "CCC-1093"
       ]
     },
     {
@@ -3969,7 +4439,8 @@
       "category": "Ecclesial",
       "confidence": "medium",
       "sources": [
-        "haydock"
+        "haydock",
+        "CCC-710"
       ]
     },
     {
@@ -4111,7 +4582,7 @@
     {
       "source": "solomon",
       "target": "christ-church",
-      "category": "Christological",
+      "category": "Ecclesial",
       "confidence": "medium",
       "sources": [
         "haydock"
@@ -4177,7 +4648,8 @@
       "category": "Christological",
       "confidence": "high",
       "sources": [
-        "haydock"
+        "haydock",
+        "CCC-2130"
       ]
     },
     {
@@ -4209,11 +4681,41 @@
     },
     {
       "source": "the-babylonian-exile",
+      "target": "christs-passion",
+      "category": "Christological",
+      "confidence": "medium",
+      "sources": [
+        "CCC-710"
+      ]
+    },
+    {
+      "source": "the-babylonian-exile",
       "target": "destruction-of-jerusalem-as-divine-judgment",
       "category": "Eschatological",
       "confidence": "medium",
       "sources": [
         "haydock"
+      ]
+    },
+    {
+      "source": "the-creation-of-the-world",
+      "target": "the-new-creation-in-christ",
+      "category": "Christological",
+      "confidence": "medium",
+      "sources": [
+        "CCC-280",
+        "CCC-315",
+        "CCC-349"
+      ]
+    },
+    {
+      "source": "the-creation-of-the-world",
+      "target": "the-one-true-church",
+      "category": "Ecclesial",
+      "confidence": "low",
+      "sources": [
+        "CCC-759",
+        "CCC-778"
       ]
     },
     {
@@ -4223,6 +4725,25 @@
       "confidence": "medium",
       "sources": [
         "haydock"
+      ]
+    },
+    {
+      "source": "the-daughter-of-zion",
+      "target": "mary",
+      "category": "Marian",
+      "confidence": "medium",
+      "sources": [
+        "CCC-722",
+        "CCC-2676"
+      ]
+    },
+    {
+      "source": "the-daughter-of-zion",
+      "target": "the-one-true-church",
+      "category": "Ecclesial",
+      "confidence": "high",
+      "sources": [
+        "CCC-559"
       ]
     },
     {
@@ -4244,12 +4765,24 @@
       ]
     },
     {
+      "source": "the-dove-and-the-olive-branch-noah",
+      "target": "the-baptism-of-jesus",
+      "category": "Christological",
+      "confidence": "medium",
+      "sources": [
+        "CCC-701"
+      ]
+    },
+    {
       "source": "the-exodus-from-egypt",
       "target": "christ",
       "category": "Christological",
       "confidence": "high",
       "sources": [
-        "haydock"
+        "haydock",
+        "CCC-530",
+        "CCC-1093",
+        "CCC-1151"
       ]
     },
     {
@@ -4366,7 +4899,8 @@
       "category": "Christological",
       "confidence": "medium",
       "sources": [
-        "haydock"
+        "haydock",
+        "CCC-662"
       ]
     },
     {
@@ -4415,6 +4949,15 @@
       ]
     },
     {
+      "source": "the-lord-passing-by-at-horeb",
+      "target": "the-transfiguration",
+      "category": "Christological",
+      "confidence": "medium",
+      "sources": [
+        "CCC-2583"
+      ]
+    },
+    {
       "source": "the-mark-of-tau",
       "target": "baptism",
       "category": "Sacramental",
@@ -4433,6 +4976,15 @@
       ]
     },
     {
+      "source": "the-mercy-seat",
+      "target": "christ",
+      "category": "Christological",
+      "confidence": "medium",
+      "sources": [
+        "CCC-433"
+      ]
+    },
+    {
       "source": "the-mincha-unbloody-sacrifice",
       "target": "eucharist",
       "category": "Sacramental",
@@ -4447,7 +4999,14 @@
       "category": "Christological",
       "confidence": "high",
       "sources": [
-        "haydock"
+        "haydock",
+        "CCC-62",
+        "CCC-580",
+        "CCC-592",
+        "CCC-708",
+        "CCC-1961",
+        "CCC-1964",
+        "CCC-2053"
       ]
     },
     {
@@ -4465,7 +5024,26 @@
       "category": "Covenantal",
       "confidence": "high",
       "sources": [
-        "haydock"
+        "haydock",
+        "CCC-781",
+        "CCC-581",
+        "CCC-700",
+        "CCC-1964",
+        "CCC-1967",
+        "CCC-1968",
+        "CCC-1982",
+        "CCC-1984",
+        "CCC-2056"
+      ]
+    },
+    {
+      "source": "the-mosaic-law",
+      "target": "the-one-true-church",
+      "category": "Ecclesial",
+      "confidence": "medium",
+      "sources": [
+        "CCC-759",
+        "CCC-778"
       ]
     },
     {
@@ -4488,11 +5066,23 @@
     },
     {
       "source": "the-promised-land",
+      "target": "eternal-life",
+      "category": "Eschatological",
+      "confidence": "high",
+      "sources": [
+        "CCC-1222"
+      ]
+    },
+    {
+      "source": "the-promised-land",
       "target": "heaven",
       "category": "Eschatological",
       "confidence": "medium",
       "sources": [
-        "haydock"
+        "haydock",
+        "CCC-1716",
+        "CCC-1820",
+        "CCC-2795"
       ]
     },
     {
@@ -4546,7 +5136,8 @@
       "category": "Christological",
       "confidence": "high",
       "sources": [
-        "haydock"
+        "haydock",
+        "CCC-756"
       ]
     },
     {
@@ -4556,6 +5147,27 @@
       "confidence": "high",
       "sources": [
         "haydock"
+      ]
+    },
+    {
+      "source": "the-sabbath",
+      "target": "eternal-life",
+      "category": "Eschatological",
+      "confidence": "low",
+      "sources": [
+        "CCC-314",
+        "CCC-2002"
+      ]
+    },
+    {
+      "source": "the-sabbath",
+      "target": "the-lords-day",
+      "category": "Ecclesial",
+      "confidence": "medium",
+      "sources": [
+        "CCC-2175",
+        "CCC-2176",
+        "CCC-2190"
       ]
     },
     {
@@ -4577,6 +5189,15 @@
       ]
     },
     {
+      "source": "the-seventy-elders",
+      "target": "holy-orders",
+      "category": "Sacramental",
+      "confidence": "high",
+      "sources": [
+        "CCC-1541"
+      ]
+    },
+    {
       "source": "the-shepherd-of-israel",
       "target": "christ",
       "category": "Christological",
@@ -4595,9 +5216,28 @@
       ]
     },
     {
+      "source": "the-spirit-over-the-waters",
+      "target": "baptism",
+      "category": "Sacramental",
+      "confidence": "medium",
+      "sources": [
+        "CCC-1217",
+        "CCC-1218"
+      ]
+    },
+    {
+      "source": "the-spirit-over-the-waters",
+      "target": "the-baptism-of-jesus",
+      "category": "Christological",
+      "confidence": "medium",
+      "sources": [
+        "CCC-1224"
+      ]
+    },
+    {
       "source": "the-spouse-of-the-canticle-song-of-songs",
       "target": "christ-church",
-      "category": "Christological",
+      "category": "Ecclesial",
       "confidence": "medium",
       "sources": [
         "haydock"
@@ -4633,7 +5273,7 @@
     {
       "source": "the-tabernacle-gods-dwelling-place",
       "target": "destruction-of-jerusalem-as-divine-judgment",
-      "category": "Ecclesial",
+      "category": "Eschatological",
       "confidence": "medium",
       "sources": [
         "haydock"
@@ -4672,7 +5312,12 @@
       "category": "Christological",
       "confidence": "medium",
       "sources": [
-        "haydock"
+        "haydock",
+        "CCC-994",
+        "CCC-586",
+        "CCC-593",
+        "CCC-1093",
+        "CCC-1197"
       ]
     },
     {
@@ -4690,7 +5335,8 @@
       "category": "Ecclesial",
       "confidence": "high",
       "sources": [
-        "haydock"
+        "haydock",
+        "CCC-1543"
       ]
     },
     {
@@ -4717,7 +5363,8 @@
       "category": "Ecclesial",
       "confidence": "high",
       "sources": [
-        "haydock"
+        "haydock",
+        "CCC-765"
       ]
     },
     {
@@ -4741,7 +5388,7 @@
     {
       "source": "the-vineyard-of-israel",
       "target": "christ-church",
-      "category": "Christological",
+      "category": "Ecclesial",
       "confidence": "high",
       "sources": [
         "haydock"
@@ -4843,14 +5490,13 @@
       "category": "Christological",
       "confidence": "high",
       "sources": [
-        "CCC-1094",
         "haydock"
       ]
     },
     {
       "source": "water-from-rock",
       "target": "spiritual-gifts-of-christ",
-      "category": "Christological",
+      "category": "Ecclesial",
       "confidence": "high",
       "sources": [
         "CCC-1094"

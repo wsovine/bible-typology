@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Export the explorer's evidence to data/evidence.json (loaded only when a reader opens the explorer).
 
-For each Type: the verses that attest it (curated or cross-reference-mined) and the Catechism paragraphs
+For each Type: the verses that attest it (curated, cited by the Catechism, or cross-reference-mined) and the Catechism paragraphs
 that teach it. For each link: its reviewer note, unless the note is AI review meta-text ("AI-assisted: …"),
 and its attesting verses. Plus the verse texts, short Catechism excerpts, and the Catechism clarification
 notes from export/context_notes.toml (validated: targets must exist, quotes must be verbatim).
@@ -54,7 +54,7 @@ def main() -> int:
         type_ids = set(type_info)
         members = [dict(r) for r in s.run(
             "MATCH (v:Verse)-[m:MEMBER_OF]->(t:Type) RETURN t.id AS type, v.id AS verse, "
-            "m.source AS source, m.confidence AS confidence ORDER BY t.id, v.id")]
+            "m.source AS source, m.confidence AS confidence, m.ccc AS ccc ORDER BY t.id, v.id")]
         links = [dict(r) for r in s.run(
             "MATCH (a:Type)-[r:PREFIGURES]->(b:Type) RETURN a.id AS source, b.id AS target, "
             "r.notes AS notes, r.source_verses AS verses ORDER BY a.id, b.id")]
@@ -69,8 +69,10 @@ def main() -> int:
 
     memberships = defaultdict(list)
     for m in members:
-        provenance = "mined" if m["source"] == "crossref-mined" else "curated"
-        memberships[m["type"]].append([m["verse"], provenance])
+        if m["source"] == "ccc-review":  # verse the Catechism itself cites for this figure
+            memberships[m["type"]].append([m["verse"], "catechism", int(m["ccc"].removeprefix("CCC-"))])
+        else:
+            memberships[m["type"]].append([m["verse"], "mined" if m["source"] == "crossref-mined" else "curated"])
     link_notes, link_verses = {}, {}
     for l in links:
         key = f"{l['source']}|{l['target']}"

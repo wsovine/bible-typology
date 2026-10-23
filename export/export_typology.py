@@ -51,6 +51,14 @@ def main() -> int:
             members[r["t"]].append(r["v"])
     conn.close()
 
+    # The site draws Old Testament -> New Testament links only. Same-testament links (Paul's Ishmael allegory,
+    # Jerusalem's fall -> the Last Judgment) stay in the graph for the planned prophecy / NT -> NT edge kinds.
+    testament = {t["id"]: t["testament"] for t in types}
+    held = [l for l in links if testament[l["source"]] == testament[l["target"]]]
+    links = [l for l in links if testament[l["source"]] != testament[l["target"]]]
+    for l in held:
+        print(f"Held back (same testament): {l['source']} -> {l['target']}")
+
     in_degree, out_degree = Counter(l["target"] for l in links), Counter(l["source"] for l in links)
     incoming = defaultdict(Counter)
     for l in links:

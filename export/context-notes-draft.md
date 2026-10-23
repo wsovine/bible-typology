@@ -12,6 +12,7 @@
 ## Type: The Babylonian Exile  (`the-babylonian-exile`, applies to type)
 
 - **Description:** Israel's exile, deprived of religion, temple, and princes; a figure of the long desolation the Jews endured after rejecting Christ.
+- **Link note, The Babylonian Exile → Christ's Passion:** CCC 710: “In God's plan, the Exile already stands in the shadow of the Cross”
 - **Link note, The Babylonian Exile → Destruction of Jerusalem as Divine Judgment:** Origen/St. Jerome: the exile 'was only a figure of what they endured since they rejected Christ.'
 
 **Clarification:** The Catechism is precise about who bears responsibility for Jesus' trial: not “the Jews in Jerusalem as a whole,” and “still less … other Jews of different times and places.”
