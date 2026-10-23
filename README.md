@@ -2,10 +2,10 @@
 
 A scroll-driven story about biblical **typology**: how Old Testament figures, events and institutions
 foreshadow their New Testament fulfillments. It ends with an explorer of every figure. Built from the
-typology layer of [LogosGraph](../../README.md), a Neo4j knowledge graph of the 73-book Catholic Bible.
+typology layer of [LogosGraph](https://github.com/wsovine/LogosGraph), a Neo4j knowledge graph of the 73-book Catholic Bible.
 
-**Status:** draft. The full story (37 scroll steps) and the explorer are built; the Catechism clarification
-notes await sign-off; not yet published.
+**Live:** https://wsovine.github.io/bible-typology/ (served by GitHub Pages from `main`). The story has 38 scroll
+steps, followed by the explorer.
 
 ## Run it locally
 
