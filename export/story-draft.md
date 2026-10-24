@@ -347,11 +347,11 @@ Marriage. “The two shall be as one flesh,” Genesis says, right after the cre
 - **Catechism §766:** “As Eve was formed from the sleeping Adam's side, so the Church was born from the pierced heart of Christ hanging dead on the cross.”
 
 
-## All threads lead to Christ  `convergence`
+## Christ at the center  `convergence`
 
-### `convergence-gather` · radial · 53 words
+### `convergence-gather` · radial · 36 words
 
-Step back and the pattern is clear. These commentators read every thread toward Christ: of the 307 links, 105 point to him or to an event of his life, such as his passion, resurrection and priesthood. And the threads of the sacraments, of Mary and of the Church lead back to him too.
+Step back and the pattern is clear. Of the 307 links, 105 point to Christ or to an event of his life, such as his passion, resurrection and priesthood. That is more than any other fulfillment.
 
 
 ### `convergence-close` · radial · 43 words
@@ -371,9 +371,9 @@ Now explore on your own. Search any of the 220 figures, filter by theme, and ope
 
 ## Sources & methods  `sources`
 
-### `sources-data` · text · 51 words
+### `sources-data` · text · 50 words
 
-This site is built from LogosGraph, a knowledge graph of the 73-book Catholic Bible. Verse text is from the Catholic Public Domain Version. Typology links come from the Catechism of the Catholic Church and from the Haydock Bible commentary (first published 1811–1814, later revised), which gathers the Fathers and later commentators.
+This site is built from LogosGraph, a knowledge graph of the 73-book Bible. Verse text is from the Catholic Public Domain Version. Typology links come from the Catechism of the Catholic Church and from the Haydock Bible commentary (first published 1811–1814, later revised), which gathers the Fathers and later commentators.
 
 
 ### `sources-method` · text · 23 words
@@ -381,9 +381,9 @@ This site is built from LogosGraph, a knowledge graph of the 73-book Catholic Bi
 Every link on this site was checked against the text of its source: the Catechism paragraph or the commentary note that makes it.
 
 
-### `sources-warrant` · text · 43 words
+### `sources-warrant` · text · 46 words
 
-Two cautions. First, these are traditional readings, not proofs. Each pair on this site is marked by its strongest warrant: the New Testament draws the link itself, the Catechism teaches it, or it comes from the commentary tradition, sometimes from a single commentator.
+Two cautions on the commentaries. First, these are traditional readings, not proofs. Each pair on this site is marked by its strongest warrant: the New Testament draws the link itself, the Catechism teaches it, or it comes from the commentary tradition, sometimes from a single commentator.
 
 
 ### `sources-caveats` · text · 33 words

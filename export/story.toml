@@ -523,15 +523,14 @@ his Church.
 # ---------------------------------------------------------------------------
 [[chapter]]
 id = "convergence"
-title = "All threads lead to Christ"
+title = "Christ at the center"
 
 [[chapter.step]]
 id = "convergence-gather"
 view = "radial"
 text = """
-Step back and the pattern is clear. These commentators read every thread toward Christ: of the {links} \
-links, {christLinks} point to him or to an event of his life, such as his passion, resurrection and \
-priesthood. And the threads of the sacraments, of Mary and of the Church lead back to him too.
+Step back and the pattern is clear. Of the {links} links, {christLinks} point to Christ or to an event \
+of his life, such as his passion, resurrection and priesthood. That is more than any other fulfillment.
 """
 
 [[chapter.step]]

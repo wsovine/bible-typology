@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated": "2026-10-23T14:24:43+00:00",
+    "generated": "2026-10-24T12:37:08+00:00",
     "source": "export/story.toml + LogosGraph Neo4j",
     "stats": {
       "types": 220,
@@ -1307,14 +1307,14 @@
     },
     {
       "id": "convergence",
-      "title": "All threads lead to Christ",
+      "title": "Christ at the center",
       "category": null,
       "steps": [
         {
           "id": "convergence-gather",
           "view": "radial",
-          "text": "Step back and the pattern is clear. These commentators read every thread toward Christ: of the 307 links, 105 point to him or to an event of his life, such as his passion, resurrection and priesthood. And the threads of the sacraments, of Mary and of the Church lead back to him too.",
-          "words": 53,
+          "text": "Step back and the pattern is clear. Of the 307 links, 105 point to Christ or to an event of his life, such as his passion, resurrection and priesthood. That is more than any other fulfillment.",
+          "words": 36,
           "ccc": []
         },
         {
@@ -1353,8 +1353,8 @@
         {
           "id": "sources-data",
           "view": "text",
-          "text": "This site is built from LogosGraph, a knowledge graph of the 73-book Catholic Bible. Verse text is from the Catholic Public Domain Version. Typology links come from the Catechism of the Catholic Church and from the Haydock Bible commentary (first published 1811–1814, later revised), which gathers the Fathers and later commentators.",
-          "words": 51,
+          "text": "This site is built from LogosGraph, a knowledge graph of the 73-book Bible. Verse text is from the Catholic Public Domain Version. Typology links come from the Catechism of the Catholic Church and from the Haydock Bible commentary (first published 1811–1814, later revised), which gathers the Fathers and later commentators.",
+          "words": 50,
           "ccc": []
         },
         {
@@ -1367,8 +1367,8 @@
         {
           "id": "sources-warrant",
           "view": "text",
-          "text": "Two cautions. First, these are traditional readings, not proofs. Each pair on this site is marked by its strongest warrant: the New Testament draws the link itself, the Catechism teaches it, or it comes from the commentary tradition, sometimes from a single commentator.",
-          "words": 43,
+          "text": "Two cautions on the commentaries. First, these are traditional readings, not proofs. Each pair on this site is marked by its strongest warrant: the New Testament draws the link itself, the Catechism teaches it, or it comes from the commentary tradition, sometimes from a single commentator.",
+          "words": 46,
           "ccc": []
         },
         {
