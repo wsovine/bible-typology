@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated": "2026-10-24T12:37:08+00:00",
+    "generated": "2026-10-30T17:45:15+00:00",
     "source": "export/story.toml + LogosGraph Neo4j",
     "stats": {
       "types": 220,
@@ -1367,15 +1367,15 @@
         {
           "id": "sources-warrant",
           "view": "text",
-          "text": "Two cautions on the commentaries. First, these are traditional readings, not proofs. Each pair on this site is marked by its strongest warrant: the New Testament draws the link itself, the Catechism teaches it, or it comes from the commentary tradition, sometimes from a single commentator.",
-          "words": 46,
+          "text": "Each featured pair in the story is marked by its strongest warrant: the New Testament draws the link itself, the Catechism teaches it, or it comes from the commentary tradition, sometimes from a single commentator. In the explorer, every link lists its sources.",
+          "words": 43,
           "ccc": []
         },
         {
           "id": "sources-caveats",
           "view": "text",
-          "text": "Second, these commentators wrote amid the controversies of their own centuries. Where one of their readings could be mistaken for Church teaching, the explorer adds a short note from Scripture or the Catechism.",
-          "words": 33,
+          "text": "The commentators wrote amid the controversies of their own centuries. Where one of their readings could be mistaken for Church teaching, the explorer adds a short note from Scripture or the Catechism.",
+          "words": 32,
           "ccc": []
         },
         {

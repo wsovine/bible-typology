@@ -583,16 +583,16 @@ commentary note that makes it.
 id = "sources-warrant"
 view = "text"
 text = """
-Two cautions on the commentaries. First, these are traditional readings, not proofs. Each pair on this site is marked by its \
-strongest warrant: the New Testament draws the link itself, the Catechism teaches it, or it comes from the \
-commentary tradition, sometimes from a single commentator.
+Each featured pair in the story is marked by its strongest warrant: the New Testament draws the link itself, \
+the Catechism teaches it, or it comes from the commentary tradition, sometimes from a single commentator. \
+In the explorer, every link lists its sources.
 """
 
 [[chapter.step]]
 id = "sources-caveats"
 view = "text"
 text = """
-Second, these commentators wrote amid the controversies of their own centuries. Where one of their readings \
+The commentators wrote amid the controversies of their own centuries. Where one of their readings \
 could be mistaken for Church teaching, the explorer adds a short note from Scripture or the Catechism.
 """
 

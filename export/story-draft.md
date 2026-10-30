@@ -381,14 +381,14 @@ This site is built from LogosGraph, a knowledge graph of the 73-book Bible. Vers
 Every link on this site was checked against the text of its source: the Catechism paragraph or the commentary note that makes it.
 
 
-### `sources-warrant` · text · 46 words
+### `sources-warrant` · text · 43 words
 
-Two cautions on the commentaries. First, these are traditional readings, not proofs. Each pair on this site is marked by its strongest warrant: the New Testament draws the link itself, the Catechism teaches it, or it comes from the commentary tradition, sometimes from a single commentator.
+Each featured pair in the story is marked by its strongest warrant: the New Testament draws the link itself, the Catechism teaches it, or it comes from the commentary tradition, sometimes from a single commentator. In the explorer, every link lists its sources.
 
 
-### `sources-caveats` · text · 33 words
+### `sources-caveats` · text · 32 words
 
-Second, these commentators wrote amid the controversies of their own centuries. Where one of their readings could be mistaken for Church teaching, the explorer adds a short note from Scripture or the Catechism.
+The commentators wrote amid the controversies of their own centuries. Where one of their readings could be mistaken for Church teaching, the explorer adds a short note from Scripture or the Catechism.
 
 
 ### `sources-numbering` · text · 54 words
