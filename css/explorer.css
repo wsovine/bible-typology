@@ -404,7 +404,7 @@
   text-transform: uppercase;
 }
 
-@media (max-width: 899px) {
+@media (max-width: 899px) and (orientation: portrait), (max-width: 899px) and (min-height: 521px) {
   .explorer {
     padding: 3rem 1rem 2rem;
   }

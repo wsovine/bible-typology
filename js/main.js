@@ -4,7 +4,9 @@ import { GraphRenderer } from './graph-renderer.js';
 import { buildAppendix, buildSteps } from './story-steps.js';
 import { debounce, h } from './util.js';
 
-const MOBILE_QUERY = '(max-width: 899px)';
+// Stacked layout (graph on top, cards beneath): narrow screens, except short landscape ones (phones on
+// their side), which get the side-by-side layout. Keep in sync with css/responsive.css and css/explorer.css.
+const MOBILE_QUERY = '(max-width: 899px) and (orientation: portrait), (max-width: 899px) and (min-height: 521px)';
 
 function viewFor({ step, chapter }) {
   return { view: step.view, category: chapter.category, pair: step.pair ?? null };

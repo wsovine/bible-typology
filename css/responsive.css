@@ -1,5 +1,7 @@
-/* Phones and narrow tablets: graphic sticks to the top, steps scroll beneath it */
-@media (max-width: 899px) {
+/* Phones and narrow tablets in portrait: graphic sticks to the top, steps scroll beneath it.
+   Short landscape screens (phones on their side) keep the side-by-side layout instead.
+   Keep in sync with MOBILE_QUERY in js/main.js. */
+@media (max-width: 899px) and (orientation: portrait), (max-width: 899px) and (min-height: 521px) {
   .scrolly {
     display: block;
   }
@@ -30,8 +32,15 @@
   }
 
   .step-card {
-    max-width: none;
+    max-width: 40rem; /* full width on phones; centered with readable lines on tablets */
+    margin: 0 auto;
     padding: 1.2rem 1.1rem;
+  }
+
+  /* On tablets the 3:2 painting would fill the screen; cap it (phones never reach the cap) */
+  .chapter-art img {
+    max-height: 30vh;
+    max-height: 30svh;
   }
 
   /* On phones the legend is a slim strip above the graph instead of an overlay */
@@ -48,6 +57,50 @@
     background: none;
     font-size: 0.7rem;
     min-height: 2.9rem; /* two rows, so the graph doesn't jump between steps */
+    align-content: flex-start;
+  }
+}
+
+/* Short landscape screens (phones on their side): side-by-side layout with tighter spacing */
+@media (orientation: landscape) and (max-height: 520px) {
+  .steps {
+    padding: 0 0.75rem 30vh 1rem;
+  }
+
+  .step-card {
+    padding: 1.1rem;
+  }
+
+  .chapter-art img {
+    max-height: 45vh;
+    max-height: 45svh;
+  }
+
+  /* As on phones in portrait: the legend is a slim strip above the graph, not an overlay on its nodes */
+  .graphic {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #graph {
+    flex: 1;
+    min-height: 0;
+    height: auto;
+  }
+
+  .legend {
+    order: -1;
+    position: static;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.15rem 0.9rem;
+    max-width: none;
+    padding: 0.4rem 0.75rem 0;
+    border: 0;
+    border-radius: 0;
+    background: none;
+    font-size: 0.7rem;
+    min-height: 1.6rem;
     align-content: flex-start;
   }
 }

@@ -37,3 +37,10 @@
   --space: 1rem;
   --mobile-graphic-height: 46vh;
 }
+
+/* The small viewport (iOS toolbars showing), so the sticky graph is never partly hidden */
+@supports (height: 1svh) {
+  :root {
+    --mobile-graphic-height: 46svh;
+  }
+}

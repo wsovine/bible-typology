@@ -358,9 +358,23 @@ export class GraphRenderer {
       }
     } else {
       for (const testament of ['OT', 'NT']) {
-        const items = labels.filter((l) => l.node.testament === testament).map((l) => ({ ...l, want: l.node.y }));
-        const gap = items.some((it) => it.strong) ? 17 : 14;
-        deoverlap(items, gap, 44, this.H - 10).forEach((it) => {
+        const items = labels.filter((l) => l.node.testament === testament).map((l) => ({ ...l, want: l.node.y }))
+          .sort((a, b) => a.want - b.want);
+        const strong = items.some((it) => it.strong);
+        const room = this.H - 10 - 44;
+        // On short screens not every label fits, and deoverlap would pile the overflow at the top. First
+        // tighten the spacing (to 12 px for the 11 px labels); if that isn't enough, keep the strong labels
+        // and the best-connected figures, as many as fit (leader lines tie each label to its node).
+        let gap = strong ? 17 : 14;
+        if ((items.length - 1) * gap > room) gap = Math.max(strong ? 17 : 12, room / (items.length - 1));
+        const capacity = Math.floor(room / gap) + 1;
+        let kept = items;
+        if (items.length > capacity) {
+          const degree = (it) => (testament === 'NT' ? it.node.inDegree : it.node.outDegree);
+          const keep = new Set([...items].sort((a, b) => b.strong - a.strong || degree(b) - degree(a)).slice(0, capacity));
+          kept = items.filter((it) => keep.has(it));
+        }
+        deoverlap(kept, gap, 44, this.H - 10).forEach((it) => {
           const left = testament === 'OT';
           const x = left ? this.otX - 14 : this.ntX + 14;
           const room = left ? x - 8 : this.W - x - 8; // px available for the label text
