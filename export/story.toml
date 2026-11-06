@@ -22,7 +22,7 @@
 #   focus    optional CSS object-position for the 3:2 crop, e.g. "50% 62%" (default centered)
 
 [meta]
-title = "Shadow & Fulfillment"          # working title (decision D1)
+title = "Shadow & Fulfillment"          # settled 2026-10-30 (decision D1)
 subtitle = "How the Old Testament foreshadows the New"
 
 [stats]
@@ -228,7 +228,7 @@ file = "bouts-gathering-of-the-manna"
 title = "The Gathering of the Manna"
 artist = "Dieric Bouts"
 year = "1464–1467"
-collection = "Altarpiece of the Holy Sacrament, St. Peter's Church, Leuven"
+collection = "Altarpiece of the Holy Sacrament, St.\u00A0Peter's Church, Leuven"
 alt = """Israelites kneel on bare ground gathering manna into a jug and bowls while a mother and child look on; \
 more figures cross the rocky hills behind them."""
 focus = "50% 55%"
@@ -603,7 +603,7 @@ file = "van-eyck-adoration-of-the-lamb"
 title = "The Adoration of the Mystic Lamb"
 artist = "Hubert and Jan van Eyck"
 year = "1432"
-collection = "Ghent Altarpiece, St Bavo's Cathedral, Ghent"
+collection = "Ghent Altarpiece, St.\u00A0Bavo's Cathedral, Ghent"
 alt = "The Lamb stands on an altar in a flowering meadow, surrounded by kneeling angels, as crowds of saints, prophets and apostles approach from every side; the dove of the Holy Spirit shines above."
 focus = "50% 50%"
 source = "https://commons.wikimedia.org/wiki/File:Ghent_Altarpiece_-_Adoration_of_the_Mystic_Lamb.jpg"
@@ -687,4 +687,13 @@ text = """
 A note on numbering: this site follows the Vulgate numbering used by Catholic Bibles of the Haydock era. \
 For Psalms, the number most modern Bibles use is shown in parentheses, as in Psalm 109 (110). A few other \
 verses, such as Jonah 2:1 and those in Judith, may be numbered differently in your Bible.
+"""
+
+[[chapter.step]]
+id = "sources-credits"
+view = "text"
+text = """
+The Catholic Public Domain Version and the Haydock commentary are in the public domain. Catechism \
+excerpts are © Libreria Editrice Vaticana, quoted from the text published at vatican.va. The paintings, \
+listed below with their sources, are public-domain works reproduced from Wikimedia Commons.
 """

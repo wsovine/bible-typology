@@ -24,7 +24,7 @@ async function init() {
   // Sources & methods closes the page as plain text after the explorer; every other chapter scrolls.
   const steps = buildSteps(document.getElementById('steps'), story.chapters.filter((c) => c.id !== 'sources'));
   const appendix = story.chapters.find((c) => c.id === 'sources');
-  if (appendix) buildAppendix(document.getElementById('sources'), appendix);
+  if (appendix) buildAppendix(document.getElementById('sources'), appendix, story.chapters);
   const renderer = new GraphRenderer(
     document.getElementById('graph'), document.getElementById('legend'), typology, story.metadata.christFamily);
   renderer.setView(viewFor(steps[0]), { immediate: true });

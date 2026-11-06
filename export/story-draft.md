@@ -424,3 +424,8 @@ The commentators wrote amid the controversies of their own centuries. Where one 
 A note on numbering: this site follows the Vulgate numbering used by Catholic Bibles of the Haydock era. For Psalms, the number most modern Bibles use is shown in parentheses, as in Psalm 109 (110). A few other verses, such as Jonah 2:1 and those in Judith, may be numbered differently in your Bible.
 
 
+### `sources-credits` · text · 42 words
+
+The Catholic Public Domain Version and the Haydock commentary are in the public domain. Catechism excerpts are © Libreria Editrice Vaticana, quoted from the text published at vatican.va. The paintings, listed below with their sources, are public-domain works reproduced from Wikimedia Commons.
+
+

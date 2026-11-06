@@ -377,6 +377,33 @@
   color: var(--text-secondary);
 }
 
+.appendix > h3 {
+  margin: 2.25rem 0 0.9rem;
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
+.art-credits {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+.art-credits li {
+  margin: 0 0 0.9rem;
+}
+
+.art-credit-chapter {
+  display: block;
+  color: var(--text-muted);
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
 @media (max-width: 899px) {
   .explorer {
     padding: 3rem 1rem 2rem;

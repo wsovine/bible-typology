@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated": "2026-11-06T16:16:10+00:00",
+    "generated": "2026-11-06T16:21:22+00:00",
     "source": "export/story.toml + LogosGraph Neo4j",
     "stats": {
       "types": 220,
@@ -611,7 +611,7 @@
         "year": "1464–1467",
         "source": "https://commons.wikimedia.org/wiki/File:Dieric_Bouts_008.jpg",
         "license": "Public domain",
-        "collection": "Altarpiece of the Holy Sacrament, St. Peter's Church, Leuven"
+        "collection": "Altarpiece of the Holy Sacrament, St. Peter's Church, Leuven"
       }
     },
     {
@@ -1440,7 +1440,7 @@
         "year": "1432",
         "source": "https://commons.wikimedia.org/wiki/File:Ghent_Altarpiece_-_Adoration_of_the_Mystic_Lamb.jpg",
         "license": "Public domain",
-        "collection": "Ghent Altarpiece, St Bavo's Cathedral, Ghent"
+        "collection": "Ghent Altarpiece, St. Bavo's Cathedral, Ghent"
       }
     },
     {
@@ -1495,6 +1495,13 @@
           "view": "text",
           "text": "A note on numbering: this site follows the Vulgate numbering used by Catholic Bibles of the Haydock era. For Psalms, the number most modern Bibles use is shown in parentheses, as in Psalm 109 (110). A few other verses, such as Jonah 2:1 and those in Judith, may be numbered differently in your Bible.",
           "words": 54,
+          "ccc": []
+        },
+        {
+          "id": "sources-credits",
+          "view": "text",
+          "text": "The Catholic Public Domain Version and the Haydock commentary are in the public domain. Catechism excerpts are © Libreria Editrice Vaticana, quoted from the text published at vatican.va. The paintings, listed below with their sources, are public-domain works reproduced from Wikimedia Commons.",
+          "words": 42,
           "ccc": []
         }
       ]

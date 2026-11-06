@@ -1,4 +1,4 @@
-# Shadow & Fulfillment (working title)
+# Shadow & Fulfillment
 
 A scroll-driven story about biblical **typology**: how Old Testament figures, events and institutions
 foreshadow their New Testament fulfillments. It ends with an explorer of every figure. Built from the
@@ -48,6 +48,20 @@ anything fails:
 
 `export/story-draft.md` is the readable review copy, with the real verse, commentary and Catechism text.
 
+## Chapter art
+
+Each story chapter opens with a public-domain painting from Wikimedia Commons, shown in a 3:2 frame at the top
+of its first card and credited in full under Sources & methods. To add or replace one:
+
+1. Download the file from its Commons page into a scratch folder, and check that the page marks it public domain.
+2. Make the two WebP sizes (needs `cwebp` from `brew install webp`):
+   `python3 export/prepare_art.py path/to/source.jpg artist-short-title` → `images/<name>.webp` (≤ 1600 px)
+   and `images/<name>-800.webp`. Trim any frame or color bar from the photo first.
+3. Add a `[chapter.art]` table under the chapter in `export/story.toml` (fields are listed in its header):
+   the file name, title, artist, year, collection, alt text, `focus` for the crop, the Commons page and the license.
+4. Run `render_story.py`, then `stamp.py`. The compiler refuses a missing credit field, a missing file, an
+   image over 400 KB or 1600 px, more than 10 paintings, or `images/` over 4 MB.
+
 ## Structure
 
 ```
@@ -57,8 +71,9 @@ js/    main.js (scroll wiring) · graph-renderer.js (two-column and radial layou
        story-steps.js (step cards, sources section) · explorer.js (search, figure panels, ego diagram)
        palette.js · data-loader.js · util.js
 data/  typology.json · story.json · evidence.json (generated)
+images/ chapter paintings (WebP, two sizes each; made by prepare_art.py)
 export/ story.toml (the script) · context_notes.toml (Catechism clarifications)
-        render_story.py · export_typology.py · export_evidence.py · textcheck.py · stamp.py
+        render_story.py · export_typology.py · export_evidence.py · textcheck.py · stamp.py · prepare_art.py
         story-draft.md · context-notes-draft.md (generated review copies)
 ```
 
@@ -85,6 +100,8 @@ with pinned versions.
   Hebrew number, e.g. Psalm 109 (110).
 - **Typology:** the Catechism of the Catholic Church (short excerpts, © Libreria Editrice Vaticana) and
   the Haydock Bible commentary (first published 1811–1814; 1883 edition, public domain).
+- **Paintings:** seven public-domain works reproduced from Wikimedia Commons; each is credited with its source
+  page under Sources & methods on the site.
 - **AI assistance:** an AI assistant made a first review pass with suggestions, and the author then
   reviewed selections of them personally, over several rounds.
 

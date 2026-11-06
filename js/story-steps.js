@@ -96,10 +96,22 @@ export function buildSteps(container, chapters) {
   return built;
 }
 
-/** Render a text-only chapter (Sources & methods) as a plain closing section. */
-export function buildAppendix(container, chapter) {
+/**
+ * Render a text-only chapter (Sources & methods) as a plain closing section, followed by credits for
+ * the chapter paintings in `chapters` (story order).
+ */
+export function buildAppendix(container, chapter, chapters = []) {
   container.append(h('h2', {}, chapter.title));
   for (const step of chapter.steps) {
     container.append(h('p', {}, step.text), ...cccBlock(step.ccc));
   }
+  const painted = chapters.filter((c) => c.art);
+  if (!painted.length) return;
+  container.append(
+    h('h3', {}, 'Paintings'),
+    h('ul', { class: 'art-credits' }, painted.map(({ title, art }) => h('li', {},
+      h('span', { class: 'art-credit-chapter' }, title),
+      `${art.artist}, `, h('cite', {}, art.title), ', ', h('span', { class: 'nowrap' }, art.year), '. ',
+      art.collection ? `${art.collection}. ` : '',
+      `${art.license}, via `, h('a', { href: art.source }, 'Wikimedia Commons'), '.'))));
 }
