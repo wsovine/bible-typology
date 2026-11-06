@@ -7,12 +7,13 @@
   --bg: #141210;
   --surface-2: #1d1a17;
   --surface-3: #26221e;
-  --border: #322d27;
+  --border: #322d27;          /* decorative card edges */
+  --border-control: #706759;  /* form-control outlines: ≥ 3:1 on --bg and --surface-2 */
 
   /* Text */
   --text-primary: #f2ede4;
   --text-secondary: #bdb5a7;
-  --text-muted: #8c8478;
+  --text-muted: #938b7f;      /* ≥ 4.5:1 on every surface, including --surface-3 */
 
   /* Categories (one at a time in the graphic) */
   --cat-christological: #c98500;

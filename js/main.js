@@ -78,7 +78,8 @@ async function init() {
     }
   }, { rootMargin: '800px 0px' }).observe(explorerRoot);
   const hashType = () => decodeURIComponent(window.location.hash.match(/^#type=(.+)$/)?.[1] ?? '');
-  window.addEventListener('hashchange', () => { if (hashType()) explorer.select(hashType(), { scroll: true }); });
+  // A story card's "Explore …" link: move focus with the reader, since the link stays far behind in the story.
+  window.addEventListener('hashchange', () => { if (hashType()) explorer.select(hashType(), { scroll: true, focus: true }); });
   if (hashType()) explorer.select(hashType(), { scroll: true });
 
   window.typologyDebug = { typology, story, renderer, explorer, scroller: () => scroller };

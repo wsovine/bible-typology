@@ -26,7 +26,7 @@
   flex: 1 1 18rem;
   min-width: 0;
   padding: 0.6rem 0.85rem;
-  border: 1px solid var(--border);
+  border: 1px solid var(--border-control);
   border-radius: 8px;
   background: var(--surface-2);
   color: var(--text-primary);
@@ -92,7 +92,7 @@
 
 .explorer-sort {
   padding: 0.45rem 0.6rem;
-  border: 1px solid var(--border);
+  border: 1px solid var(--border-control);
   border-radius: 8px;
 }
 

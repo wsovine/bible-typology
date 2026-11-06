@@ -14,6 +14,7 @@ const FEATURED = ['noahs-ark', 'melchizedek', 'eve', 'jonah', 'the-temple-of-jer
 const EGO_CAP = 10; // figures drawn per side of the diagram; the lists below always show everything
 const VERSES_SHOWN = 6;
 
+const reducedMotion = () => window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 const fold = (s) => s.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase();
 const linkKey = (l) => `${l.source}|${l.target}`;
 const sourceLabel = (s) => (s.startsWith('CCC-') ? `Catechism §${s.slice(4)}` : s === 'haydock' ? 'Haydock commentary' : s);
@@ -108,13 +109,16 @@ export class Explorer {
 
     this.count = h('p', { class: 'explorer-count', 'aria-live': 'polite' });
     this.list = h('ul', { class: 'explorer-list' });
-    this.panel = h('div', { class: 'explorer-panel', 'aria-live': 'polite' });
+    this.panel = h('div', { class: 'explorer-panel' });
+    // A short announcement per selection; making the whole panel live would re-read all of it.
+    this.status = h('p', { class: 'sr-only', role: 'status' });
 
     this.root.append(
       h('div', { class: 'explorer-toolbar' }, this.search, testaments, themes, this.sortSelect),
       h('div', { class: 'explorer-layout' },
         h('nav', { class: 'explorer-sidebar', 'aria-label': 'Figures' }, this.count, this.list),
-        this.panel));
+        this.panel),
+      this.status);
   }
 
   // ---- list ----------------------------------------------------------------
@@ -142,7 +146,10 @@ export class Explorer {
       canon: (a, b) => (a.testament === b.testament ? 0 : a.testament === 'OT' ? -1 : 1)
         || (a.canonPosition ?? Infinity) - (b.canonPosition ?? Infinity) || byName(a, b),
     };
-    this.visible = matches.sort(sorters[sort]);
+    // While searching, figures whose name matches come before those matched only by their description,
+    // so "manna" + Enter opens Manna rather than a figure that merely mentions it.
+    const nameHit = (t) => Number(Boolean(q) && fold(`${t.displayName} ${t.name}`).includes(q));
+    this.visible = matches.sort((a, b) => nameHit(b) - nameHit(a) || sorters[sort](a, b));
     this.count.textContent = `${this.visible.length} of ${this.types.length} figures`;
     this.list.replaceChildren(...this.visible.map((t) => {
       const button = h('button', { type: 'button', class: 'figure-item', 'aria-current': String(t.id === this.state.selected) },
@@ -155,7 +162,12 @@ export class Explorer {
 
   // ---- selection -----------------------------------------------------------
 
-  async select(id, { scroll = false } = {}) {
+  /**
+   * Show a figure. `focus` moves keyboard focus to its heading: use it when the control that was
+   * clicked disappears with the old panel (links inside the panel, story links), so keyboard and
+   * screen-reader users land on the new figure instead of the top of the page.
+   */
+  async select(id, { scroll = false, focus = false } = {}) {
     if (!this.byId.has(id)) return;
     this.state.selected = id;
     history.replaceState(null, '', `#type=${encodeURIComponent(id)}`);
@@ -169,16 +181,24 @@ export class Explorer {
     await this.ensureEvidence();
     if (this.state.selected !== id) return;
     this.renderPanel();
+    const t = this.byId.get(id);
+    if (focus) {
+      this.panel.querySelector('.figure-header h3')?.focus({ preventScroll: true });
+    } else {
+      this.status.textContent = `${t.displayName}: foreshadows ${this.outgoing.get(id).length}, `
+        + `foreshadowed by ${this.incoming.get(id).length}.`;
+    }
+    const behavior = reducedMotion() ? 'auto' : 'smooth';
     // Scroll only once the panel has its final height, so the explorer lands at the top. Jump instantly
     // from far away (e.g. a story card): smooth-scrolling through the story would replay every step.
     if (scroll) {
       const far = Math.abs(this.root.getBoundingClientRect().top) > window.innerHeight * 1.5;
-      this.root.scrollIntoView({ behavior: far ? 'auto' : 'smooth', block: 'start' });
+      this.root.scrollIntoView({ behavior: far ? 'auto' : behavior, block: 'start' });
     } else {
       // In-explorer navigation: bring the new figure's details into view if they're off screen
       // (a link deep in a long panel, or the list above the panel on phones).
       const top = this.panel.getBoundingClientRect().top;
-      if (top < 0 || top > window.innerHeight * 0.6) this.panel.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      if (top < 0 || top > window.innerHeight * 0.6) this.panel.scrollIntoView({ behavior, block: 'start' });
     }
   }
 
@@ -189,7 +209,7 @@ export class Explorer {
         h('p', {}, 'Choose a figure from the list, or start with one of these:'),
         h('div', { class: 'featured' }, FEATURED.map((fid) => {
           const b = h('button', { type: 'button', class: 'chip' }, this.byId.get(fid).displayName);
-          b.addEventListener('click', () => this.select(fid));
+          b.addEventListener('click', () => this.select(fid, { focus: true }));
           return b;
         }))));
       return;
@@ -221,7 +241,7 @@ export class Explorer {
     const notes = (this.typeNotes.get(t.id) ?? []);
     return h('header', { class: 'figure-header' },
       h('p', { class: 'eyebrow' }, t.testament === 'OT' ? 'Old Testament figure' : 'New Testament fulfillment'),
-      h('h3', {}, t.displayName),
+      h('h3', { tabindex: '-1' }, t.displayName),
       t.description ? h('p', { class: 'figure-description' }, t.description) : null,
       notes.map((n) => this.contextNote(n)));
   }
@@ -257,8 +277,12 @@ export class Explorer {
           .attr('data-key', linkKey(l));
         const g = svg.append('g').attr('class', 'ego-node').attr('tabindex', 0).attr('role', 'button')
           .attr('aria-label', `Open ${other.displayName}`)
-          .on('click', () => this.select(other.id))
-          .on('keydown', (e) => { if (e.key === 'Enter') this.select(other.id); })
+          .on('click', () => this.select(other.id, { focus: true }))
+          .on('keydown', (e) => {
+            if (e.key !== 'Enter' && e.key !== ' ') return;
+            e.preventDefault(); // Space would otherwise scroll the page
+            this.select(other.id, { focus: true });
+          })
           .on('mouseenter focus', () => path.attr('stroke', categoryColor(l.category)).attr('stroke-opacity', 1).attr('stroke-width', 2.5))
           .on('mouseleave blur', () => path.attr('stroke', dim).attr('stroke-opacity', 0.45).attr('stroke-width', 1.2));
         g.append('circle').attr('cx', x).attr('cy', y(i)).attr('r', 4);
@@ -296,7 +320,7 @@ export class Explorer {
     const other = this.byId.get(link[otherEnd]);
     const key = linkKey(link);
     const open = h('button', { type: 'button', class: 'figure-link' }, other.displayName);
-    open.addEventListener('click', () => this.select(other.id));
+    open.addEventListener('click', () => this.select(other.id, { focus: true }));
     const verses = this.evidence.linkVerses[key] ?? [];
     return h('li', { class: 'link-item' },
       h('div', { class: 'link-main' }, open,

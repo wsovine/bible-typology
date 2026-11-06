@@ -17,6 +17,41 @@ body {
   line-height: 1.6;
 }
 
+/* Accessibility helpers ---------------------------------------------------- */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Skip links stay off screen until focused with the keyboard */
+.skip-links a {
+  position: absolute;
+  top: 0.75rem;
+  left: 0.75rem;
+  z-index: 30;
+  padding: 0.5rem 0.9rem;
+  border-radius: 8px;
+  background: var(--surface-3);
+  color: var(--text-primary);
+  transform: translateY(-200%);
+}
+
+.skip-links a:focus {
+  transform: none;
+}
+
+/* Programmatic focus targets (section and figure headings) don't need a ring */
+[tabindex="-1"]:focus {
+  outline: none;
+}
+
 .prototype-flag {
   position: fixed;
   right: 0.75rem;

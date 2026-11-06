@@ -33,7 +33,7 @@ function pairCard(step) {
     verseBlock(step.nt, 'verse--nt'),
     h('p', { class: 'explore-links' }, 'Explore ',
       h('a', { href: `#type=${pair.type}` }, pair.typeName), ' or ',
-      h('a', { href: `#type=${pair.antitype}` }, pair.antitypeName), ' →'));
+      h('a', { href: `#type=${pair.antitype}` }, pair.antitypeName), ' ', h('span', { 'aria-hidden': 'true' }, '→')));
 
   if (step.quote) {
     const attribution = [step.quote.by, step.quote.source].filter(Boolean).join(', ');
