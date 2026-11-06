@@ -50,8 +50,9 @@
       <a href="https://wsovine.github.io/bible-timeline/">the Bible timeline</a>.</p>
   </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/scrollama@3.2.0/build/scrollama.min.js"></script>
+  <!-- defer: the page paints before these run; they still run in order, before the main.js module -->
+  <script defer src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/scrollama@3.2.0/build/scrollama.min.js"></script>
   <script type="importmap">
   {
     "imports": {
