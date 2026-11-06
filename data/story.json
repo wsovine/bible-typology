@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated": "2026-11-06T15:54:53+00:00",
+    "generated": "2026-11-06T16:16:10+00:00",
     "source": "export/story.toml + LogosGraph Neo4j",
     "stats": {
       "types": 220,
@@ -174,7 +174,23 @@
             }
           ]
         }
-      ]
+      ],
+      "art": {
+        "src": "images/biblia-pauperum-crucifixion.webp",
+        "srcset": "images/biblia-pauperum-crucifixion-800.webp 800w, images/biblia-pauperum-crucifixion.webp 1500w",
+        "width": 1500,
+        "height": 735,
+        "aspect": "3 / 2",
+        "focus": "48% 50%",
+        "detail": true,
+        "alt": "A medieval picture-Bible page: Christ on the cross in the center, flanked by Abraham raising his sword over Isaac on the left and Moses with the bronze serpent on the right, with prophets holding scrolls around them.",
+        "title": "Biblia pauperum: The Crucifixion",
+        "artist": "Master of the Hours of Margaret of Cleves",
+        "year": "c. 1405",
+        "source": "https://commons.wikimedia.org/wiki/File:Biblia_Pauperum_-_British_Library_manuscript_King%27s_5_-_Folio_17_-_Crucifixion.jpg",
+        "license": "Public domain",
+        "collection": "British Library, King's MS 5, folio 17"
+      }
     },
     {
       "id": "web",
@@ -403,7 +419,23 @@
             }
           ]
         }
-      ]
+      ],
+      "art": {
+        "src": "images/poussin-crossing-of-the-red-sea.webp",
+        "srcset": "images/poussin-crossing-of-the-red-sea-800.webp 800w, images/poussin-crossing-of-the-red-sea.webp 925w",
+        "width": 925,
+        "height": 655,
+        "aspect": "3 / 2",
+        "focus": "50% 50%",
+        "detail": true,
+        "alt": "Moses stands at the water's edge with his arm raised while the Israelites, safely across the Red Sea, gather armor from Pharaoh's drowned army beneath a dark storm cloud.",
+        "title": "The Crossing of the Red Sea",
+        "artist": "Nicolas Poussin",
+        "year": "1632–1634",
+        "source": "https://commons.wikimedia.org/wiki/File:Poussin_-_The_Crossing_of_the_Red_Sea,_1632-1634,_1843-4.jpg",
+        "license": "Public domain",
+        "collection": "National Gallery of Victoria, Melbourne"
+      }
     },
     {
       "id": "bread",
@@ -867,7 +899,23 @@
             }
           ]
         }
-      ]
+      ],
+      "art": {
+        "src": "images/caravaggio-sacrifice-of-isaac.webp",
+        "srcset": "images/caravaggio-sacrifice-of-isaac-800.webp 800w, images/caravaggio-sacrifice-of-isaac.webp 1600w",
+        "width": 1600,
+        "height": 1241,
+        "aspect": "3 / 2",
+        "focus": "50% 35%",
+        "detail": true,
+        "alt": "An angel seizes Abraham's wrist as he presses a knife toward his son Isaac, who is pinned to a stone and crying out; a ram watches at right.",
+        "title": "The Sacrifice of Isaac",
+        "artist": "Caravaggio",
+        "year": "1603–1604",
+        "source": "https://commons.wikimedia.org/wiki/File:Caravaggio_-_Sacrificio_di_Isacco_-_Google_Art_Project.jpg",
+        "license": "Public domain",
+        "collection": "Uffizi Gallery, Florence"
+      }
     },
     {
       "id": "mary",
@@ -1074,7 +1122,23 @@
             }
           ]
         }
-      ]
+      ],
+      "art": {
+        "src": "images/van-den-eeckhout-hannah-and-samuel.webp",
+        "srcset": "images/van-den-eeckhout-hannah-and-samuel-800.webp 800w, images/van-den-eeckhout-hannah-and-samuel.webp 1600w",
+        "width": 1600,
+        "height": 1307,
+        "aspect": "3 / 2",
+        "focus": "50% 25%",
+        "detail": true,
+        "alt": "Hannah kneels as her small son Samuel, dressed in white, steps toward the aged priest Eli, who sits in rich vestments beside an altar; a man in a turban stands behind them.",
+        "title": "The Infant Samuel Brought by Hannah to Eli",
+        "artist": "Gerbrand van den Eeckhout",
+        "year": "1660–1663",
+        "source": "https://commons.wikimedia.org/wiki/File:Eeckhout,_Gerbrand_van_den_-_The_Infant_Samuel_brought_by_Hannah_to_Eli_-_Ashmolean_Museum.jpg",
+        "license": "Public domain",
+        "collection": "Ashmolean Museum, Oxford"
+      }
     },
     {
       "id": "church",
@@ -1319,7 +1383,23 @@
             }
           ]
         }
-      ]
+      ],
+      "art": {
+        "src": "images/bassano-animals-entering-the-ark.webp",
+        "srcset": "images/bassano-animals-entering-the-ark-800.webp 800w, images/bassano-animals-entering-the-ark.webp 1600w",
+        "width": 1600,
+        "height": 1242,
+        "aspect": "3 / 2",
+        "focus": "50% 50%",
+        "detail": true,
+        "alt": "Noah, in a red robe, looks up as pairs of animals of every kind crowd toward the ramp of the ark, while birds fill the sky and the tree above.",
+        "title": "The Animals Entering Noah's Ark",
+        "artist": "Jacopo Bassano",
+        "year": "c. 1570",
+        "source": "https://commons.wikimedia.org/wiki/File:The_Animals_Entering_Noah%27s_Ark_1570s_Jacopo_Bassano.jpg",
+        "license": "Public domain",
+        "collection": "Museo del Prado, Madrid"
+      }
     },
     {
       "id": "convergence",
@@ -1345,7 +1425,23 @@
             }
           ]
         }
-      ]
+      ],
+      "art": {
+        "src": "images/van-eyck-adoration-of-the-lamb.webp",
+        "srcset": "images/van-eyck-adoration-of-the-lamb-800.webp 800w, images/van-eyck-adoration-of-the-lamb.webp 1600w",
+        "width": 1600,
+        "height": 926,
+        "aspect": "3 / 2",
+        "focus": "50% 50%",
+        "detail": true,
+        "alt": "The Lamb stands on an altar in a flowering meadow, surrounded by kneeling angels, as crowds of saints, prophets and apostles approach from every side; the dove of the Holy Spirit shines above.",
+        "title": "The Adoration of the Mystic Lamb",
+        "artist": "Hubert and Jan van Eyck",
+        "year": "1432",
+        "source": "https://commons.wikimedia.org/wiki/File:Ghent_Altarpiece_-_Adoration_of_the_Mystic_Lamb.jpg",
+        "license": "Public domain",
+        "collection": "Ghent Altarpiece, St Bavo's Cathedral, Ghent"
+      }
     },
     {
       "id": "explore",

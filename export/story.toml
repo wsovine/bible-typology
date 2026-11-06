@@ -39,6 +39,17 @@ the-one-true-church = "The Church"
 id = "intro"
 title = "What is a type?"
 
+[chapter.art]
+file = "biblia-pauperum-crucifixion"
+title = "Biblia pauperum: The Crucifixion"
+artist = "Master of the Hours of Margaret of Cleves"
+year = "c. 1405"
+collection = "British Library, King's MS 5, folio 17"
+alt = "A medieval picture-Bible page: Christ on the cross in the center, flanked by Abraham raising his sword over Isaac on the left and Moses with the bronze serpent on the right, with prophets holding scrolls around them."
+focus = "48% 50%"
+source = "https://commons.wikimedia.org/wiki/File:Biblia_Pauperum_-_British_Library_manuscript_King%27s_5_-_Folio_17_-_Crucifixion.jpg"
+license = "Public domain"
+
 [[chapter.step]]
 id = "intro-title"
 view = "title"
@@ -126,6 +137,17 @@ covenants. Let's follow four of these threads.
 id = "waters"
 title = "Through the Waters"
 category = "Sacramental"
+
+[chapter.art]
+file = "poussin-crossing-of-the-red-sea"
+title = "The Crossing of the Red Sea"
+artist = "Nicolas Poussin"
+year = "1632–1634"
+collection = "National Gallery of Victoria, Melbourne"
+alt = "Moses stands at the water's edge with his arm raised while the Israelites, safely across the Red Sea, gather armor from Pharaoh's drowned army beneath a dark storm cloud."
+focus = "50% 50%"
+source = "https://commons.wikimedia.org/wiki/File:Poussin_-_The_Crossing_of_the_Red_Sea,_1632-1634,_1843-4.jpg"
+license = "Public domain"
 
 [[chapter.step]]
 id = "waters-intro"
@@ -278,6 +300,17 @@ id = "christ"
 title = "Figures of Christ"
 category = "Christological"
 
+[chapter.art]
+file = "caravaggio-sacrifice-of-isaac"
+title = "The Sacrifice of Isaac"
+artist = "Caravaggio"
+year = "1603–1604"
+collection = "Uffizi Gallery, Florence"
+alt = "An angel seizes Abraham's wrist as he presses a knife toward his son Isaac, who is pinned to a stone and crying out; a ram watches at right."
+focus = "50% 35%"
+source = "https://commons.wikimedia.org/wiki/File:Caravaggio_-_Sacrificio_di_Isacco_-_Google_Art_Project.jpg"
+license = "Public domain"
+
 [[chapter.step]]
 id = "christ-intro"
 view = "web-category"
@@ -380,6 +413,17 @@ id = "mary"
 title = "Daughters of Promise"
 category = "Marian"
 
+[chapter.art]
+file = "van-den-eeckhout-hannah-and-samuel"
+title = "The Infant Samuel Brought by Hannah to Eli"
+artist = "Gerbrand van den Eeckhout"
+year = "1660–1663"
+collection = "Ashmolean Museum, Oxford"
+alt = "Hannah kneels as her small son Samuel, dressed in white, steps toward the aged priest Eli, who sits in rich vestments beside an altar; a man in a turban stands behind them."
+focus = "50% 25%"
+source = "https://commons.wikimedia.org/wiki/File:Eeckhout,_Gerbrand_van_den_-_The_Infant_Samuel_brought_by_Hannah_to_Eli_-_Ashmolean_Museum.jpg"
+license = "Public domain"
+
 [[chapter.step]]
 id = "mary-intro"
 view = "web-category"
@@ -454,6 +498,17 @@ this: Elizabeth asks how “the mother of my Lord” could come to her, and Mary
 id = "church"
 title = "One Ark, One People"
 category = "Ecclesial"
+
+[chapter.art]
+file = "bassano-animals-entering-the-ark"
+title = "The Animals Entering Noah's Ark"
+artist = "Jacopo Bassano"
+year = "c. 1570"
+collection = "Museo del Prado, Madrid"
+alt = "Noah, in a red robe, looks up as pairs of animals of every kind crowd toward the ramp of the ark, while birds fill the sky and the tree above."
+focus = "50% 50%"
+source = "https://commons.wikimedia.org/wiki/File:The_Animals_Entering_Noah%27s_Ark_1570s_Jacopo_Bassano.jpg"
+license = "Public domain"
 
 [[chapter.step]]
 id = "church-intro"
@@ -542,6 +597,17 @@ his Church.
 [[chapter]]
 id = "convergence"
 title = "Christ at the center"
+
+[chapter.art]
+file = "van-eyck-adoration-of-the-lamb"
+title = "The Adoration of the Mystic Lamb"
+artist = "Hubert and Jan van Eyck"
+year = "1432"
+collection = "Ghent Altarpiece, St Bavo's Cathedral, Ghent"
+alt = "The Lamb stands on an altar in a flowering meadow, surrounded by kneeling angels, as crowds of saints, prophets and apostles approach from every side; the dove of the Holy Spirit shines above."
+focus = "50% 50%"
+source = "https://commons.wikimedia.org/wiki/File:Ghent_Altarpiece_-_Adoration_of_the_Mystic_Lamb.jpg"
+license = "Public domain"
 
 [[chapter.step]]
 id = "convergence-gather"

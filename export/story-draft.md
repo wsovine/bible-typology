@@ -11,6 +11,10 @@ _How the Old Testament foreshadows the New_
 
 ## What is a type?  `intro`
 
+**Art:** Master of the Hours of Margaret of Cleves, _Biblia pauperum: The Crucifixion_ (detail), c. 1405 · Public domain · [source](https://commons.wikimedia.org/wiki/File:Biblia_Pauperum_-_British_Library_manuscript_King%27s_5_-_Folio_17_-_Crucifixion.jpg) · `images/biblia-pauperum-crucifixion.webp` 1500x735
+
+Alt text: A medieval picture-Bible page: Christ on the cross in the center, flanked by Abraham raising his sword over Isaac on the left and Moses with the bronze serpent on the right, with prophets holding scrolls around them.
+
 ### `intro-title` · title · 44 words
 
 “The law contains the shadow of future good things,” says the Letter to the Hebrews. For two thousand years Christians have read the Old Testament this way: as a true story whose people, events and rituals cast shadows forward onto Christ and his Church.
@@ -66,6 +70,10 @@ Each link has a theme: Christ himself, the Church, the end of time, the sacramen
 
 
 ## Through the Waters  ·  _Sacramental_  `waters`
+
+**Art:** Nicolas Poussin, _The Crossing of the Red Sea_ (detail), 1632–1634 · Public domain · [source](https://commons.wikimedia.org/wiki/File:Poussin_-_The_Crossing_of_the_Red_Sea,_1632-1634,_1843-4.jpg) · `images/poussin-crossing-of-the-red-sea.webp` 925x655
+
+Alt text: Moses stands at the water's edge with his arm raised while the Israelites, safely across the Red Sea, gather armor from Pharaoh's drowned army beneath a dark storm cloud.
 
 ### `waters-intro` · web-category · 30 words
 
@@ -168,6 +176,10 @@ Other sacraments have figures too. The Church sees in Aaron's priesthood, the Le
 
 ## Figures of Christ  ·  _Christological_  `christ`
 
+**Art:** Caravaggio, _The Sacrifice of Isaac_ (detail), 1603–1604 · Public domain · [source](https://commons.wikimedia.org/wiki/File:Caravaggio_-_Sacrificio_di_Isacco_-_Google_Art_Project.jpg) · `images/caravaggio-sacrifice-of-isaac.webp` 1600x1241
+
+Alt text: An angel seizes Abraham's wrist as he presses a knife toward his son Isaac, who is pinned to a stone and crying out; a ram watches at right.
+
 ### `christ-intro` · web-category · 23 words
 
 The largest thread is about Christ himself: figures that foreshadow who Jesus is and what he would suffer. Here are six of them.
@@ -240,6 +252,10 @@ Melchizedek again, where type and prophecy meet. Genesis gives the figure; a psa
 
 ## Daughters of Promise  ·  _Marian_  `mary`
 
+**Art:** Gerbrand van den Eeckhout, _The Infant Samuel Brought by Hannah to Eli_ (detail), 1660–1663 · Public domain · [source](https://commons.wikimedia.org/wiki/File:Eeckhout,_Gerbrand_van_den_-_The_Infant_Samuel_brought_by_Hannah_to_Eli_-_Ashmolean_Museum.jpg) · `images/van-den-eeckhout-hannah-and-samuel.webp` 1600x1307
+
+Alt text: Hannah kneels as her small son Samuel, dressed in white, steps toward the aged priest Eli, who sits in rich vestments beside an altar; a man in a turban stands behind them.
+
 ### `mary-intro` · web-category · 46 words
 
 The Catechism names Old Testament women who “kept alive the hope of Israel's salvation”: Sarah, Hannah, Deborah, Judith, Esther and others. “The purest figure among them is Mary.” Throughout the Old Covenant, the Catechism teaches, “the mission of many holy women prepared for that of Mary.”
@@ -291,6 +307,10 @@ The Ark of the Covenant was where God's glory dwelt. David asked, “How shall t
 
 
 ## One Ark, One People  ·  _Ecclesial_  `church`
+
+**Art:** Jacopo Bassano, _The Animals Entering Noah's Ark_ (detail), c. 1570 · Public domain · [source](https://commons.wikimedia.org/wiki/File:The_Animals_Entering_Noah%27s_Ark_1570s_Jacopo_Bassano.jpg) · `images/bassano-animals-entering-the-ark.webp` 1600x1242
+
+Alt text: Noah, in a red robe, looks up as pairs of animals of every kind crowd toward the ramp of the ark, while birds fill the sky and the tree above.
 
 ### `church-intro` · web-category · 49 words
 
@@ -352,6 +372,10 @@ Marriage. “The two shall be as one flesh,” Genesis says, right after the cre
 
 
 ## Christ at the center  `convergence`
+
+**Art:** Hubert and Jan van Eyck, _The Adoration of the Mystic Lamb_ (detail), 1432 · Public domain · [source](https://commons.wikimedia.org/wiki/File:Ghent_Altarpiece_-_Adoration_of_the_Mystic_Lamb.jpg) · `images/van-eyck-adoration-of-the-lamb.webp` 1600x926
+
+Alt text: The Lamb stands on an altar in a flowering meadow, surrounded by kneeling angels, as crowds of saints, prophets and apostles approach from every side; the dove of the Holy Spirit shines above.
 
 ### `convergence-gather` · radial · 36 words
 
