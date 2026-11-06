@@ -26,7 +26,14 @@ Everything in `data/` is generated; never edit it by hand. The story text lives 
 NEO4J_URI=bolt://localhost:17687 python export/export_typology.py   # -> data/typology.json
 NEO4J_URI=bolt://localhost:17687 python export/render_story.py      # -> data/story.json + export/story-draft.md
 NEO4J_URI=bolt://localhost:17687 python export/export_evidence.py   # -> data/evidence.json + export/context-notes-draft.md
+python3 export/stamp.py                                             # -> index.html (versioned URLs); run before every commit
 ```
+
+**Before every commit, run `python3 export/stamp.py`** (also after editing anything in `js/`, `css/` or `data/`). GitHub
+Pages lets browsers cache files for about 10 minutes, so without versioned URLs a reader who arrives just after a deploy
+can get a mix of old and new modules and the page fails to start. The script hashes every module, stylesheet and data
+file and writes the results into `index.html`: an import map for the modules and data, and `?v=` on the entry script and
+stylesheets. `python3 export/stamp.py --check` exits 1 if `index.html` is out of date.
 
 `data/evidence.json` holds the explorer's verses, link notes, Catechism excerpts and clarification notes. It
 loads only when a reader approaches the explorer.
@@ -51,11 +58,12 @@ js/    main.js (scroll wiring) · graph-renderer.js (two-column and radial layou
        palette.js · data-loader.js · util.js
 data/  typology.json · story.json · evidence.json (generated)
 export/ story.toml (the script) · context_notes.toml (Catechism clarifications)
-        render_story.py · export_typology.py · export_evidence.py · textcheck.py
+        render_story.py · export_typology.py · export_evidence.py · textcheck.py · stamp.py
         story-draft.md · context-notes-draft.md (generated review copies)
 ```
 
-No build step. D3 7.9.0 and Scrollama 3.2.0 load from jsDelivr with pinned versions.
+No build step: `stamp.py` only writes file hashes into `index.html`. D3 7.9.0 and Scrollama 3.2.0 load from jsDelivr
+with pinned versions.
 
 ## Design notes
 
