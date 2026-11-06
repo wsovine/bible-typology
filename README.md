@@ -102,6 +102,7 @@ with pinned versions.
   the Haydock Bible commentary (first published 1811–1814; 1883 edition, public domain).
 - **Paintings:** seven public-domain works reproduced from Wikimedia Commons; each is credited with its source
   page under Sources & methods on the site.
+- **Analytics:** the live site uses Google Analytics (GA4), the same property as the other LogosGraph sites.
 - **AI assistance:** an AI assistant made a first review pass with suggestions, and the author then
   reviewed selections of them personally, over several rounds.
 

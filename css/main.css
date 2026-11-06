@@ -52,19 +52,6 @@ body {
   outline: none;
 }
 
-.prototype-flag {
-  position: fixed;
-  right: 0.75rem;
-  bottom: 0.75rem;
-  z-index: 20;
-  padding: 0.25rem 0.6rem;
-  border: 1px solid var(--border);
-  border-radius: 999px;
-  background: var(--surface-2);
-  color: var(--text-muted);
-  font-size: 0.75rem;
-  letter-spacing: 0.02em;
-}
 
 /* Intro ------------------------------------------------------------------ */
 .intro {
