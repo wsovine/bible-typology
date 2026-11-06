@@ -46,6 +46,25 @@ function pairCard(step) {
   return card;
 }
 
+/** A chapter's painting, cropped to a fixed frame around its focus point (see [chapter.art] in story.toml). */
+function artFigure(art) {
+  return h('figure', { class: 'chapter-art' },
+    h('img', {
+      src: art.src,
+      srcset: art.srcset,
+      // The card's content width: full width minus gutters on phones, 34rem minus padding on desktop.
+      sizes: '(max-width: 899px) calc(100vw - 4.2rem), 31rem',
+      width: art.width,
+      height: art.height,
+      alt: art.alt,
+      loading: 'lazy',
+      decoding: 'async',
+      style: { aspectRatio: art.aspect, objectPosition: art.focus },
+    }),
+    h('figcaption', {}, `${art.artist}, `, h('cite', {}, art.title), `${art.detail ? ' (detail)' : ''}, `,
+      h('span', { class: 'nowrap' }, art.year)));
+}
+
 /**
  * Render each chapter's steps into `container`.
  * Returns [{ el, step, chapter }] in scroll order.
@@ -56,6 +75,7 @@ export function buildSteps(container, chapters) {
     chapter.steps.forEach((step, index) => {
       const card = h('div', { class: 'step-card' });
       if (index === 0) {
+        if (chapter.art) card.append(artFigure(chapter.art));
         const label = h('h2', { class: 'chapter-label' }, chapter.title);
         if (chapter.category) {
           label.dataset.category = chapter.category;

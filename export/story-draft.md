@@ -119,6 +119,10 @@ Circumcision. One figure of Baptism involves no water. God's covenant with Abrah
 
 ## Bread from Heaven  ·  _Sacramental_  `bread`
 
+**Art:** Dieric Bouts, _The Gathering of the Manna_ (detail), 1464–1467 · Public domain · [source](https://commons.wikimedia.org/wiki/File:Dieric_Bouts_008.jpg) · `images/bouts-gathering-of-the-manna.webp` 1266x1600
+
+Alt text: Israelites kneel on bare ground gathering manna into a jug and bowls while a mother and child look on; more figures cross the rocky hills behind them.
+
 ### `bread-intro` · web-category · 30 words
 
 A second sacramental thread runs through meals: a lamb eaten in haste, bread falling from the sky, a mysterious priest-king's offering. Each one, the Church teaches, points toward the Eucharist.

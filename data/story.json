@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated": "2026-10-30T17:45:15+00:00",
+    "generated": "2026-11-06T15:54:53+00:00",
     "source": "export/story.toml + LogosGraph Neo4j",
     "stats": {
       "types": 220,
@@ -564,7 +564,23 @@
           "words": 59,
           "ccc": []
         }
-      ]
+      ],
+      "art": {
+        "src": "images/bouts-gathering-of-the-manna.webp",
+        "srcset": "images/bouts-gathering-of-the-manna-800.webp 633w, images/bouts-gathering-of-the-manna.webp 1266w",
+        "width": 1266,
+        "height": 1600,
+        "aspect": "3 / 2",
+        "focus": "50% 55%",
+        "detail": true,
+        "alt": "Israelites kneel on bare ground gathering manna into a jug and bowls while a mother and child look on; more figures cross the rocky hills behind them.",
+        "title": "The Gathering of the Manna",
+        "artist": "Dieric Bouts",
+        "year": "1464–1467",
+        "source": "https://commons.wikimedia.org/wiki/File:Dieric_Bouts_008.jpg",
+        "license": "Public domain",
+        "collection": "Altarpiece of the Holy Sacrament, St. Peter's Church, Leuven"
+      }
     },
     {
       "id": "christ",

@@ -2,7 +2,8 @@
 """Compile story.toml into data/story.json and a human-readable review draft.
 
 Resolves every verse, Catechism paragraph and PREFIGURES edge the script references, checks that
-quotes appear verbatim in their sources, and fills {placeholders} from live graph stats. Writes
+quotes appear verbatim in their sources, checks chapter art against the image budget, and fills
+{placeholders} from live graph stats. Writes
 export/story-draft.md for review and, only if nothing failed, data/story.json for the site.
 
 Usage (Neo4j running; on this machine it listens on 17687):
@@ -36,6 +37,13 @@ WARRANTS = {
 }
 QUOTED = re.compile(r"“([^”]+)”")
 
+# Chapter art ([chapter.art] in story.toml; files made by export/prepare_art.py). The card shows each painting
+# in a fixed frame of ART_ASPECT (width, height), cropped around `focus`; the caption says "detail" when it crops.
+IMAGES = SITE / "images"
+ART_ASPECT = (3, 2)
+ART_REQUIRED = ("file", "title", "artist", "year", "alt", "source", "license")
+ART_MAX_KB, ART_MAX_EDGE, ART_MAX_TOTAL_KB, ART_MAX_COUNT = 400, 1600, 4096, 10
+
 
 def load_graph():
     conn = get_connection()
@@ -50,6 +58,55 @@ def load_graph():
         ccc_links = s.run("MATCH ()-[r:TEACHES]->() RETURN count(r) AS n").single()["n"]
     conn.close()
     return types, edges, verse_links, ccc_links
+
+
+def webp_size(path: Path) -> tuple[int, int]:
+    """Pixel size of a WebP file, read from its header (lossy VP8, lossless VP8L or extended VP8X)."""
+    head = path.read_bytes()[:30]
+    if head[:4] != b"RIFF" or head[8:12] != b"WEBP":
+        raise ValueError(f"{path.name} is not a WebP file")
+    chunk = head[12:16]
+    if chunk == b"VP8X":
+        return 1 + int.from_bytes(head[24:27], "little"), 1 + int.from_bytes(head[27:30], "little")
+    if chunk == b"VP8 ":
+        return int.from_bytes(head[26:28], "little") & 0x3FFF, int.from_bytes(head[28:30], "little") & 0x3FFF
+    if chunk == b"VP8L":
+        bits = int.from_bytes(head[21:25], "little")
+        return (bits & 0x3FFF) + 1, ((bits >> 14) & 0x3FFF) + 1
+    raise ValueError(f"{path.name}: unknown WebP chunk {chunk!r}")
+
+
+def resolve_art(art: dict, cid: str, errors: list) -> dict | None:
+    """Check one [chapter.art] entry and build the card's image data (src, srcset, crop, credit)."""
+    missing = [f for f in ART_REQUIRED if not str(art.get(f, "")).strip()]
+    if missing:
+        errors.append(f"{cid}: art is missing {', '.join(missing)}")
+        return None
+    sizes = []
+    for suffix in ("-800", ""):
+        path = IMAGES / f"{art['file']}{suffix}.webp"
+        if not path.exists():
+            errors.append(f"{cid}: art file images/{path.name} not found (run export/prepare_art.py)")
+            return None
+        w, h = webp_size(path)
+        sizes.append((path.name, w, h))
+    name, width, height = sizes[-1]
+    kb = (IMAGES / name).stat().st_size / 1024
+    if kb > ART_MAX_KB:
+        errors.append(f"{cid}: images/{name} is {kb:.0f} KB (limit {ART_MAX_KB} KB)")
+    if max(width, height) > ART_MAX_EDGE:
+        errors.append(f"{cid}: images/{name} is {width}x{height} (long edge limit {ART_MAX_EDGE} px)")
+    frame = ART_ASPECT[0] / ART_ASPECT[1]
+    return {
+        "src": f"images/{name}",
+        "srcset": ", ".join(f"images/{n} {w}w" for n, w, _ in sizes),
+        "width": width, "height": height,
+        "aspect": f"{ART_ASPECT[0]} / {ART_ASPECT[1]}",
+        "focus": art.get("focus", "50% 50%"),
+        "detail": abs(width / height - frame) / frame > 0.05,
+        **{k: art[k] for k in ("alt", "title", "artist", "year", "source", "license")},
+        "collection": art.get("collection"),
+    }
 
 
 def main() -> int:
@@ -163,7 +220,18 @@ def main() -> int:
                     errors.append(f"{sid}: quote not found in CCC {ref['para']}: {ref['quote'][:60]}…")
                 out["ccc"].append({"para": ref["para"], "quote": ref["quote"]})
             steps.append(out)
-        chapters.append({"id": chapter["id"], "title": chapter["title"], "category": cat, "steps": steps})
+        out_chapter = {"id": chapter["id"], "title": chapter["title"], "category": cat, "steps": steps}
+        if "art" in chapter:
+            out_chapter["art"] = resolve_art(chapter["art"], chapter["id"], errors)
+        chapters.append(out_chapter)
+
+    art_count = sum(1 for c in chapters if c.get("art"))
+    if art_count > ART_MAX_COUNT:
+        errors.append(f"{art_count} chapters have art (limit {ART_MAX_COUNT})")
+    if IMAGES.exists():
+        total_kb = sum(f.stat().st_size for f in IMAGES.iterdir() if f.is_file()) / 1024
+        if total_kb > ART_MAX_TOTAL_KB:
+            errors.append(f"images/ totals {total_kb:.0f} KB (limit {ART_MAX_TOTAL_KB} KB)")
 
     write_draft(story["meta"], stats, chapters, errors, warnings)
     if not errors:
@@ -201,6 +269,11 @@ def write_draft(meta: dict, stats: dict, chapters: list, errors: list, warnings:
     for chapter in chapters:
         cat = chapter["category"]
         lines.append(f"\n## {chapter['title']}" + (f"  ·  _{cat}_" if cat else "") + f"  `{chapter['id']}`\n")
+        if art := chapter.get("art"):
+            detail = " (detail)" if art["detail"] else ""
+            lines.append(f"**Art:** {art['artist']}, _{art['title']}_{detail}, {art['year']} · {art['license']} · "
+                         f"[source]({art['source']}) · `{art['src']}` {art['width']}x{art['height']}\n\n"
+                         f"Alt text: {art['alt']}\n")
         for s in chapter["steps"]:
             lines.append(f"### `{s['id']}` · {s['view']} · {s['words']} words\n\n{s['text']}\n")
             if "verse" in s:

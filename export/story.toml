@@ -14,6 +14,12 @@
 #   quote    { text, by }: commentary quote; must appear verbatim in the Haydock commentary on that pair
 #            ("…" marks an omission). `by` is the commentator.
 #   ccc      { para, quote } or a list of them; each quote must appear verbatim in that paragraph
+#
+# Chapter art ([chapter.art], shown at the top of the chapter's first card)
+#   file     base name in images/; make the two sizes with export/prepare_art.py <source> <file>
+#   title, artist, year, alt, source (Wikimedia Commons file page), license: required
+#   collection  optional; where the work belongs (e.g. the altarpiece it is a panel of)
+#   focus    optional CSS object-position for the 3:2 crop, e.g. "50% 62%" (default centered)
 
 [meta]
 title = "Shadow & Fulfillment"          # working title (decision D1)
@@ -194,6 +200,18 @@ circumcision of Christ,” and in the next breath of being “buried with him in
 id = "bread"
 title = "Bread from Heaven"
 category = "Sacramental"
+
+[chapter.art]
+file = "bouts-gathering-of-the-manna"
+title = "The Gathering of the Manna"
+artist = "Dieric Bouts"
+year = "1464–1467"
+collection = "Altarpiece of the Holy Sacrament, St. Peter's Church, Leuven"
+alt = """Israelites kneel on bare ground gathering manna into a jug and bowls while a mother and child look on; \
+more figures cross the rocky hills behind them."""
+focus = "50% 55%"
+source = "https://commons.wikimedia.org/wiki/File:Dieric_Bouts_008.jpg"
+license = "Public domain"
 
 [[chapter.step]]
 id = "bread-intro"

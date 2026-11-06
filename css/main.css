@@ -134,6 +134,35 @@ body {
   background: var(--surface-2);
 }
 
+/* Chapter art: one painting at the top of a chapter's first card, cropped to a fixed frame */
+.chapter-art {
+  margin: 0 0 1.1rem;
+}
+
+.chapter-art img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  background: var(--surface-3);
+}
+
+.chapter-art figcaption {
+  margin-top: 0.45rem;
+  color: var(--text-muted);
+  font-size: 0.75rem;
+  line-height: 1.4;
+}
+
+.chapter-art cite {
+  font-style: italic;
+}
+
+.chapter-art .nowrap {
+  white-space: nowrap;
+}
+
 .chapter-label {
   margin: 0 0 0.75rem;
   font-family: var(--font-display);
