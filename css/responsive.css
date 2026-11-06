@@ -59,6 +59,11 @@
     min-height: 2.9rem; /* two rows, so the graph doesn't jump between steps */
     align-content: flex-start;
   }
+
+  /* Keep the strip (blank) on text-only steps: collapsing it would resize the graph and cut transitions */
+  .legend:empty {
+    display: flex;
+  }
 }
 
 /* Short landscape screens (phones on their side): side-by-side layout with tighter spacing */
@@ -102,6 +107,10 @@
     font-size: 0.7rem;
     min-height: 1.6rem;
     align-content: flex-start;
+  }
+
+  .legend:empty {
+    display: flex;
   }
 }
 

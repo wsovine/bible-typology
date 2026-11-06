@@ -427,6 +427,29 @@ export class GraphRenderer {
       .text((d) => d.text);
   }
 
+  /**
+   * On phones the legend is a strip above the graph, so a legend that wraps onto more lines would shrink
+   * the graph: the ResizeObserver then re-lays it out and cuts any running morph or fade short. Reserve
+   * the tallest legend any of `views` needs at the current width, so the graph keeps one size all story.
+   * (Where the legend floats over the graph, nothing is reserved.)
+   */
+  reserveLegendHeight(views) {
+    const el = this.legendEl;
+    el.style.minHeight = '';
+    if (getComputedStyle(el).position !== 'static') return;
+    // Measure silently: the legend is a live region, and screen readers shouldn't hear every legend at once.
+    const live = el.getAttribute('aria-live');
+    el.removeAttribute('aria-live');
+    let tallest = 0;
+    for (const view of views) {
+      this.renderLegend(this.styleFor(view).legend);
+      tallest = Math.max(tallest, el.getBoundingClientRect().height);
+    }
+    this.renderLegend(this.view ? this.styleFor(this.view).legend : []);
+    el.style.minHeight = `${Math.ceil(tallest)}px`;
+    if (live) el.setAttribute('aria-live', live);
+  }
+
   renderLegend(rows) {
     this.legendEl.replaceChildren(...rows.map((row) => h('div', { class: 'legend-row' },
       h('span', { class: 'swatch', style: { background: row.color, opacity: row.faint ? '0.45' : '1' } }),

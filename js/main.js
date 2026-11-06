@@ -30,6 +30,8 @@ async function init() {
   const renderer = new GraphRenderer(
     document.getElementById('graph'), document.getElementById('legend'), typology, story.metadata.christFamily);
   renderer.setView(viewFor(steps[0]), { immediate: true });
+  const views = steps.map(viewFor);
+  renderer.reserveLegendHeight(views);
 
   // Steps trigger later on phones, where the graphic covers the top of the screen. Scrollama 3 can't
   // change its offset in place, so rebuild it when the layout crosses the phone breakpoint.
@@ -50,6 +52,7 @@ async function init() {
 
   // The graph re-lays itself out (ResizeObserver); scrollama needs to re-measure the steps.
   window.addEventListener('resize', debounce(() => {
+    renderer.reserveLegendHeight(views); // legends wrap differently at the new width
     if (window.matchMedia(MOBILE_QUERY).matches !== mobile) setupScroller();
     else scroller.resize();
   }, 200));
