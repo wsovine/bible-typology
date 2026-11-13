@@ -27,6 +27,7 @@ from src.data.book_mapping import display_ref  # noqa: E402
 from src.data.cpdv_parser import parse_cpdv  # noqa: E402
 from src.db.connection import get_connection  # noqa: E402
 from textcheck import normalize, quote_found  # noqa: E402
+from site_scope import drawn_links, drawn_type_ids, shown_evidence  # noqa: E402
 
 CCC_EXCERPT_CHARS = 320
 QUOTED = re.compile(r"“([^”]+)”")
@@ -50,8 +51,8 @@ def main() -> int:
     conn.connect()
     with conn.session() as s:
         type_info = {r["id"]: dict(r) for r in s.run(
-            "MATCH (t:Type) RETURN t.id AS id, t.name AS name, t.description AS description")}
-        type_ids = set(type_info)
+            "MATCH (t:Type) RETURN t.id AS id, t.name AS name, t.description AS description, "
+            "t.testament AS testament")}
         members = [dict(r) for r in s.run(
             "MATCH (v:Verse)-[m:MEMBER_OF]->(t:Type) RETURN t.id AS type, v.id AS verse, "
             "m.source AS source, m.confidence AS confidence, m.ccc AS ccc ORDER BY t.id, v.id")]
@@ -59,7 +60,13 @@ def main() -> int:
             "MATCH (a:Type)-[r:PREFIGURES]->(b:Type) RETURN a.id AS source, b.id AS target, "
             "r.notes AS notes, r.source_verses AS verses ORDER BY a.id, b.id")]
         teaches = [dict(r) for r in s.run(
-            "MATCH (c:CatechismParagraph)-[:TEACHES]->(t:Type) RETURN t.id AS type, c.id AS ccc, c.text AS text")]
+            "MATCH (c:CatechismParagraph)-[r:TEACHES]->(t:Type) RETURN t.id AS type, c.id AS ccc, "
+            "c.text AS text, r.source AS source")]
+        # Only what the site shows (see site_scope.py): drawn links, their Types and their evidence
+        links, _ = drawn_links(links, {tid: t["testament"] for tid, t in type_info.items()})
+        type_ids = drawn_type_ids(links)
+        members = shown_evidence(members, type_ids)
+        teaches = shown_evidence(teaches, type_ids)
         wanted = sorted({m["verse"] for m in members} | {v for l in links for v in l["verses"]})
         verses = {r["id"]: r["text"].strip() for r in s.run(
             "MATCH (v:Verse) WHERE v.id IN $ids RETURN v.id AS id, v.text AS text", ids=wanted)}
@@ -81,7 +88,8 @@ def main() -> int:
         if l["verses"]:
             link_verses[key] = l["verses"]
     teaches_by_type, ccc = defaultdict(list), {}
-    for t in teaches:
+    # Sorted, so the export doesn't depend on the order the database returns edges in
+    for t in sorted(teaches, key=lambda t: (t["type"], int(t["ccc"].removeprefix("CCC-")))):
         para = int(t["ccc"].removeprefix("CCC-"))
         teaches_by_type[t["type"]].append(para)
         ccc[para] = ccc_excerpt(t["text"])

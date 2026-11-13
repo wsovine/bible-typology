@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "generated": "2026-10-23T14:24:41+00:00",
+    "generated": "2026-11-13T17:18:42+00:00",
     "source": "LogosGraph Neo4j typology layer",
     "counts": {
-      "types": 220,
-      "links": 307,
+      "types": 219,
+      "links": 306,
       "categories": {
         "Christological": 113,
-        "Marian": 16,
+        "Marian": 15,
         "Eschatological": 43,
         "Ecclesial": 77,
         "Sacramental": 47,
@@ -1184,7 +1184,7 @@
       "displayName": "Mary",
       "canonPosition": 49001028,
       "verseCount": 3,
-      "inDegree": 16,
+      "inDegree": 15,
       "outDegree": 0,
       "group": "Marian"
     },
@@ -2554,18 +2554,6 @@
       "verseCount": 2,
       "inDegree": 0,
       "outDegree": 2,
-      "group": null
-    },
-    {
-      "id": "the-virgin-of-emmanuel-isaiah-7-14",
-      "name": "The Virgin of Emmanuel (Isaiah 7:14)",
-      "testament": "OT",
-      "description": "The virgin (almah) who shall conceive and bear Emmanuel; fulfilled in the Virgin Mary's conception of Christ.",
-      "displayName": "The Virgin of Emmanuel (Isaiah 7:14)",
-      "canonPosition": 29007014,
-      "verseCount": 1,
-      "inDegree": 0,
-      "outDegree": 1,
       "group": null
     },
     {
@@ -5398,15 +5386,6 @@
       "source": "the-vineyard-of-israel",
       "target": "the-gospel-new-covenant",
       "category": "Covenantal",
-      "confidence": "high",
-      "sources": [
-        "haydock"
-      ]
-    },
-    {
-      "source": "the-virgin-of-emmanuel-isaiah-7-14",
-      "target": "mary",
-      "category": "Marian",
       "confidence": "high",
       "sources": [
         "haydock"

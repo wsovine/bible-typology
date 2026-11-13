@@ -1,11 +1,11 @@
 {
   "metadata": {
-    "generated": "2026-11-06T16:21:22+00:00",
+    "generated": "2026-11-13T17:18:44+00:00",
     "source": "export/story.toml + LogosGraph Neo4j",
     "stats": {
-      "types": 220,
-      "links": 307,
-      "verseLinks": "1,235",
+      "types": 219,
+      "links": 306,
+      "verseLinks": "1,234",
       "cccLinks": 312,
       "christLinks": 105,
       "sacramental": 47,
@@ -13,7 +13,7 @@
       "ecclesial": 77,
       "christological": 113,
       "covenantal": 11,
-      "marian": 16
+      "marian": 15
     },
     "christFamily": [
       "christ",
@@ -200,7 +200,7 @@
         {
           "id": "web-all",
           "view": "web-all",
-          "text": "LogosGraph maps 220 of these figures and 307 links between them. They are drawn from the Catechism of the Catholic Church and from the 19th-century Haydock Bible commentary, which gathers readings from the Church Fathers and later Catholic commentators. Old Testament figures sit on one side; their fulfillments, on the other.",
+          "text": "LogosGraph maps 219 of these figures and 306 links between them. They are drawn from the Catechism of the Catholic Church and from the 19th-century Haydock Bible commentary, which gathers readings from the Church Fathers and later Catholic commentators. Old Testament figures sit on one side; their fulfillments, on the other.",
           "words": 51,
           "ccc": []
         },
@@ -1409,7 +1409,7 @@
         {
           "id": "convergence-gather",
           "view": "radial",
-          "text": "Step back and the pattern is clear. Of the 307 links, 105 point to Christ or to an event of his life, such as his passion, resurrection and priesthood. That is more than any other fulfillment.",
+          "text": "Step back and the pattern is clear. Of the 306 links, 105 point to Christ or to an event of his life, such as his passion, resurrection and priesthood. That is more than any other fulfillment.",
           "words": 36,
           "ccc": []
         },
@@ -1451,7 +1451,7 @@
         {
           "id": "explore-intro",
           "view": "explorer",
-          "text": "Now explore on your own. Search any of the 220 figures, filter by theme, and open one to see its links, the verses behind it, the commentators who noticed it, and what the Catechism says.",
+          "text": "Now explore on your own. Search any of the 219 figures, filter by theme, and open one to see its links, the verses behind it, the commentators who noticed it, and what the Catechism says.",
           "words": 35,
           "ccc": []
         }

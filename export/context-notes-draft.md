@@ -49,11 +49,3 @@
 - Catechism §605: “Christ died for all men without exception”
 - Catechism §1058: “desires all men to be saved”
 
-## Link: The Virgin of Emmanuel (Isaiah 7:14) → Mary  (applies to link-note)
-
-- **Link note:** St. Jerome (on 'almah' = virgin) and the Fathers 'generally apply all to Christ'; the virgin sign is fulfilled in Mary.
-
-**Clarification:** Strictly speaking, Isaiah 7:14 is a prophecy rather than a type: a promise spoken in words, not a person or event that foreshadows. The Catechism treats it as a promise kept: of Jesus' virginal conception it says, “The Church sees here the fulfillment of the divine promise given through the prophet Isaiah.”
-
-- Catechism §497: “The Church sees here the fulfillment of the divine promise given through the prophet Isaiah”
-

@@ -27,6 +27,7 @@ from src.data.book_mapping import CPDV_BOOK_ID_TO_ABBREV, display_ref  # noqa: E
 from src.data.cpdv_parser import parse_cpdv  # noqa: E402
 from src.db.connection import get_connection  # noqa: E402
 from textcheck import normalize, quote_found  # noqa: E402
+from site_scope import drawn_links, drawn_type_ids, shown_evidence  # noqa: E402
 
 MAX_WORDS = 60
 OT_BOOKS = {CPDV_BOOK_ID_TO_ABBREV[i] for i in range(1, 47)}
@@ -54,8 +55,10 @@ def load_graph():
         edges = {(r["a"], r["b"]): dict(r) for r in s.run(
             "MATCH (a:Type)-[r:PREFIGURES]->(b:Type) RETURN a.id AS a, b.id AS b, r.category AS category, "
             "r.confidence AS confidence, r.sources AS sources, r.notes AS notes")}
-        verse_links = s.run("MATCH ()-[r:MEMBER_OF]->() RETURN count(r) AS n").single()["n"]
-        ccc_links = s.run("MATCH ()-[r:TEACHES]->() RETURN count(r) AS n").single()["n"]
+        verse_links = [dict(r) for r in s.run(
+            "MATCH ()-[r:MEMBER_OF]->(t:Type) RETURN t.id AS type, r.source AS source")]
+        ccc_links = [dict(r) for r in s.run(
+            "MATCH ()-[r:TEACHES]->(t:Type) RETURN t.id AS type, r.source AS source")]
     conn.close()
     return types, edges, verse_links, ccc_links
 
@@ -121,15 +124,21 @@ def main() -> int:
             rec = json.loads(line)
             commentary[(rec["type_id"], rec["antitype_id"])].append((rec["verse_id"], rec["original_text"]))
     types, edges, verse_links, ccc_links = load_graph()
-    # Same-testament links aren't drawn on the site (see export_typology.py), so they don't count here either
-    edges = {k: e for k, e in edges.items() if types[k[0]]["testament"] != types[k[1]]["testament"]}
+    # Only what the site shows is counted (see site_scope.py): links across the testaments, the Types they
+    # join, and the evidence gathered for them
+    testament = {tid: t["testament"] for tid, t in types.items()}
+    drawn, _ = drawn_links(list(edges.values()), testament, "a", "b")
+    edges = {(e["a"], e["b"]): e for e in drawn}
+    shown = drawn_type_ids(drawn, "a", "b")
+    verse_links = len(shown_evidence(verse_links, shown))
+    ccc_links = len(shown_evidence(ccc_links, shown))
 
     by_category = defaultdict(int)
     for e in edges.values():
         by_category[e["category"]] += 1
     family = story["stats"]["christ_family"]
     stats = {
-        "types": len(types), "links": len(edges), "verseLinks": f"{verse_links:,}", "cccLinks": ccc_links,
+        "types": len(shown), "links": len(edges), "verseLinks": f"{verse_links:,}", "cccLinks": ccc_links,
         "christLinks": sum(1 for (_, b) in edges if b in family),
         **{c.lower(): n for c, n in by_category.items() if c},
     }

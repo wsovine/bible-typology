@@ -83,20 +83,3 @@ ccc = [
   { para = 605, quote = "Christ died for all men without exception" },
   { para = 1058, quote = "desires all men to be saved" },
 ]
-
-# ---------------------------------------------------------------------------
-# Classification
-# ---------------------------------------------------------------------------
-
-[[note]]
-target = { link = ["the-virgin-of-emmanuel-isaiah-7-14", "mary"] }
-applies_to = "link-note"
-text = """
-Strictly speaking, Isaiah 7:14 is a prophecy rather than a type: a promise spoken in words, not a \
-person or event that foreshadows. The Catechism treats it as a promise kept: of Jesus' virginal \
-conception it says, “The Church sees here the fulfillment of the divine promise given through the \
-prophet Isaiah.”
-"""
-ccc = [
-  { para = 497, quote = "The Church sees here the fulfillment of the divine promise given through the prophet Isaiah" },
-]

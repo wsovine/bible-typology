@@ -24,6 +24,7 @@ sys.path.insert(0, str(PROJECT_ROOT))
 
 from src.data.book_mapping import CPDV_BOOK_ID_TO_ABBREV  # noqa: E402
 from src.db.connection import get_connection  # noqa: E402
+from site_scope import drawn_links, drawn_type_ids, shown_evidence  # noqa: E402
 
 BOOK_ORDER = {abbrev: order for order, abbrev in CPDV_BOOK_ID_TO_ABBREV.items()}
 CATEGORY_ORDER = ["Christological", "Sacramental", "Marian", "Ecclesial", "Eschatological", "Covenantal"]
@@ -46,18 +47,24 @@ def main() -> int:
         links = [dict(r) for r in s.run(
             "MATCH (a:Type)-[r:PREFIGURES]->(b:Type) RETURN a.id AS source, b.id AS target, "
             "r.category AS category, r.confidence AS confidence, r.sources AS sources ORDER BY a.id, b.id")]
-        members = defaultdict(list)
-        for r in s.run("MATCH (v:Verse)-[:MEMBER_OF]->(t:Type) RETURN t.id AS t, v.id AS v"):
-            members[r["t"]].append(r["v"])
+        member_rows = [dict(r) for r in s.run(
+            "MATCH (v:Verse)-[m:MEMBER_OF]->(t:Type) RETURN t.id AS type, v.id AS v, m.source AS source")]
     conn.close()
 
-    # The site draws Old Testament -> New Testament links only. Same-testament links (Paul's Ishmael allegory,
-    # Jerusalem's fall -> the Last Judgment) stay in the graph for the planned prophecy / NT -> NT edge kinds.
+    # The site draws Old Testament -> New Testament links only (see site_scope.py). Same-testament links
+    # (Paul's Ishmael allegory, New Testament figures) and Types with no drawn link stay in the graph.
     testament = {t["id"]: t["testament"] for t in types}
-    held = [l for l in links if testament[l["source"]] == testament[l["target"]]]
-    links = [l for l in links if testament[l["source"]] != testament[l["target"]]]
-    for l in held:
-        print(f"Held back (same testament): {l['source']} -> {l['target']}")
+    links, held = drawn_links(links, testament)
+    print(f"Held back: {len(held)} same-testament links" + "".join(
+        f"\n  {l['source']} -> {l['target']}" for l in held[:5]) + ("\n  …" if len(held) > 5 else ""))
+    shown = drawn_type_ids(links)
+    hidden_types = [t["id"] for t in types if t["id"] not in shown]
+    if hidden_types:
+        print(f"Held back: {len(hidden_types)} Types with no drawn link")
+    types = [t for t in types if t["id"] in shown]
+    members = defaultdict(list)
+    for r in shown_evidence(member_rows, shown):
+        members[r["type"]].append(r["v"])
 
     in_degree, out_degree = Counter(l["target"] for l in links), Counter(l["source"] for l in links)
     incoming = defaultdict(Counter)
