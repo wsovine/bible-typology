@@ -30,8 +30,8 @@ Israelite” (Romans 11:1). Christ's first followers, his mother and the apostle
 ccc = []
 
 [[note]]
-target = { type = "the-babylonian-exile" }
-applies_to = "type"
+target = { link = ["the-babylonian-exile", "destruction-of-jerusalem-as-divine-judgment"] }
+applies_to = "link-note"
 text = """
 The Catechism is precise about who bears responsibility for Jesus' trial: not “the Jews in Jerusalem as \
 a whole,” and “still less … other Jews of different times and places.”

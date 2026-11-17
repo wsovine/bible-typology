@@ -1,16 +1,16 @@
 {
   "metadata": {
-    "generated": "2026-11-13T17:18:42+00:00",
+    "generated": "2026-11-14T20:19:11+00:00",
     "source": "LogosGraph Neo4j typology layer",
     "counts": {
-      "types": 219,
-      "links": 306,
+      "types": 213,
+      "links": 300,
       "categories": {
-        "Christological": 113,
+        "Christological": 110,
         "Marian": 15,
-        "Eschatological": 43,
-        "Ecclesial": 77,
-        "Sacramental": 47,
+        "Eschatological": 42,
+        "Ecclesial": 76,
+        "Sacramental": 46,
         "Covenantal": 11
       }
     }
@@ -152,7 +152,7 @@
       "displayName": "Antichrist",
       "canonPosition": null,
       "verseCount": 0,
-      "inDegree": 5,
+      "inDegree": 4,
       "outDegree": 0,
       "group": "Eschatological"
     },
@@ -284,7 +284,7 @@
       "displayName": "Christ",
       "canonPosition": 29040005,
       "verseCount": 43,
-      "inDegree": 60,
+      "inDegree": 59,
       "outDegree": 0,
       "group": "Christological"
     },
@@ -332,7 +332,7 @@
       "displayName": "Christ's Passion",
       "canonPosition": 50001029,
       "verseCount": 2,
-      "inDegree": 21,
+      "inDegree": 20,
       "outDegree": 0,
       "group": "Christological"
     },
@@ -392,18 +392,6 @@
       "displayName": "Cyrus",
       "canonPosition": 23093015,
       "verseCount": 8,
-      "inDegree": 0,
-      "outDegree": 1,
-      "group": null
-    },
-    {
-      "id": "daniels-four-beasts-four-empires",
-      "name": "Daniel's Four Beasts (Four Empires)",
-      "testament": "OT",
-      "description": "The four beasts of Daniel 7 (lion/Chaldean, bear/Persian, leopard/Greek, and the fourth/Roman empire); the composite beast of Revelation alludes to them, figuring the final apostate empire of Antichrist.",
-      "displayName": "Daniel's Four Beasts (Four Empires)",
-      "canonPosition": 73013002,
-      "verseCount": 1,
       "inDegree": 0,
       "outDegree": 1,
       "group": null
@@ -584,7 +572,7 @@
       "displayName": "Eucharist",
       "canonPosition": 47026026,
       "verseCount": 23,
-      "inDegree": 10,
+      "inDegree": 9,
       "outDegree": 0,
       "group": "Sacramental"
     },
@@ -1681,18 +1669,6 @@
       "group": null
     },
     {
-      "id": "the-adoration-of-the-magi",
-      "name": "The Adoration of the Magi",
-      "testament": "NT",
-      "description": "The wise men from the East who came to adore the infant Christ with gifts of gold, frankincense, and myrrh (Matt 2).",
-      "displayName": "The Adoration of the Magi",
-      "canonPosition": null,
-      "verseCount": 0,
-      "inDegree": 1,
-      "outDegree": 0,
-      "group": "Christological"
-    },
-    {
       "id": "the-altar-of-incense",
       "name": "The Altar of Incense",
       "testament": "OT",
@@ -1756,7 +1732,7 @@
       "id": "the-babylonian-exile",
       "name": "The Babylonian Exile",
       "testament": "OT",
-      "description": "Israel's exile, deprived of religion, temple, and princes; a figure of the long desolation the Jews endured after rejecting Christ.",
+      "description": "The deportation of Juda to Babylon under Nabuchodonosor and the seventy years of captivity there, without temple, sacrifice or king (4 Kings 24-25; 2 Paralipomenon 36:17-21; Jeremias 25:11).",
       "displayName": "The Babylonian Exile",
       "canonPosition": 35003004,
       "verseCount": 1,
@@ -1905,7 +1881,7 @@
       "canonPosition": 29025006,
       "verseCount": 3,
       "inDegree": 0,
-      "outDegree": 2,
+      "outDegree": 1,
       "group": null
     },
     {
@@ -2053,18 +2029,6 @@
       "group": null
     },
     {
-      "id": "the-kings-of-sheba-bearing-gifts",
-      "name": "The Kings of Sheba Bearing Gifts",
-      "testament": "OT",
-      "description": "The kings of Sheba and Ephah prophesied to come bearing gold and frankincense (Isa 60:6); fulfilled in the Magi adoring Christ.",
-      "displayName": "The Kings of Sheba Bearing Gifts",
-      "canonPosition": 29060006,
-      "verseCount": 1,
-      "inDegree": 0,
-      "outDegree": 1,
-      "group": null
-    },
-    {
       "id": "the-living-waters-from-the-sanctuary",
       "name": "The Living Waters from the Sanctuary",
       "testament": "OT",
@@ -2168,7 +2132,7 @@
       "displayName": "The Church",
       "canonPosition": 50019034,
       "verseCount": 1,
-      "inDegree": 40,
+      "inDegree": 39,
       "outDegree": 0,
       "group": "Ecclesial"
     },
@@ -2317,18 +2281,6 @@
       "group": null
     },
     {
-      "id": "the-shepherd-of-israel",
-      "name": "The Shepherd of Israel",
-      "testament": "OT",
-      "description": "God/the Messiah portrayed as a shepherd ruling, guiding, and feeding his flock (Ps 23; Ezek 34); fulfilled in Christ the Lamb-Shepherd who leads the saints to fountains of living water.",
-      "displayName": "The Shepherd of Israel",
-      "canonPosition": 73007017,
-      "verseCount": 1,
-      "inDegree": 0,
-      "outDegree": 1,
-      "group": null
-    },
-    {
       "id": "the-son-of-isaiah-emmanuel-sign",
       "name": "The Son of Isaiah (Emmanuel sign)",
       "testament": "OT",
@@ -2360,18 +2312,6 @@
       "displayName": "The Spouse of the Canticle (Song of Songs)",
       "canonPosition": 26001006,
       "verseCount": 3,
-      "inDegree": 0,
-      "outDegree": 1,
-      "group": null
-    },
-    {
-      "id": "the-stone-daniels-vision",
-      "name": "The Stone (Daniel's Vision)",
-      "testament": "OT",
-      "description": "The stone cut without hands that shattered the four kingdoms and became a mountain filling the earth (Dan 2); a figure of Christ's eternal kingdom, the Church.",
-      "displayName": "The Stone (Daniel's Vision)",
-      "canonPosition": 34002040,
-      "verseCount": 1,
       "inDegree": 0,
       "outDegree": 1,
       "group": null
@@ -2515,18 +2455,6 @@
       "description": "The twelve sons of Jacob and the twelve tribes of Israel descended from and named after them (Gen 49:28).",
       "displayName": "The Twelve Patriarchs and Tribes of Israel",
       "canonPosition": 47010001,
-      "verseCount": 1,
-      "inDegree": 0,
-      "outDegree": 1,
-      "group": null
-    },
-    {
-      "id": "the-unbroken-bones-of-the-just",
-      "name": "The Unbroken Bones of the Just",
-      "testament": "OT",
-      "description": "The bones of the just man that shall not be broken (Ps 33/34:21); fulfilled in Christ, whose bones were not broken (John 19:36).",
-      "displayName": "The Unbroken Bones of the Just",
-      "canonPosition": 23033021,
       "verseCount": 1,
       "inDegree": 0,
       "outDegree": 1,
@@ -3015,15 +2943,6 @@
       "source": "cyrus",
       "target": "christ",
       "category": "Christological",
-      "confidence": "medium",
-      "sources": [
-        "haydock"
-      ]
-    },
-    {
-      "source": "daniels-four-beasts-four-empires",
-      "target": "antichrist",
-      "category": "Eschatological",
       "confidence": "medium",
       "sources": [
         "haydock"
@@ -4784,15 +4703,6 @@
     },
     {
       "source": "the-feast-on-mount-zion",
-      "target": "eucharist",
-      "category": "Sacramental",
-      "confidence": "high",
-      "sources": [
-        "haydock"
-      ]
-    },
-    {
-      "source": "the-feast-on-mount-zion",
       "target": "heaven",
       "category": "Eschatological",
       "confidence": "high",
@@ -4914,15 +4824,6 @@
       "target": "satan-the-devil",
       "category": "Eschatological",
       "confidence": "medium",
-      "sources": [
-        "haydock"
-      ]
-    },
-    {
-      "source": "the-kings-of-sheba-bearing-gifts",
-      "target": "the-adoration-of-the-magi",
-      "category": "Christological",
-      "confidence": "high",
       "sources": [
         "haydock"
       ]
@@ -5186,15 +5087,6 @@
       ]
     },
     {
-      "source": "the-shepherd-of-israel",
-      "target": "christ",
-      "category": "Christological",
-      "confidence": "high",
-      "sources": [
-        "haydock"
-      ]
-    },
-    {
       "source": "the-son-of-isaiah-emmanuel-sign",
       "target": "christ",
       "category": "Christological",
@@ -5227,15 +5119,6 @@
       "target": "christ-church",
       "category": "Ecclesial",
       "confidence": "medium",
-      "sources": [
-        "haydock"
-      ]
-    },
-    {
-      "source": "the-stone-daniels-vision",
-      "target": "the-one-true-church",
-      "category": "Ecclesial",
-      "confidence": "high",
       "sources": [
         "haydock"
       ]
@@ -5353,15 +5236,6 @@
       "sources": [
         "haydock",
         "CCC-765"
-      ]
-    },
-    {
-      "source": "the-unbroken-bones-of-the-just",
-      "target": "christs-passion",
-      "category": "Christological",
-      "confidence": "high",
-      "sources": [
-        "haydock"
       ]
     },
     {

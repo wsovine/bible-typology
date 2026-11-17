@@ -7,14 +7,14 @@ The graph holds more than the site draws. The site shows Old Testament -> New Te
     Mary -> the Church),
   - prophecy (FORETELLS) links, which the exporters never query,
   - Types that have no drawn link (oracle Types, New Testament figure Types),
-  - verse and Catechism evidence added by the prophecy / New Testament figure pass
-    (MEMBER_OF and TEACHES edges whose source is in HIDDEN_SOURCES).
+  - verse and Catechism evidence added by the prophecy / New Testament figure pass and by the
+    Haydock prophecy pass (MEMBER_OF and TEACHES edges whose source is in HIDDEN_SOURCES).
 
 All three exporters use these helpers, so the graphic, the story's counts and the explorer's evidence
 agree on what is shown.
 """
 
-HIDDEN_SOURCES = {"ccc-review-2"}
+HIDDEN_SOURCES = {"ccc-review-2", "haydock-prophecy"}
 
 
 def drawn_links(links: list[dict], testament: dict[str, str], source: str = "source", target: str = "target"):

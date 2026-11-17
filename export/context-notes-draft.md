@@ -9,11 +9,9 @@
 **Clarification:** Paul answers this himself: “Has God driven away his people? Let it not be so! For I, too, am an Israelite” (Romans 11:1). Christ's first followers, his mother and the apostles were Jews.
 
 
-## Type: The Babylonian Exile  (`the-babylonian-exile`, applies to type)
+## Link: The Babylonian Exile → Destruction of Jerusalem as Divine Judgment  (applies to link-note)
 
-- **Description:** Israel's exile, deprived of religion, temple, and princes; a figure of the long desolation the Jews endured after rejecting Christ.
-- **Link note, The Babylonian Exile → Christ's Passion:** CCC 710: “In God's plan, the Exile already stands in the shadow of the Cross”
-- **Link note, The Babylonian Exile → Destruction of Jerusalem as Divine Judgment:** Origen/St. Jerome: the exile 'was only a figure of what they endured since they rejected Christ.'
+- **Link note:** Origen/St. Jerome: the exile 'was only a figure of what they endured since they rejected Christ.'
 
 **Clarification:** The Catechism is precise about who bears responsibility for Jesus' trial: not “the Jews in Jerusalem as a whole,” and “still less … other Jews of different times and places.”
 
